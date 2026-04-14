@@ -38,7 +38,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Uruk",
       "category": "Creator",
-      "description": "En yüce tanrı, gökyüzünün kişileştirmesi, tanrısal iradenin kaynağı."
+      "description": "En yüce tanrı, gökyüzünün kişileştirmesi, tanrısal iradenin kaynağı.",
+      "gruplar": [
+        "Annunaki",
+        "Duzen"
+      ]
     },
     {
       "name": "Ki",
@@ -58,7 +62,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Uruk (farklı gelenekler)",
       "category": "Creator",
-      "description": "Toprağın ve yerin ilkesi, An ile birlikte evrensel düzeni oluşturur."
+      "description": "Toprağın ve yerin ilkesi, An ile birlikte evrensel düzeni oluşturur.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nammu",
@@ -78,7 +85,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Eridu (Enki ile bağlantılı)",
       "category": "Creator",
-      "description": "Yaratıcı tanrıça, Abzu ile birlikte ilk tanrıları doğurur."
+      "description": "Yaratıcı tanrıça, Abzu ile birlikte ilk tanrıları doğurur.",
+      "gruplar": [
+        "Annunaki",
+        "Kaos"
+      ]
     },
     {
       "name": "Abzu",
@@ -96,7 +107,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Eridu",
       "category": "Creator",
-      "description": "Yeraltı sularının ilkesi, Enki'nin mabedi E-Abzu'nun isim kaynağı."
+      "description": "Yeraltı sularının ilkesi, Enki'nin mabedi E-Abzu'nun isim kaynağı.",
+      "gruplar": [
+        "Annunaki",
+        "Kaos"
+      ]
     }
   ],
   "ruling_major_gods": [
@@ -122,7 +137,12 @@ const TANRILAR_JSON = {
       ],
       "city": "Nippur",
       "category": "Ruling",
-      "description": "Pantheon başkanı, 'Büyük Dağ', tanrısal fermanların sahibi."
+      "description": "Pantheon başkanı, 'Büyük Dağ', tanrısal fermanların sahibi.",
+      "gruplar": [
+        "Annunaki",
+        "Igigi",
+        "Duzen"
+      ]
     },
     {
       "name": "Enki",
@@ -148,7 +168,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Eridu",
       "category": "Ruling",
-      "description": "İnsanlığın yaratıcısı, bilginin ve sihirin efendisi."
+      "description": "İnsanlığın yaratıcısı, bilginin ve sihirin efendisi.",
+      "gruplar": [
+        "Annunaki",
+        "Duzen"
+      ]
     },
     {
       "name": "Ninhursag",
@@ -173,7 +197,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Kesh, Adab",
       "category": "Ruling",
-      "description": "Ana tanrıça, 'Dağların Hanımı', yaratılış mitlerinde önemli rol."
+      "description": "Ana tanrıça, 'Dağların Hanımı', yaratılış mitlerinde önemli rol.",
+      "gruplar": [
+        "Annunaki",
+        "Duzen"
+      ]
     },
     {
       "name": "Ninlil",
@@ -196,7 +224,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Nippur",
       "category": "Ruling",
-      "description": "Enlil'in eşi, 'Hava Hanımefendisi'."
+      "description": "Enlil'in eşi, 'Hava Hanımefendisi'.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "İnanna",
@@ -217,7 +248,12 @@ const TANRILAR_JSON = {
       ],
       "city": "Uruk, Aratta",
       "category": "Ruling",
-      "description": "En güçlü kadın tanrıça, gökyüzünde gezegen Venüs olarak temsil edilir."
+      "description": "En güçlü kadın tanrıça, gökyüzünde gezegen Venüs olarak temsil edilir.",
+      "gruplar": [
+        "Annunaki",
+        "Igigi",
+        "Duzen"
+      ]
     },
     {
       "name": "Nanna",
@@ -238,7 +274,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Ur, Harran",
       "category": "Ruling",
-      "description": "Ay tanrısı, 'Büyük Boğa', zaman ölçümünün efendisi."
+      "description": "Ay tanrısı, 'Büyük Boğa', zaman ölçümünün efendisi.",
+      "gruplar": [
+        "Annunaki",
+        "Igigi"
+      ]
     },
     {
       "name": "Utu",
@@ -258,7 +298,12 @@ const TANRILAR_JSON = {
       ],
       "city": "Sippar, Larsa",
       "category": "Ruling",
-      "description": "Adaletin koruyucusu, ölüler diyarının kapısını açan."
+      "description": "Adaletin koruyucusu, ölüler diyarının kapısını açan.",
+      "gruplar": [
+        "Annunaki",
+        "Igigi",
+        "Duzen"
+      ]
     },
     {
       "name": "Adad",
@@ -279,7 +324,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Karkamış, Assur",
       "category": "Ruling",
-      "description": "Yağmur ve bereket getiren, boğa sembolü taşıyan."
+      "description": "Yağmur ve bereket getiren, boğa sembolü taşıyan.",
+      "gruplar": [
+        "Annunaki",
+        "Igigi"
+      ]
     },
     {
       "name": "Nergal",
@@ -299,7 +348,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Kutha",
       "category": "Ruling",
-      "description": "Kur'un (Ölüler Diyarı) efendisi, ani ölüm tanrısı."
+      "description": "Kur'un (Ölüler Diyarı) efendisi, ani ölüm tanrısı.",
+      "gruplar": [
+        "Annunaki",
+        "Kaos"
+      ]
     },
     {
       "name": "Ereşkigal",
@@ -320,7 +373,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Kutha",
       "category": "Ruling",
-      "description": "Göklerden ayrılıp yeraltını yöneten, İnanna'nın ablası."
+      "description": "Göklerden ayrılıp yeraltını yöneten, İnanna'nın ablası.",
+      "gruplar": [
+        "Annunaki",
+        "Kaos"
+      ]
     },
     {
       "name": "Dumuzi",
@@ -339,7 +396,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Bad-tibira",
       "category": "Ruling",
-      "description": "Mevsimsel ölüm ve diriliş tanrısı, çobanların koruyucusu."
+      "description": "Mevsimsel ölüm ve diriliş tanrısı, çobanların koruyucusu.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninurta",
@@ -362,7 +422,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Nippur, Girsu, Lagash",
       "category": "Ruling",
-      "description": "Kahraman tanrı, Anzu kuşunu öldüren, tarımsal bereketin sahibi."
+      "description": "Kahraman tanrı, Anzu kuşunu öldüren, tarımsal bereketin sahibi.",
+      "gruplar": [
+        "Annunaki",
+        "Duzen"
+      ]
     }
   ],
   "major_minor_gods": [
@@ -381,7 +445,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Ur",
       "category": "Major",
-      "description": "Nanna'nın eşi, büyük anne tanrıça."
+      "description": "Nanna'nın eşi, büyük anne tanrıça.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Damgalnuna",
@@ -401,7 +468,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Eridu",
       "category": "Major",
-      "description": "Enki'nin baş eşi, bilgelik tanrıçası."
+      "description": "Enki'nin baş eşi, bilgelik tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Gula",
@@ -419,7 +489,10 @@ const TANRILAR_JSON = {
       ],
       "city": "İşin, Lagash",
       "category": "Major",
-      "description": "Şifa ve merhamet tanrıçası, koruyucu köpeklerle tasvir edilir."
+      "description": "Şifa ve merhamet tanrıçası, koruyucu köpeklerle tasvir edilir.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ningişzida",
@@ -437,7 +510,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Gizah, Lagash",
       "category": "Major",
-      "description": "İki yılan sarmal şeklinde tasvir edilir, ölüler diyarının yargıcı."
+      "description": "İki yılan sarmal şeklinde tasvir edilir, ölüler diyarının yargıcı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninazu",
@@ -457,7 +533,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Enegi, Eshnunna",
       "category": "Major",
-      "description": "Yılanlarla ilişkili şifa tanrısı."
+      "description": "Yılanlarla ilişkili şifa tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Geshtinanna",
@@ -473,7 +552,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Major",
-      "description": "Dumuzi'nin kız kardeşi, onun yerine ölüler diyarına gönüllü giden."
+      "description": "Dumuzi'nin kız kardeşi, onun yerine ölüler diyarına gönüllü giden.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninsun",
@@ -493,7 +575,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Uruk",
       "category": "Major",
-      "description": "Gilgamesh'in annesi, bilge tanrıça."
+      "description": "Gilgamesh'in annesi, bilge tanrıça.",
+      "gruplar": [
+        "Annunaki",
+        "Mitolojik"
+      ]
     },
     {
       "name": "Nidaba",
@@ -513,7 +599,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Eresh, Uruk",
       "category": "Major",
-      "description": "Sümer edebiyatının ve yazının koruyucusu."
+      "description": "Sümer edebiyatının ve yazının koruyucusu.",
+      "gruplar": [
+        "Annunaki",
+        "Duzen"
+      ]
     },
     {
       "name": "Nanşe",
@@ -529,7 +619,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Lagash, Nina",
       "category": "Major",
-      "description": "Denizlerin ve balıkçıların tanrıçası, düş yorumcusu."
+      "description": "Denizlerin ve balıkçıların tanrıçası, düş yorumcusu.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninisina",
@@ -547,7 +640,10 @@ const TANRILAR_JSON = {
       ],
       "city": "İşin",
       "category": "Major",
-      "description": "Tıbbın tanrıçası, Pabilsag'ın eşi."
+      "description": "Tıbbın tanrıçası, Pabilsag'ın eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Pabilsag",
@@ -564,7 +660,10 @@ const TANRILAR_JSON = {
       ],
       "city": "İşin, Larag",
       "category": "Major",
-      "description": "Yay burcuna eşdeğer tanrı, koruyucu ruh."
+      "description": "Yay burcuna eşdeğer tanrı, koruyucu ruh.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nusku",
@@ -581,7 +680,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Nippur, Harran",
       "category": "Major",
-      "description": "Enlil'in vezir-suikastçısı, ateşin tanrısı."
+      "description": "Enlil'in vezir-suikastçısı, ateşin tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Gibil",
@@ -595,7 +697,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Demircilerin ve ateşin tanrısı."
+      "description": "Demircilerin ve ateşin tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "İşum",
@@ -611,7 +716,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Dostane bir tanrı, Erra'nın öfkesini yatıştıran."
+      "description": "Dostane bir tanrı, Erra'nın öfkesini yatıştıran.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Hendursaga",
@@ -626,7 +734,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Geceleyin adaleti sağlayan, İşum ile özdeşleştirilir."
+      "description": "Geceleyin adaleti sağlayan, İşum ile özdeşleştirilir.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Namtar",
@@ -641,7 +752,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Major",
-      "description": "Ölüler diyarının vebadarı, ölüm meleği."
+      "description": "Ölüler diyarının vebadarı, ölüm meleği.",
+      "gruplar": [
+        "Annunaki",
+        "Kaos"
+      ]
     },
     {
       "name": "Ningirda",
@@ -656,7 +771,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Lagash",
       "category": "Minor",
-      "description": "Ninazu'nun eşi, bahçe tanrıçası."
+      "description": "Ninazu'nun eşi, bahçe tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Azimua",
@@ -672,7 +790,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Ningişzida'nın eşi."
+      "description": "Ningişzida'nın eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Husbishag",
@@ -685,7 +806,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Namtar'ın eşi."
+      "description": "Namtar'ın eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Aya",
@@ -701,7 +825,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Sippar, Larsa",
       "category": "Major",
-      "description": "Güneş tanrısının eşi, şafak tanrıçası."
+      "description": "Güneş tanrısının eşi, şafak tanrıçası.",
+      "gruplar": [
+        "Annunaki",
+        "Igigi"
+      ]
     },
     {
       "name": "Shala",
@@ -718,7 +846,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Karkamış",
       "category": "Major",
-      "description": "Fırtına tanrısının eşi, bereket sembolü."
+      "description": "Fırtına tanrısının eşi, bereket sembolü.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Haia",
@@ -733,7 +864,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Minor",
-      "description": "Tahıl ambarlarının koruyucusu."
+      "description": "Tahıl ambarlarının koruyucusu.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Lugalbanda",
@@ -748,7 +882,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Uruk",
       "category": "Demigod",
-      "description": "Efsanevi Uruk kralı, sonra tanrılaştırıldı."
+      "description": "Efsanevi Uruk kralı, sonra tanrılaştırıldı.",
+      "gruplar": [
+        "Mitolojik",
+        "Annunaki"
+      ]
     },
     {
       "name": "Gilgamesh",
@@ -762,7 +900,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Uruk",
       "category": "Demigod",
-      "description": "1/3 insan 2/3 tanrı, efsanevi kahraman."
+      "description": "1/3 insan 2/3 tanrı, efsanevi kahraman.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Ziusudra",
@@ -774,7 +915,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Shuruppak",
       "category": "Demigod",
-      "description": "Tufandan kurtulan, tanrılar tarafından ölümsüzlük verilen."
+      "description": "Tufandan kurtulan, tanrılar tarafından ölümsüzlük verilen.",
+      "gruplar": [
+        "Apkallu",
+        "Mitolojik"
+      ]
     },
     {
       "name": "Etana",
@@ -787,7 +932,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Kish",
       "category": "Demigod",
-      "description": "Göğe uçan efsanevi Kral."
+      "description": "Göğe uçan efsanevi Kral.",
+      "gruplar": [
+        "Apkallu",
+        "Mitolojik"
+      ]
     },
     {
       "name": "Adapa",
@@ -800,7 +949,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Eridu",
       "category": "Demigod",
-      "description": "Enki tarafından yaratılan ilk bilge insan, ölümsüzlüğü reddeden."
+      "description": "Enki tarafından yaratılan ilk bilge insan, ölümsüzlüğü reddeden.",
+      "gruplar": [
+        "Apkallu"
+      ]
     },
     {
       "name": "Enkidu",
@@ -815,7 +967,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demigod",
-      "description": "Gilgamesh'in arkadaşı, vahşi doğadan gelen."
+      "description": "Gilgamesh'in arkadaşı, vahşi doğadan gelen.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Şamhat",
@@ -828,7 +983,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Uruk",
       "category": "Demigod",
-      "description": "Enkidu'yu medenileştiren fahişe."
+      "description": "Enkidu'yu medenileştiren fahişe.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Ninkasi",
@@ -841,7 +999,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Bira tanrıçası, Sümerlerin bira tanrıçası."
+      "description": "Bira tanrıçası, Sümerlerin bira tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninmug",
@@ -855,7 +1016,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Doğum tanrıçası, terzilerin koruyucusu."
+      "description": "Doğum tanrıçası, terzilerin koruyucusu.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninkurra",
@@ -873,7 +1037,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Minor",
-      "description": "Ninsar'ın kızı, Enki'nin torunu."
+      "description": "Ninsar'ın kızı, Enki'nin torunu.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninsar",
@@ -891,7 +1058,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Minor",
-      "description": "Yeşil bitkilerin tanrıçası."
+      "description": "Yeşil bitkilerin tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Uttu",
@@ -905,7 +1075,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Dokumacılık ve ağ örme tanrıçası."
+      "description": "Dokumacılık ve ağ örme tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Enbilulu",
@@ -919,7 +1092,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Sulama sistemlerinin tanrısı."
+      "description": "Sulama sistemlerinin tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Asalluhi",
@@ -933,7 +1109,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Kaşıma",
       "category": "Minor",
-      "description": "Enki'nin oğlu, büyü tanrısı, Marduk ile özdeş."
+      "description": "Enki'nin oğlu, büyü tanrısı, Marduk ile özdeş.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Marduk",
@@ -951,7 +1130,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Babil",
       "category": "Ruling",
-      "description": "Babil döneminde yükselen, Tiamat'i öldüren tanrı."
+      "description": "Babil döneminde yükselen, Tiamat'i öldüren tanrı.",
+      "gruplar": [
+        "Annunaki",
+        "Duzen"
+      ]
     },
     {
       "name": "Nabu",
@@ -967,7 +1150,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Borsippa",
       "category": "Major",
-      "description": "Yazı ve bilgelik tanrısı."
+      "description": "Yazı ve bilgelik tanrısı.",
+      "gruplar": [
+        "Annunaki",
+        "Duzen"
+      ]
     },
     {
       "name": "Sarpanit",
@@ -982,7 +1169,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Babil",
       "category": "Major",
-      "description": "Marduk'un eşi."
+      "description": "Marduk'un eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Tashmetum",
@@ -995,7 +1185,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Nabu'nun eşi, duaları dinleyen."
+      "description": "Nabu'nun eşi, duaları dinleyen.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Emes",
@@ -1009,7 +1202,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Yaz mevsiminin tanrısı."
+      "description": "Yaz mevsiminin tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Enten",
@@ -1023,7 +1219,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Kış mevsimi ve çiftçilik tanrısı."
+      "description": "Kış mevsimi ve çiftçilik tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Lahar",
@@ -1036,7 +1235,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Sığırların tanrısı."
+      "description": "Sığırların tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ashnan",
@@ -1049,7 +1251,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Tahıl tanrıçası."
+      "description": "Tahıl tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Sumugan",
@@ -1060,7 +1265,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Düzlüklerin ve nehir kenarlarının tanrısı."
+      "description": "Düzlüklerin ve nehir kenarlarının tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Kulla",
@@ -1071,7 +1279,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "İnşaat ve tuğla tanrısı."
+      "description": "İnşaat ve tuğla tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Mushdamma",
@@ -1082,7 +1293,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Mimarların koruyucusu."
+      "description": "Mimarların koruyucusu.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Kabta",
@@ -1095,7 +1309,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Zanaatkârların tanrısı."
+      "description": "Zanaatkârların tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninsianna",
@@ -1108,7 +1325,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Venüs gezegeni tanrıçası (İnanna ile karıştırılabilir)."
+      "description": "Venüs gezegeni tanrıçası (İnanna ile karıştırılabilir).",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninkarnunna",
@@ -1119,7 +1339,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Berberlerin tanrısı."
+      "description": "Berberlerin tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Gula",
@@ -1131,7 +1354,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Lagash",
       "category": "Major",
-      "description": "Köpeklerle ilişkili şifa tanrıçası."
+      "description": "Köpeklerle ilişkili şifa tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Sirtur",
@@ -1142,7 +1368,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Koyunların tanrıçası."
+      "description": "Koyunların tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Lulal",
@@ -1155,7 +1384,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Bad-tibira",
       "category": "Minor",
-      "description": "Step hayvanlarının tanrısı."
+      "description": "Step hayvanlarının tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Şara",
@@ -1168,7 +1400,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Umma",
       "category": "Major",
-      "description": "Umma kentinin koruyucusu, savaş tanrısı."
+      "description": "Umma kentinin koruyucusu, savaş tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nungal",
@@ -1184,7 +1419,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Nippur",
       "category": "Minor",
-      "description": "Hapishane tanrıçası, idam cezası ile ilgili."
+      "description": "Hapishane tanrıçası, idam cezası ile ilgili.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Birtum",
@@ -1197,7 +1435,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Kelepçelerin tanrısı, Nungal'ın eşi."
+      "description": "Kelepçelerin tanrısı, Nungal'ın eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Neti",
@@ -1208,7 +1449,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Ölüler diyarının bekçisi."
+      "description": "Ölüler diyarının bekçisi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Gugalanna",
@@ -1221,7 +1465,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Büyük Gök Boğa, Ereşkigal'in ilk kocası."
+      "description": "Büyük Gök Boğa, Ereşkigal'in ilk kocası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Belili",
@@ -1237,7 +1484,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Dumuzi'nin kız kardeşi veya eşi."
+      "description": "Dumuzi'nin kız kardeşi veya eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninşubur",
@@ -1248,7 +1498,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Major",
-      "description": "İnanna'nın sadık habercisi ve veziri."
+      "description": "İnanna'nın sadık habercisi ve veziri.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Isimud",
@@ -1259,7 +1512,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Eridu",
       "category": "Minor",
-      "description": "Enki'nin çift yüzlü habercisi."
+      "description": "Enki'nin çift yüzlü habercisi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninurta",
@@ -1276,7 +1532,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Girsu",
       "category": "Ruling",
-      "description": "Lagash bölgesinin yerel savaş tanrısı, Ninurta ile özdeş."
+      "description": "Lagash bölgesinin yerel savaş tanrısı, Ninurta ile özdeş.",
+      "gruplar": [
+        "Annunaki",
+        "Duzen"
+      ]
     },
     {
       "name": "Baba",
@@ -1292,7 +1552,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Lagash",
       "category": "Major",
-      "description": "Lagash'ın koruyucu tanrıçası."
+      "description": "Lagash'ın koruyucu tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Gatumdug",
@@ -1305,7 +1568,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Lagash",
       "category": "Minor",
-      "description": "Şifa ve bereket tanrıçası."
+      "description": "Şifa ve bereket tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nunbarşegunu",
@@ -1319,7 +1585,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Yazı ve sel kontrolü tanrıçası."
+      "description": "Yazı ve sel kontrolü tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nanshe",
@@ -1335,7 +1604,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Lagash, Nina",
       "category": "Major",
-      "description": "Düş yorumu ve balık tanrıçası."
+      "description": "Düş yorumu ve balık tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nindara",
@@ -1348,7 +1620,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Lagash",
       "category": "Minor",
-      "description": "Nanşe'nin eşi."
+      "description": "Nanşe'nin eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninindar",
@@ -1361,7 +1636,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Doğurganlık tanrıçası."
+      "description": "Doğurganlık tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninkura",
@@ -1374,7 +1652,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Toprak tanrıçası."
+      "description": "Toprak tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninsar",
@@ -1391,7 +1672,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Minor",
-      "description": "Bitki tanrıçası."
+      "description": "Bitki tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninsi'anna",
@@ -1402,7 +1686,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Venüs tanrıçası."
+      "description": "Venüs tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninşubur",
@@ -1413,7 +1700,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "İnanna'nın habercisi."
+      "description": "İnanna'nın habercisi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Uzume",
@@ -1424,7 +1714,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Dans ve neşe tanrıçası."
+      "description": "Dans ve neşe tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Sadarnunna",
@@ -1437,7 +1730,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Nippur",
       "category": "Minor",
-      "description": "Nusku'nun eşi."
+      "description": "Nusku'nun eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Geshtinanna",
@@ -1454,7 +1750,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Major",
-      "description": "Üzüm ve şarap tanrıçası."
+      "description": "Üzüm ve şarap tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Damu",
@@ -1468,7 +1767,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "İşin",
       "category": "Minor",
-      "description": "Genç şifa tanrısı."
+      "description": "Genç şifa tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Gunura",
@@ -1481,7 +1783,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Şifa tanrıçası, Dumuzi'nin kız kardeşi."
+      "description": "Şifa tanrıçası, Dumuzi'nin kız kardeşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninsi",
@@ -1494,7 +1799,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Şifa tanrıçası."
+      "description": "Şifa tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninsutu",
@@ -1507,7 +1815,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Şifa tanrıçası."
+      "description": "Şifa tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninti",
@@ -1520,7 +1831,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "'Kaburga Hanımı', şifa tanrıçası."
+      "description": "'Kaburga Hanımı', şifa tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninazimua",
@@ -1533,7 +1847,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Hayat tanrıçası."
+      "description": "Hayat tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Enshag",
@@ -1546,7 +1863,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Şifa tanrısı."
+      "description": "Şifa tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nazi",
@@ -1559,7 +1879,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Şifa tanrısı."
+      "description": "Şifa tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Dazimus",
@@ -1572,7 +1895,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Şifa tanrıçası."
+      "description": "Şifa tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Abu",
@@ -1585,7 +1911,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Bitki ve şifa tanrısı."
+      "description": "Bitki ve şifa tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nintur",
@@ -1598,7 +1927,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Şifa tanrısı."
+      "description": "Şifa tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninshar",
@@ -1614,7 +1946,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Minor",
-      "description": "Bitki tanrıçası."
+      "description": "Bitki tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninkurra",
@@ -1632,7 +1967,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Minor",
-      "description": "Toprak tanrıçası."
+      "description": "Toprak tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nanshe",
@@ -1648,7 +1986,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Lagash",
       "category": "Major",
-      "description": "Kehanet ve balık tanrıçası."
+      "description": "Kehanet ve balık tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nindub",
@@ -1659,7 +2000,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Gümüş tanrısı."
+      "description": "Gümüş tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ningubla",
@@ -1670,7 +2014,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Değerli taş tanrıçası."
+      "description": "Değerli taş tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ningal",
@@ -1687,7 +2034,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Ur",
       "category": "Major",
-      "description": "Ay tanrısının eşi."
+      "description": "Ay tanrısının eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ningikuga",
@@ -1700,7 +2050,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Bataklık tanrıçası."
+      "description": "Bataklık tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ningirida",
@@ -1715,7 +2068,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Minor",
-      "description": "Bahçe tanrıçası."
+      "description": "Bahçe tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nirah",
@@ -1726,7 +2082,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Der",
       "category": "Minor",
-      "description": "Yılan tanrısı."
+      "description": "Yılan tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Igalima",
@@ -1737,7 +2096,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Kapı tanrısı."
+      "description": "Kapı tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Piqiddu",
@@ -1748,7 +2110,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Doğum tanrıçası."
+      "description": "Doğum tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Shuzianna",
@@ -1759,7 +2124,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Doğum tanrıçası."
+      "description": "Doğum tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninmada",
@@ -1770,7 +2138,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Rüzgar tanrıçası."
+      "description": "Rüzgar tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninšubur",
@@ -1781,7 +2152,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Haberci tanrıçası."
+      "description": "Haberci tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Alulu",
@@ -1792,7 +2166,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Eridu",
       "category": "Demigod",
-      "description": "Eridu'nun efsanevi kralı."
+      "description": "Eridu'nun efsanevi kralı.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Alalgar",
@@ -1803,7 +2180,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Eridu",
       "category": "Demigod",
-      "description": "Eridu kralı."
+      "description": "Eridu kralı.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Amelanu",
@@ -1814,7 +2194,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Bad-tibira",
       "category": "Demigod",
-      "description": "Bad-tibira kralı."
+      "description": "Bad-tibira kralı.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Enmenluana",
@@ -1825,7 +2208,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Bad-tibira",
       "category": "Demigod",
-      "description": "Bad-tibira kralı."
+      "description": "Bad-tibira kralı.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Enmengalana",
@@ -1836,7 +2222,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Bad-tibira",
       "category": "Demigod",
-      "description": "Bad-tibira kralı."
+      "description": "Bad-tibira kralı.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Dumuzi",
@@ -1850,7 +2239,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Bad-tibira",
       "category": "Demigod",
-      "description": "Kral listesindeki Dumuzi."
+      "description": "Kral listesindeki Dumuzi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ensipazianna",
@@ -1861,7 +2253,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Larak",
       "category": "Demigod",
-      "description": "Larak kralı."
+      "description": "Larak kralı.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Enmenduranna",
@@ -1872,7 +2267,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Sippar",
       "category": "Demigod",
-      "description": "Sippar kralı."
+      "description": "Sippar kralı.",
+      "gruplar": [
+        "Apkallu",
+        "Mitolojik"
+      ]
     },
     {
       "name": "Ubara-Tutu",
@@ -1885,7 +2284,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Shuruppak",
       "category": "Demigod",
-      "description": "Ziusudra'nın babası."
+      "description": "Ziusudra'nın babası.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Ziusudra",
@@ -1899,7 +2301,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Shuruppak",
       "category": "Demigod",
-      "description": "Tufandan kurtulan."
+      "description": "Tufandan kurtulan.",
+      "gruplar": [
+        "Apkallu",
+        "Mitolojik"
+      ]
     },
     {
       "name": "Agga",
@@ -1912,7 +2318,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Kish",
       "category": "Demigod",
-      "description": "Kish kralı."
+      "description": "Kish kralı.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Enmebaragesi",
@@ -1925,7 +2334,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Kish",
       "category": "Demigod",
-      "description": "Kish kralı."
+      "description": "Kish kralı.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Meskiaggasher",
@@ -1938,7 +2350,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Uruk",
       "category": "Demigod",
-      "description": "Uruk kralı, Utu'nun oğlu."
+      "description": "Uruk kralı, Utu'nun oğlu.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Enmerkar",
@@ -1951,7 +2366,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Uruk",
       "category": "Demigod",
-      "description": "Uruk kralı."
+      "description": "Uruk kralı.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Lugalbanda",
@@ -1966,7 +2384,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Uruk",
       "category": "Demigod",
-      "description": "Uruk kralı."
+      "description": "Uruk kralı.",
+      "gruplar": [
+        "Mitolojik",
+        "Annunaki"
+      ]
     },
     {
       "name": "Gilgamesh",
@@ -1980,7 +2402,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Uruk",
       "category": "Demigod",
-      "description": "Ünlü kral."
+      "description": "Ünlü kral.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Ur-Nungal",
@@ -1993,7 +2418,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Uruk",
       "category": "Demigod",
-      "description": "Uruk kralı."
+      "description": "Uruk kralı.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Aga",
@@ -2004,7 +2432,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Kish",
       "category": "Demigod",
-      "description": "Kish kralı."
+      "description": "Kish kralı.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     }
   ],
   "demons_spirits": [
@@ -2019,7 +2450,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Ölüler diyarından gelen, ruhları toplayan demonlar. İnanna'nın ölüler diyarına inişinde onu yakalayan yedi Galla vardır. Dumuzi'yi de arayıp yakalamışlardır."
+      "description": "Ölüler diyarından gelen, ruhları toplayan demonlar. İnanna'nın ölüler diyarına inişinde onu yakalayan yedi Galla vardır. Dumuzi'yi de arayıp yakalamışlardır.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Udug",
@@ -2030,7 +2464,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "İyi niyetli koruyucu ruhlar."
+      "description": "İyi niyetli koruyucu ruhlar.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Lamashtu",
@@ -2043,7 +2480,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Anneleri ve bebekleri hedef alan iblis."
+      "description": "Anneleri ve bebekleri hedef alan iblis.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Pazuzu",
@@ -2056,7 +2496,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Lamashtu'yu kovabilen rüzgar iblisi."
+      "description": "Lamashtu'yu kovabilen rüzgar iblisi.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Asag",
@@ -2070,7 +2513,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Dağlarla savaşan, hastalık getiren iblis."
+      "description": "Dağlarla savaşan, hastalık getiren iblis.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Namtar",
@@ -2083,7 +2529,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Ölüm ve vebadan sorumlu."
+      "description": "Ölüm ve vebadan sorumlu.",
+      "gruplar": [
+        "Annunaki",
+        "Kaos"
+      ]
     },
     {
       "name": "Sebitti",
@@ -2096,7 +2546,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Yedi savaş cinleri."
+      "description": "Yedi savaş cinleri.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Rabisu",
@@ -2107,7 +2560,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Gizlenerek pusu kuran cinler."
+      "description": "Gizlenerek pusu kuran cinler.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Ekimmu",
@@ -2118,7 +2574,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Gömülmemiş ölülerin ruhları."
+      "description": "Gömülmemiş ölülerin ruhları.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Utukku",
@@ -2129,7 +2588,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Genel hayalet terimi."
+      "description": "Genel hayalet terimi.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Edimmu",
@@ -2141,7 +2603,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Gömülmemiş veya haksız öldürülmüş kişilerin ruhları. Kapılara ve pencerelere dadanır, ev halkını rahatsız eder. Gidim olarak da bilinir."
+      "description": "Gömülmemiş veya haksız öldürülmüş kişilerin ruhları. Kapılara ve pencerelere dadanır, ev halkını rahatsız eder. Gidim olarak da bilinir.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Ahhazu",
@@ -2152,7 +2617,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Saplantı yapan cinler."
+      "description": "Saplantı yapan cinler.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Lilitu",
@@ -2163,7 +2631,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Gece iblisi, rüyalara girer."
+      "description": "Gece iblisi, rüyalara girer.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Ardat Lili",
@@ -2174,7 +2645,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Genç erkekleri hedef alan."
+      "description": "Genç erkekleri hedef alan.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Irdu Lili",
@@ -2185,7 +2659,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon/Spirit",
-      "description": "Kadınları taciz eden."
+      "description": "Kadınları taciz eden.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Sagul",
@@ -2196,7 +2673,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Yiyecek çalan."
+      "description": "Yiyecek çalan.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Mulla",
@@ -2207,7 +2687,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Sinir bozukluğu yapar."
+      "description": "Sinir bozukluğu yapar.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Lamassu",
@@ -2218,7 +2701,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Tapınak ve saray kapılarını koruyan."
+      "description": "Tapınak ve saray kapılarını koruyan.",
+      "gruplar": [
+        "EfsaneviYaratik",
+        "Duzen"
+      ]
     },
     {
       "name": "Shedu",
@@ -2229,7 +2716,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Lamassu çifti, koruyucu ruh."
+      "description": "Lamassu çifti, koruyucu ruh.",
+      "gruplar": [
+        "EfsaneviYaratik",
+        "Duzen"
+      ]
     },
     {
       "name": "Kusarikku",
@@ -2240,7 +2731,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "İyi huylu boğa-insan koruyucu."
+      "description": "İyi huylu boğa-insan koruyucu.",
+      "gruplar": [
+        "EfsaneviYaratik"
+      ]
     },
     {
       "name": "Ugallu",
@@ -2253,7 +2747,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Fırtına tanrısının yardımcısı, aslan başlı."
+      "description": "Fırtına tanrısının yardımcısı, aslan başlı.",
+      "gruplar": [
+        "EfsaneviYaratik",
+        "Kaos"
+      ]
     },
     {
       "name": "Anzu",
@@ -2265,7 +2763,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Kader Tabletlerini çalan kuş-canavar, Ninurta tarafından öldürüldü."
+      "description": "Kader Tabletlerini çalan kuş-canavar, Ninurta tarafından öldürüldü.",
+      "gruplar": [
+        "EfsaneviYaratik",
+        "Kaos"
+      ]
     },
     {
       "name": "Humbaba",
@@ -2276,7 +2778,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Gilgamesh ve Enkidu tarafından öldürüldü."
+      "description": "Gilgamesh ve Enkidu tarafından öldürüldü.",
+      "gruplar": [
+        "EfsaneviYaratik",
+        "Kaos"
+      ]
     },
     {
       "name": "Scorpion Men",
@@ -2287,7 +2793,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Mashu Dağı'nı koruyan akrep-insanlar."
+      "description": "Mashu Dağı'nı koruyan akrep-insanlar.",
+      "gruplar": [
+        "EfsaneviYaratik"
+      ]
     },
     {
       "name": "Sirrush",
@@ -2298,7 +2807,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Marduk'un sembolü, ejderha."
+      "description": "Marduk'un sembolü, ejderha.",
+      "gruplar": [
+        "EfsaneviYaratik"
+      ]
     },
     {
       "name": "Mušḫuššu",
@@ -2309,7 +2821,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Babil",
       "category": "Spirit",
-      "description": "Marduk ve Nabu'nun hayvansal sembolü."
+      "description": "Marduk ve Nabu'nun hayvansal sembolü.",
+      "gruplar": [
+        "EfsaneviYaratik"
+      ]
     },
     {
       "name": "Başmu",
@@ -2320,7 +2835,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "İki başlı, boynuzlu yılan."
+      "description": "İki başlı, boynuzlu yılan.",
+      "gruplar": [
+        "EfsaneviYaratik",
+        "Kaos"
+      ]
     },
     {
       "name": "Mušmaḫḫū",
@@ -2331,7 +2850,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Yedi başlı yılan-ejderha."
+      "description": "Yedi başlı yılan-ejderha.",
+      "gruplar": [
+        "EfsaneviYaratik",
+        "Kaos"
+      ]
     },
     {
       "name": "Lahamu",
@@ -2349,7 +2872,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Primordial",
-      "description": "Tiamat'in kızı, Anshar'ın eşi."
+      "description": "Tiamat'in kızı, Anshar'ın eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Anshar",
@@ -2367,7 +2893,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Primordial",
-      "description": "Gök kubbenin kişileştirmesi."
+      "description": "Gök kubbenin kişileştirmesi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Kingaludda",
@@ -2378,7 +2907,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Enlil'in habercilerinden."
+      "description": "Enlil'in habercilerinden.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Kengida",
@@ -2389,7 +2921,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Enlil'in habercisi."
+      "description": "Enlil'in habercisi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Uddagubba",
@@ -2400,7 +2935,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Enlil'in habercisi."
+      "description": "Enlil'in habercisi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Endursaga",
@@ -2411,7 +2949,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Duyuru tanrısı."
+      "description": "Duyuru tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninshubur",
@@ -2422,7 +2963,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "İnanna'nın veziri."
+      "description": "İnanna'nın veziri.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Kakka",
@@ -2433,7 +2977,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Mari",
       "category": "Minor",
-      "description": "Anu'nun habercisi (farklı gelenek)."
+      "description": "Anu'nun habercisi (farklı gelenek).",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Shullat",
@@ -2446,7 +2993,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Rüzgar cinleri çifti."
+      "description": "Rüzgar cinleri çifti.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Hanish",
@@ -2459,7 +3009,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Rüzgar cinleri."
+      "description": "Rüzgar cinleri.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Kur",
@@ -2470,7 +3023,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Primordial",
-      "description": "Ölüler diyarının kendisi, dağ."
+      "description": "Ölüler diyarının kendisi, dağ.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Hanbi",
@@ -2484,7 +3040,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Demon",
-      "description": "İblislerin atası."
+      "description": "İblislerin atası.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Girtablullu",
@@ -2495,7 +3054,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Akrep beden, insan üst vücut."
+      "description": "Akrep beden, insan üst vücut.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Alad",
@@ -2507,7 +3069,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Ev koruyucusu."
+      "description": "Ev koruyucusu.",
+      "gruplar": [
+        "Duzen"
+      ]
     },
     {
       "name": "Sukkal",
@@ -2518,7 +3083,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Yüksek rütbeli haberci veya vekil."
+      "description": "Yüksek rütbeli haberci veya vekil.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Igigi",
@@ -2529,7 +3097,8 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Collective",
-      "description": "Gökyüzü tanrıları kolektifi."
+      "description": "Gökyüzü tanrıları kolektifi.",
+      "gruplar": []
     },
     {
       "name": "Anunnaki",
@@ -2542,7 +3111,8 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Collective",
-      "description": "Gök ve yer tanrıları, sonradan ölüler diyarı tanrıları."
+      "description": "Gök ve yer tanrıları, sonradan ölüler diyarı tanrıları.",
+      "gruplar": []
     },
     {
       "name": "Apkallu",
@@ -2555,7 +3125,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Eridu",
       "category": "Demigod",
-      "description": "İnsanlığa medeniyeti öğreten yarı-balık bilgeler."
+      "description": "İnsanlığa medeniyeti öğreten yarı-balık bilgeler.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Adapa",
@@ -2569,7 +3142,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Eridu",
       "category": "Demigod",
-      "description": "İlk Apkallu, ölümsüzlüğü reddeden."
+      "description": "İlk Apkallu, ölümsüzlüğü reddeden.",
+      "gruplar": [
+        "Apkallu"
+      ]
     },
     {
       "name": "Enmeduranna",
@@ -2580,7 +3156,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Sippar",
       "category": "Demigod",
-      "description": "Güneş kehanetinin kurucusu."
+      "description": "Güneş kehanetinin kurucusu.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Tammuz",
@@ -2597,7 +3176,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Bad-tibira",
       "category": "Major",
-      "description": "Mevsimsel ölüm ve diriliş."
+      "description": "Mevsimsel ölüm ve diriliş.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Belili",
@@ -2613,7 +3195,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Dumuzi'nin eşi veya kız kardeşi."
+      "description": "Dumuzi'nin eşi veya kız kardeşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Gestinanna",
@@ -2630,7 +3215,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Major",
-      "description": "Dumuzi'nin kız kardeşi."
+      "description": "Dumuzi'nin kız kardeşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Azimua",
@@ -2646,7 +3234,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Ningişzida'nın eşi."
+      "description": "Ningişzida'nın eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ningirda",
@@ -2661,7 +3252,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Minor",
-      "description": "Bahçe tanrıçası."
+      "description": "Bahçe tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Allatu",
@@ -2678,7 +3272,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Kutha",
       "category": "Ruling",
-      "description": "Ereşkigal'in Akkadça ismi."
+      "description": "Ereşkigal'in Akkadça ismi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Belet-Seri",
@@ -2689,7 +3286,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Uruk",
       "category": "Minor",
-      "description": "Geshtinanna ile özdeş."
+      "description": "Geshtinanna ile özdeş.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Gubarra",
@@ -2702,7 +3302,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Step tanrıçası."
+      "description": "Step tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ashratum",
@@ -2715,7 +3318,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Amurru'nun eşi."
+      "description": "Amurru'nun eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Amurru",
@@ -2731,7 +3337,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Step ve batı rüzgarları tanrısı."
+      "description": "Step ve batı rüzgarları tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Martu",
@@ -2745,7 +3354,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Amurru'nun Sümerce ismi."
+      "description": "Amurru'nun Sümerce ismi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Dagan",
@@ -2757,7 +3369,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Middle Euphrates",
       "category": "Major",
-      "description": "Semitc tanrı, Enki ile özdeşleştirildi."
+      "description": "Semitc tanrı, Enki ile özdeşleştirildi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Shala",
@@ -2772,7 +3387,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Karkamış",
       "category": "Major",
-      "description": "Adad'ın eşi."
+      "description": "Adad'ın eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Shala",
@@ -2786,7 +3404,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Adad'ın diğer eşi."
+      "description": "Adad'ın diğer eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Sarruma",
@@ -2800,7 +3421,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Anatolia",
       "category": "Minor",
-      "description": "Dağ tanrısı."
+      "description": "Dağ tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Hebat",
@@ -2813,7 +3437,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Aleppo",
       "category": "Major",
-      "description": "Adad'ın eşi (Hurri etkisi)."
+      "description": "Adad'ın eşi (Hurri etkisi).",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Shuwala",
@@ -2824,7 +3451,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Ebla",
       "category": "Minor",
-      "description": "Ebla tanrıçası."
+      "description": "Ebla tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Admu",
@@ -2835,7 +3465,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Yer tanrısı."
+      "description": "Yer tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Zisumudra",
@@ -2849,7 +3482,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Uzun yaşam veren."
+      "description": "Uzun yaşam veren.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nuska",
@@ -2866,7 +3502,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Nippur",
       "category": "Major",
-      "description": "Enlil'in veziri, ateş tanrısı."
+      "description": "Enlil'in veziri, ateş tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Sadarnunna",
@@ -2879,7 +3518,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Nippur",
       "category": "Minor",
-      "description": "Nuska'nın eşi."
+      "description": "Nuska'nın eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Gibil",
@@ -2892,7 +3534,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Ateş ve demircilik."
+      "description": "Ateş ve demircilik.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nindara",
@@ -2905,7 +3550,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Lagash",
       "category": "Minor",
-      "description": "Lagash tanrısı."
+      "description": "Lagash tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nanshe",
@@ -2921,7 +3569,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Lagash",
       "category": "Major",
-      "description": "Kehanet tanrıçası."
+      "description": "Kehanet tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninagal",
@@ -2934,7 +3585,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Metal işçiliği."
+      "description": "Metal işçiliği.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninsikila",
@@ -2950,7 +3604,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Dilmun",
       "category": "Minor",
-      "description": "Dilmun tanrıçası."
+      "description": "Dilmun tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Lahar",
@@ -2963,7 +3620,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Sığır tanrısı."
+      "description": "Sığır tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ashnan",
@@ -2976,7 +3636,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Tahıl tanrıçası."
+      "description": "Tahıl tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Sumugan",
@@ -2987,7 +3650,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Ova tanrısı."
+      "description": "Ova tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Enkimdu",
@@ -2998,7 +3664,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Küçük kanal tanrısı."
+      "description": "Küçük kanal tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ennugi",
@@ -3009,7 +3678,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Nehir kanalı tanrısı."
+      "description": "Nehir kanalı tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Enbilulu",
@@ -3023,7 +3695,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Sulama tanrısı."
+      "description": "Sulama tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Asalluhi",
@@ -3037,7 +3712,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Kaşıma",
       "category": "Minor",
-      "description": "Büyü tanrısı, Marduk ile özdeş."
+      "description": "Büyü tanrısı, Marduk ile özdeş.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninammasa",
@@ -3048,7 +3726,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Ana tanrıça."
+      "description": "Ana tanrıça.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninmada",
@@ -3059,7 +3740,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Rüzgar tanrıçası."
+      "description": "Rüzgar tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninsun",
@@ -3080,7 +3764,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Uruk",
       "category": "Major",
-      "description": "Yabani hayvanlar ve bilgelik."
+      "description": "Yabani hayvanlar ve bilgelik.",
+      "gruplar": [
+        "Annunaki",
+        "Mitolojik"
+      ]
     },
     {
       "name": "Ninme",
@@ -3091,7 +3779,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Doğurganlık."
+      "description": "Doğurganlık.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninsar",
@@ -3109,7 +3800,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Minor",
-      "description": "Bitki tanrıçası."
+      "description": "Bitki tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Uttu",
@@ -3123,7 +3817,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Dokuma tanrıçası."
+      "description": "Dokuma tanrıçası.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninkurra",
@@ -3141,7 +3838,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Minor",
-      "description": "Toprak."
+      "description": "Toprak.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Enshag",
@@ -3154,7 +3854,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Şifa."
+      "description": "Şifa.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninti",
@@ -3167,7 +3870,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Yaşam."
+      "description": "Yaşam.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninsutu",
@@ -3180,7 +3886,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Şifa."
+      "description": "Şifa.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninsikila",
@@ -3193,7 +3902,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Dilmun",
       "category": "Minor",
-      "description": "Dilmun."
+      "description": "Dilmun.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninḫursaĝa",
@@ -3215,7 +3927,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Kesh, Adab",
       "category": "Ruling",
-      "description": "Ana tanrıça."
+      "description": "Ana tanrıça.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Shulpa'e",
@@ -3230,7 +3945,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Minor",
-      "description": "Ninhursag'ın eşi."
+      "description": "Ninhursag'ın eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Panigingarra",
@@ -3244,7 +3962,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Adab",
       "category": "Minor",
-      "description": "Tapınak tanrısı."
+      "description": "Tapınak tanrısı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Baba",
@@ -3260,7 +3981,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Lagash",
       "category": "Major",
-      "description": "Şifa."
+      "description": "Şifa.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ningirsu",
@@ -3276,7 +4000,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Girsu, Lagash",
       "category": "Ruling",
-      "description": "Lagash baştanrısı, Ninurta ile özdeş."
+      "description": "Lagash baştanrısı, Ninurta ile özdeş.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Gatumdug",
@@ -3289,7 +4016,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Lagash",
       "category": "Minor",
-      "description": "Şifa."
+      "description": "Şifa.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nunbarsegunu",
@@ -3303,7 +4033,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Tahıl."
+      "description": "Tahıl.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Uraš",
@@ -3320,7 +4053,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Creator",
-      "description": "Yer tanrıçası, Ki ile özdeş."
+      "description": "Yer tanrıçası, Ki ile özdeş.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Antu",
@@ -3335,7 +4071,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Uruk",
       "category": "Ruling",
-      "description": "Anu'nun Akkadça eşi."
+      "description": "Anu'nun Akkadça eşi.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ki",
@@ -3353,7 +4092,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Creator",
-      "description": "Yer."
+      "description": "Yer.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nammu",
@@ -3369,7 +4111,11 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Creator",
-      "description": "Deniz."
+      "description": "Deniz.",
+      "gruplar": [
+        "Annunaki",
+        "Kaos"
+      ]
     },
     {
       "name": "Abzu",
@@ -3384,7 +4130,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Eridu",
       "category": "Creator",
-      "description": "Tuzlu su."
+      "description": "Tuzlu su.",
+      "gruplar": [
+        "Annunaki",
+        "Kaos"
+      ]
     },
     {
       "name": "An",
@@ -3407,7 +4157,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Uruk",
       "category": "Ruling",
-      "description": "Gökyüzü."
+      "description": "Gökyüzü.",
+      "gruplar": [
+        "Annunaki",
+        "Duzen"
+      ]
     },
     {
       "name": "Enlil",
@@ -3430,7 +4184,12 @@ const TANRILAR_JSON = {
       ],
       "city": "Nippur",
       "category": "Ruling",
-      "description": "Hava."
+      "description": "Hava.",
+      "gruplar": [
+        "Annunaki",
+        "Igigi",
+        "Duzen"
+      ]
     },
     {
       "name": "Enki",
@@ -3453,7 +4212,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Eridu",
       "category": "Ruling",
-      "description": "Su."
+      "description": "Su.",
+      "gruplar": [
+        "Annunaki",
+        "Duzen"
+      ]
     },
     {
       "name": "Ninhursag",
@@ -3474,7 +4237,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Kesh",
       "category": "Ruling",
-      "description": "Doğurganlık."
+      "description": "Doğurganlık.",
+      "gruplar": [
+        "Annunaki",
+        "Duzen"
+      ]
     },
     {
       "name": "Ninlil",
@@ -3495,7 +4262,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Nippur",
       "category": "Ruling",
-      "description": "Hava."
+      "description": "Hava.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nanna",
@@ -3516,7 +4286,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Ur",
       "category": "Ruling",
-      "description": "Ay."
+      "description": "Ay.",
+      "gruplar": [
+        "Annunaki",
+        "Igigi"
+      ]
     },
     {
       "name": "Ningal",
@@ -3533,7 +4307,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Ur",
       "category": "Major",
-      "description": "Ay."
+      "description": "Ay.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Utu",
@@ -3552,7 +4329,12 @@ const TANRILAR_JSON = {
       ],
       "city": "Sippar",
       "category": "Ruling",
-      "description": "Güneş."
+      "description": "Güneş.",
+      "gruplar": [
+        "Annunaki",
+        "Igigi",
+        "Duzen"
+      ]
     },
     {
       "name": "Inanna",
@@ -3571,7 +4353,12 @@ const TANRILAR_JSON = {
       ],
       "city": "Uruk",
       "category": "Ruling",
-      "description": "Venüs."
+      "description": "Venüs.",
+      "gruplar": [
+        "Annunaki",
+        "Igigi",
+        "Duzen"
+      ]
     },
     {
       "name": "Ereshkigal",
@@ -3590,7 +4377,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Kutha",
       "category": "Ruling",
-      "description": "Ölüler diyarı."
+      "description": "Ölüler diyarı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nergal",
@@ -3609,7 +4399,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Kutha",
       "category": "Ruling",
-      "description": "Ölüler diyarı."
+      "description": "Ölüler diyarı.",
+      "gruplar": [
+        "Annunaki",
+        "Kaos"
+      ]
     },
     {
       "name": "Ninurta",
@@ -3626,7 +4420,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Nippur, Lagash",
       "category": "Ruling",
-      "description": "Savaş."
+      "description": "Savaş.",
+      "gruplar": [
+        "Annunaki",
+        "Duzen"
+      ]
     },
     {
       "name": "Gula",
@@ -3642,7 +4440,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Isin",
       "category": "Major",
-      "description": "Şifa."
+      "description": "Şifa.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Adad",
@@ -3659,7 +4460,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Aleppo",
       "category": "Ruling",
-      "description": "Fırtına."
+      "description": "Fırtına.",
+      "gruplar": [
+        "Annunaki",
+        "Igigi"
+      ]
     },
     {
       "name": "Dumuzi",
@@ -3676,7 +4481,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Bad-tibira",
       "category": "Major",
-      "description": "Çoban."
+      "description": "Çoban.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ningishzida",
@@ -3691,7 +4499,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Gizah",
       "category": "Major",
-      "description": "Ağaçlar."
+      "description": "Ağaçlar.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninazu",
@@ -3709,7 +4520,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Enegi",
       "category": "Major",
-      "description": "Şifa."
+      "description": "Şifa.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ningirida",
@@ -3724,7 +4538,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Minor",
-      "description": "Bahçeler."
+      "description": "Bahçeler.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Geshtinanna",
@@ -3740,7 +4557,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Major",
-      "description": "Üzüm."
+      "description": "Üzüm.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninsun",
@@ -3760,7 +4580,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Uruk",
       "category": "Major",
-      "description": "İnekler."
+      "description": "İnekler.",
+      "gruplar": [
+        "Annunaki",
+        "Mitolojik"
+      ]
     },
     {
       "name": "Lugalbanda",
@@ -3775,7 +4599,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Uruk",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Mitolojik",
+        "Annunaki"
+      ]
     },
     {
       "name": "Gilgamesh",
@@ -3789,7 +4617,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Uruk",
       "category": "Demigod",
-      "description": "Kahraman."
+      "description": "Kahraman.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Enkidu",
@@ -3804,7 +4635,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demigod",
-      "description": "Vahşi."
+      "description": "Vahşi.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Aruru",
@@ -3817,7 +4651,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Kesh",
       "category": "Creator",
-      "description": "Yaratıcı."
+      "description": "Yaratıcı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Shamhat",
@@ -3830,7 +4667,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Uruk",
       "category": "Demigod",
-      "description": "Fahişe."
+      "description": "Fahişe.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Siduri",
@@ -3841,7 +4681,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demigod",
-      "description": "Şarapçı."
+      "description": "Şarapçı.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Utnapishtim",
@@ -3855,7 +4698,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Shuruppak",
       "category": "Demigod",
-      "description": "Tufan."
+      "description": "Tufan.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Urshanabi",
@@ -3866,7 +4712,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demigod",
-      "description": "Feribot."
+      "description": "Feribot.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Ziusudra",
@@ -3879,7 +4728,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Shuruppak",
       "category": "Demigod",
-      "description": "Tufan."
+      "description": "Tufan.",
+      "gruplar": [
+        "Apkallu",
+        "Mitolojik"
+      ]
     },
     {
       "name": "Etana",
@@ -3890,7 +4743,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Kish",
       "category": "Demigod",
-      "description": "Şahin."
+      "description": "Şahin.",
+      "gruplar": [
+        "Apkallu",
+        "Mitolojik"
+      ]
     },
     {
       "name": "Adapa",
@@ -3903,7 +4760,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Eridu",
       "category": "Demigod",
-      "description": "Bilge."
+      "description": "Bilge.",
+      "gruplar": [
+        "Apkallu"
+      ]
     },
     {
       "name": "Oannes",
@@ -3915,7 +4775,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Eridu",
       "category": "Demigod",
-      "description": "Apkallu."
+      "description": "Apkallu.",
+      "gruplar": [
+        "Apkallu"
+      ]
     },
     {
       "name": "Nusku",
@@ -3932,7 +4795,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Nippur",
       "category": "Major",
-      "description": "Ateş."
+      "description": "Ateş.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Gibil",
@@ -3945,7 +4811,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Ateş."
+      "description": "Ateş.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ishum",
@@ -3961,7 +4830,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Gece."
+      "description": "Gece.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Hendursaga",
@@ -3976,7 +4848,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Yol."
+      "description": "Yol.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninmug",
@@ -3990,7 +4865,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Doğum."
+      "description": "Doğum.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Namtar",
@@ -4005,7 +4883,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Veba."
+      "description": "Veba.",
+      "gruplar": [
+        "Annunaki",
+        "Kaos"
+      ]
     },
     {
       "name": "Hushbishag",
@@ -4018,7 +4900,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Ölüler."
+      "description": "Ölüler.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Neti",
@@ -4029,7 +4914,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Kapı."
+      "description": "Kapı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Gugalanna",
@@ -4042,7 +4930,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Boğa."
+      "description": "Boğa.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Nungal",
@@ -4057,7 +4948,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Hapishane."
+      "description": "Hapishane.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Birtum",
@@ -4070,7 +4964,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Kelepçe."
+      "description": "Kelepçe.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Pazuzu",
@@ -4083,7 +4980,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Rüzgar."
+      "description": "Rüzgar.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Hanbi",
@@ -4097,7 +4997,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Demon",
-      "description": "İblis."
+      "description": "İblis.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Humbaba",
@@ -4110,7 +5013,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Orman."
+      "description": "Orman.",
+      "gruplar": [
+        "EfsaneviYaratik",
+        "Kaos"
+      ]
     },
     {
       "name": "Lamashtu",
@@ -4123,7 +5030,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Bebek."
+      "description": "Bebek.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Asag",
@@ -4137,7 +5047,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Hastalık."
+      "description": "Hastalık.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Anzu",
@@ -4148,7 +5061,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Kuş."
+      "description": "Kuş.",
+      "gruplar": [
+        "EfsaneviYaratik",
+        "Kaos"
+      ]
     },
     {
       "name": "Galla",
@@ -4161,7 +5078,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Cin."
+      "description": "Cin.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Udug",
@@ -4172,7 +5092,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Cin."
+      "description": "Cin.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Lamassu",
@@ -4183,7 +5106,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Koruyucu."
+      "description": "Koruyucu.",
+      "gruplar": [
+        "EfsaneviYaratik",
+        "Duzen"
+      ]
     },
     {
       "name": "Shedu",
@@ -4194,7 +5121,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Koruyucu."
+      "description": "Koruyucu.",
+      "gruplar": [
+        "EfsaneviYaratik",
+        "Duzen"
+      ]
     },
     {
       "name": "Ugallu",
@@ -4205,7 +5136,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Aslan."
+      "description": "Aslan.",
+      "gruplar": [
+        "EfsaneviYaratik",
+        "Kaos"
+      ]
     },
     {
       "name": "Scorpion Men",
@@ -4216,7 +5151,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Akrep."
+      "description": "Akrep.",
+      "gruplar": [
+        "EfsaneviYaratik"
+      ]
     },
     {
       "name": "Bahamut",
@@ -4227,7 +5165,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Primordial",
-      "description": "Devasa balık."
+      "description": "Devasa balık.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Kur",
@@ -4238,7 +5179,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Primordial",
-      "description": "Dağ."
+      "description": "Dağ.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Tiamat",
@@ -4256,7 +5200,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Primordial",
-      "description": "Deniz."
+      "description": "Deniz.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Apsu",
@@ -4274,7 +5221,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Primordial",
-      "description": "Su."
+      "description": "Su.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Lahmu",
@@ -4293,7 +5243,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Primordial",
-      "description": "İlk yaratık."
+      "description": "İlk yaratık.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Lahamu",
@@ -4312,7 +5265,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Primordial",
-      "description": "İlk yaratık."
+      "description": "İlk yaratık.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Anshar",
@@ -4330,7 +5286,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Primordial",
-      "description": "Gök."
+      "description": "Gök.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Kishar",
@@ -4348,7 +5307,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Primordial",
-      "description": "Yer."
+      "description": "Yer.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Anu",
@@ -4370,7 +5332,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Uruk",
       "category": "Ruling",
-      "description": "Gök."
+      "description": "Gök.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Marduk",
@@ -4388,7 +5353,11 @@ const TANRILAR_JSON = {
       ],
       "city": "Babil",
       "category": "Ruling",
-      "description": "Babil."
+      "description": "Babil.",
+      "gruplar": [
+        "Annunaki",
+        "Duzen"
+      ]
     },
     {
       "name": "Sarpanit",
@@ -4403,7 +5372,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Babil",
       "category": "Major",
-      "description": "Doğurganlık."
+      "description": "Doğurganlık.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nabu",
@@ -4419,7 +5391,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Borsippa",
       "category": "Major",
-      "description": "Yazı."
+      "description": "Yazı.",
+      "gruplar": [
+        "Annunaki",
+        "Duzen"
+      ]
     },
     {
       "name": "Tashmetum",
@@ -4432,7 +5408,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Dinleme."
+      "description": "Dinleme.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Erra",
@@ -4443,7 +5422,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Kutha",
       "category": "Demon",
-      "description": "Savaş."
+      "description": "Savaş.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Ishum",
@@ -4457,7 +5439,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Yatıştırıcı."
+      "description": "Yatıştırıcı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Shullat",
@@ -4470,7 +5455,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Rüzgar."
+      "description": "Rüzgar.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Hanish",
@@ -4483,7 +5471,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Rüzgar."
+      "description": "Rüzgar.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Rabisu",
@@ -4494,7 +5485,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Pusu."
+      "description": "Pusu.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Ekimmu",
@@ -4505,7 +5499,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Ruh."
+      "description": "Ruh.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Edimmu",
@@ -4516,7 +5513,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Ruh."
+      "description": "Ruh.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Utukku",
@@ -4527,7 +5527,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Hayalet."
+      "description": "Hayalet.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Sebitti",
@@ -4540,7 +5543,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Yedi."
+      "description": "Yedi.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Igigi",
@@ -4551,7 +5557,8 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Collective",
-      "description": "Gök."
+      "description": "Gök.",
+      "gruplar": []
     },
     {
       "name": "Anunnaki",
@@ -4564,7 +5571,8 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Collective",
-      "description": "Alt."
+      "description": "Alt.",
+      "gruplar": []
     },
     {
       "name": "Apkallu",
@@ -4577,7 +5585,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Eridu",
       "category": "Demigod",
-      "description": "Bilge."
+      "description": "Bilge.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Kingaludda",
@@ -4588,7 +5599,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Haberci."
+      "description": "Haberci.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Kengida",
@@ -4599,7 +5613,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Haberci."
+      "description": "Haberci.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Uddagubba",
@@ -4610,7 +5627,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Haberci."
+      "description": "Haberci.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nindub",
@@ -4621,7 +5641,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Gümüş."
+      "description": "Gümüş.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ningubla",
@@ -4632,7 +5655,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Taş."
+      "description": "Taş.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nirah",
@@ -4643,7 +5669,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Der",
       "category": "Minor",
-      "description": "Yılan."
+      "description": "Yılan.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Igalima",
@@ -4654,7 +5683,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Kapı."
+      "description": "Kapı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Piqiddu",
@@ -4665,7 +5697,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Doğum."
+      "description": "Doğum.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Shuzianna",
@@ -4676,7 +5711,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Doğum."
+      "description": "Doğum.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Belet-Seri",
@@ -4687,7 +5725,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Uruk",
       "category": "Minor",
-      "description": "Katip."
+      "description": "Katip.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Gubarra",
@@ -4700,7 +5741,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Step."
+      "description": "Step.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ashratum",
@@ -4713,7 +5757,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Step."
+      "description": "Step.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Amurru",
@@ -4728,7 +5775,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Step."
+      "description": "Step.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Martu",
@@ -4741,7 +5791,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Fırtına."
+      "description": "Fırtına.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Dagan",
@@ -4752,7 +5805,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Terqa",
       "category": "Major",
-      "description": "Tahıl."
+      "description": "Tahıl.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Shala",
@@ -4767,7 +5823,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Major",
-      "description": "Yağmur."
+      "description": "Yağmur.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Medimsha",
@@ -4780,7 +5839,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Bereket."
+      "description": "Bereket.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Sarruma",
@@ -4794,7 +5856,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Dağ."
+      "description": "Dağ.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Hebat",
@@ -4807,7 +5872,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Aleppo",
       "category": "Major",
-      "description": "Ana."
+      "description": "Ana.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Shuwala",
@@ -4818,7 +5886,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Ebla",
       "category": "Minor",
-      "description": "Bereket."
+      "description": "Bereket.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Admu",
@@ -4829,7 +5900,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Yer."
+      "description": "Yer.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Kulla",
@@ -4840,7 +5914,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Tuğla."
+      "description": "Tuğla.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Mushdamma",
@@ -4851,7 +5928,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Mimari."
+      "description": "Mimari.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Kabta",
@@ -4864,7 +5944,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Zanaat."
+      "description": "Zanaat.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninsianna",
@@ -4877,7 +5960,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Venüs."
+      "description": "Venüs.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninkarnunna",
@@ -4888,7 +5974,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Berber."
+      "description": "Berber.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Sirtur",
@@ -4899,7 +5988,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Koyun."
+      "description": "Koyun.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Lulal",
@@ -4912,7 +6004,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Bad-tibira",
       "category": "Minor",
-      "description": "Step."
+      "description": "Step.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Shara",
@@ -4925,7 +6020,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Umma",
       "category": "Major",
-      "description": "Savaş."
+      "description": "Savaş.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Emes",
@@ -4939,7 +6037,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Yaz."
+      "description": "Yaz.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Enten",
@@ -4953,7 +6054,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Kış."
+      "description": "Kış.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nisaba",
@@ -4971,7 +6075,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Eresh",
       "category": "Major",
-      "description": "Yazı."
+      "description": "Yazı.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Haia",
@@ -4986,7 +6093,10 @@ const TANRILAR_JSON = {
       ],
       "city": "",
       "category": "Minor",
-      "description": "Ambar."
+      "description": "Ambar.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nanshe",
@@ -5001,7 +6111,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Lagash",
       "category": "Major",
-      "description": "Kehanet."
+      "description": "Kehanet.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Nindara",
@@ -5014,7 +6127,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Lagash",
       "category": "Minor",
-      "description": "Lagash."
+      "description": "Lagash.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninagal",
@@ -5027,7 +6143,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Metal."
+      "description": "Metal.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninkasi",
@@ -5040,7 +6159,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Bira."
+      "description": "Bira.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninmada",
@@ -5051,7 +6173,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Rüzgar."
+      "description": "Rüzgar.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Ninshubur",
@@ -5062,7 +6187,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Haberci."
+      "description": "Haberci.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Isimud",
@@ -5073,7 +6201,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Eridu",
       "category": "Minor",
-      "description": "Haberci."
+      "description": "Haberci.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Uzume",
@@ -5084,7 +6215,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Dans."
+      "description": "Dans.",
+      "gruplar": [
+        "Annunaki"
+      ]
     },
     {
       "name": "Siduri",
@@ -5095,7 +6229,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demigod",
-      "description": "Şarap."
+      "description": "Şarap.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Urshanabi",
@@ -5106,7 +6243,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demigod",
-      "description": "Feribot."
+      "description": "Feribot.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Alulu",
@@ -5117,7 +6257,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Eridu",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Alalgar",
@@ -5128,7 +6271,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Eridu",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Amelanu",
@@ -5139,7 +6285,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Bad-tibira",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Enmenluana",
@@ -5150,7 +6299,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Bad-tibira",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Enmengalana",
@@ -5161,7 +6313,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Bad-tibira",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Ensipazianna",
@@ -5172,7 +6327,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Larak",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Enmenduranna",
@@ -5183,7 +6341,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Sippar",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Apkallu",
+        "Mitolojik"
+      ]
     },
     {
       "name": "Ubara-Tutu",
@@ -5196,7 +6358,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Shuruppak",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Agga",
@@ -5209,7 +6374,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Kish",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Enmebaragesi",
@@ -5222,7 +6390,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Kish",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Meskiaggasher",
@@ -5237,7 +6408,10 @@ const TANRILAR_JSON = {
       ],
       "city": "Uruk",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Enmerkar",
@@ -5250,7 +6424,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Uruk",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Ur-Nungal",
@@ -5263,7 +6440,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Uruk",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Aga",
@@ -5274,7 +6454,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Kish",
       "category": "Demigod",
-      "description": "Kral."
+      "description": "Kral.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Ziusudra",
@@ -5287,7 +6470,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Shuruppak",
       "category": "Demigod",
-      "description": "Tufan."
+      "description": "Tufan.",
+      "gruplar": [
+        "Apkallu",
+        "Mitolojik"
+      ]
     },
     {
       "name": "Utnapishtim",
@@ -5301,7 +6488,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Dilmun",
       "category": "Demigod",
-      "description": "Ölümsüzlük."
+      "description": "Ölümsüzlük.",
+      "gruplar": [
+        "Mitolojik"
+      ]
     },
     {
       "name": "Etana",
@@ -5312,7 +6502,11 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Kish",
       "category": "Demigod",
-      "description": "Şahin."
+      "description": "Şahin.",
+      "gruplar": [
+        "Apkallu",
+        "Mitolojik"
+      ]
     },
     {
       "name": "Adapa",
@@ -5325,7 +6519,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Eridu",
       "category": "Demigod",
-      "description": "Bilge."
+      "description": "Bilge.",
+      "gruplar": [
+        "Apkallu"
+      ]
     },
     {
       "name": "Oannes",
@@ -5337,19 +6534,27 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Eridu",
       "category": "Demigod",
-      "description": "Apkallu."
+      "description": "Apkallu.",
+      "gruplar": [
+        "Apkallu"
+      ]
     },
     {
       "name": "Namtaru",
       "name_ak": "Namtar",
       "gender": "M",
       "role": "Kader Ruhu / Ölüm Getiren",
-      "parents": ["Ereşkigal"],
+      "parents": [
+        "Ereşkigal"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Ereşkigal'in ölüler diyarındaki hizmetkarı ve kader belirleyicisi. 60 çeşit hastalığı insanlar arasında yayar. İnanna'nın inişinde önemli rol oynar."
+      "description": "Ereşkigal'in ölüler diyarındaki hizmetkarı ve kader belirleyicisi. 60 çeşit hastalığı insanlar arasında yayar. İnanna'nın inişinde önemli rol oynar.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Lama",
@@ -5361,7 +6566,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Bireysel koruyucu ruh olarak işlev gören tanrıça. Kralın veya kişinin başında durur, ona yardım eder. İkonografide kanatlı kadın figürü olarak tasvir edilir."
+      "description": "Bireysel koruyucu ruh olarak işlev gören tanrıça. Kralın veya kişinin başında durur, ona yardım eder. İkonografide kanatlı kadın figürü olarak tasvir edilir.",
+      "gruplar": [
+        "Duzen"
+      ]
     },
     {
       "name": "Udug Hul",
@@ -5372,7 +6580,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Hastalık, felaket ve şanssızlık getiren kesinlikle kötü ruhlar. Namburbi ritüelleri bunlara karşı koruma sağlamak için hazırlanmıştır."
+      "description": "Hastalık, felaket ve şanssızlık getiren kesinlikle kötü ruhlar. Namburbi ritüelleri bunlara karşı koruma sağlamak için hazırlanmıştır.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Lil",
@@ -5383,7 +6594,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Rüzgar ve hava ile ilgili ruhlar. İyi veya kötü olabilir. Lilitu (gece ruhu) ve Sümer demonolojisindeki hava ruhlarının atası."
+      "description": "Rüzgar ve hava ile ilgili ruhlar. İyi veya kötü olabilir. Lilitu (gece ruhu) ve Sümer demonolojisindeki hava ruhlarının atası.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Etemmu",
@@ -5394,7 +6608,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Gömülmüş fakat cenaze törenleri yapılmış, aile tarafından anılan ölü ruhları. Edimmu'dan farklı olarak yaşayanlarla barışık ilişki kurabilirler."
+      "description": "Gömülmüş fakat cenaze törenleri yapılmış, aile tarafından anılan ölü ruhları. Edimmu'dan farklı olarak yaşayanlarla barışık ilişki kurabilirler.",
+      "gruplar": [
+        "Kaos"
+      ]
     },
     {
       "name": "Ki Sikil",
@@ -5405,7 +6622,10 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Spirit",
-      "description": "Bahçelerde, su kaynaklarında ve kutsal yerlerde yaşayan, temizlik ve bereket getiren ruhlar. Ki-sikil-lil-la-ke varlıklarıyla ilişkili."
+      "description": "Bahçelerde, su kaynaklarında ve kutsal yerlerde yaşayan, temizlik ve bereket getiren ruhlar. Ki-sikil-lil-la-ke varlıklarıyla ilişkili.",
+      "gruplar": [
+        "Duzen"
+      ]
     }
   ]
 };

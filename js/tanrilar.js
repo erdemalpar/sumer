@@ -16,6 +16,17 @@ const tanrilarModul = (() => {
     'Demon/Spirit': { renk: '#795548', simge: '👁', tr: 'Demonlar/Ruhlar' }
   };
 
+  // ── Mitolojik Grup Sistemi ───────────────────────
+  const GRUP = {
+    'Annunaki':       { renk: '#C0392B', ikon: '𒀭', tr: 'Annunaki',          aciklama: 'Yerin ve kaderin büyük tanrıları' },
+    'Igigi':          { renk: '#2980B9', ikon: '🌟', tr: 'İgigi',             aciklama: 'Gökyüzü ve göksel tanrılar' },
+    'EfsaneviYaratik':{ renk: '#6C3483', ikon: '🐉', tr: 'Efsanevi Yaratık',  aciklama: 'Mitolojik canavarlar ve yaratıklar' },
+    'Apkallu':        { renk: '#117A65', ikon: '𒁾', tr: 'Apkallu',           aciklama: 'Yedi Bilge — medeniyeti getiren figürler' },
+    'Mitolojik':      { renk: '#B7950B', ikon: '⚔️', tr: 'Mitolojik',         aciklama: 'Efsanelerin ve destanların figürleri' },
+    'Duzen':          { renk: '#1A5276', ikon: '𒈨', tr: 'Düzen (Me)',         aciklama: 'Düzeni ve medeniyeti temsil edenler' },
+    'Kaos':           { renk: '#4A235A', ikon: '𒆳', tr: 'Kaos (Kur/Hul)',    aciklama: 'Kaos, hastalık ve karanlık güçler' }
+  };
+
   const CINSIYET = {
     M: { ikon: '♂', etiket: 'Erkek', renk: '#4FC3F7', sinif: 'erkek' },
     F: { ikon: '♀', etiket: 'Kadın', renk: '#F48FB1', sinif: 'kadin' },
@@ -172,6 +183,16 @@ const tanrilarModul = (() => {
     div.style.animationDelay = `${Math.min(indeks * 0.03, 0.5)}s`;
     div.dataset.isim = tanri.name;
 
+    // Grup etiketleri HTML'i oluştur
+    const grupEtiketleri = Array.isArray(tanri.gruplar) && tanri.gruplar.length > 0
+      ? tanri.gruplar.map(g => {
+          const grp = GRUP[g];
+          if (!grp) return '';
+          return '<span class="t-grup-etiketi" style="background:' + grp.renk + '22;color:' + grp.renk + ';border:1px solid ' + grp.renk + '55" title="' + grp.aciklama + '">' +
+                 grp.ikon + ' ' + grp.tr + '</span>';
+        }).join('')
+      : '';
+
     div.innerHTML = `
       <div class="t-kart-renk-serit"></div>
       <div class="t-kart-ic">
@@ -188,6 +209,7 @@ const tanrilarModul = (() => {
           </span>
           ${tanri.city ? `<span class="t-kart-sehir">📍 ${tanri.city.split(',')[0]}</span>` : ''}
         </div>
+        ${grupEtiketleri ? `<div class="t-grup-satirlari">${grupEtiketleri}</div>` : ''}
       </div>
     `;
 

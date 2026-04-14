@@ -1040,6 +1040,24 @@ body::after {
   color: var(--metin-soluk);
 }
 
+/* Grup Etiket Satırı */
+.t-grup-satirlari {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  margin-top: 0.3rem;
+}
+
+.t-grup-etiketi {
+  display: inline-block;
+  padding: 0.08rem 0.4rem;
+  border-radius: 20px;
+  font-size: 0.55rem;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
 .t-bos-mesaj {
   grid-column: 1 / -1;
   text-align: center;
