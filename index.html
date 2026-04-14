@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>𒀭 Sümer Tarihi CBS — Mezopotamya Keşif Atlası</title>
+  <meta name="description" content="Sümerlerin tanrı soyağacı, kutsal şehirleri, medeniyet sınırları ve çivi yazısı alfabesini keşfedin. Zaman damgalı interaktif CBS haritası.">
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Ana Stil -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Özel Cuneiform Yazı Tipi Desteği -->
+  <style>
+    @font-face {
+      font-family: 'NotoSansCuneiform';
+      /* Noto Sans Cuneiform Google Fonts CDN */
+      src: url('https://fonts.gstatic.com/s/notosanscuneiform/v36/bMrrmTWK7YY-MF22aHGGd7H3rToWHPm6AhAHmQ.woff2') format('woff2');
+      font-display: swap;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════
+     YÜKLENIYOR EKRANI
+     ════════════════════════════════════════════ -->
+<div id="yukleniyor-ekrani" class="yukleniyor">
+  <div class="yukleniyor-simge">𒀭</div>
+  <div class="yukleniyor-metin">SÜMER MEDENİYETİ YÜKLENİYOR</div>
+  <div style="font-size:0.65rem;color:#4A3A2A;letter-spacing:0.3em;margin-top:0.5rem">
+    𒂗𒆤 𒉆𒈨 𒄑𒁀𒊏 𒀭𒈾𒀭𒈾
+  </div>
+</div>
+
+<!-- Quiz Ekranı (Overlay) -->
+<div id="quiz-ekrani">
+  <!-- JS tarafından doldurulur -->
+</div>
+
+<!-- ════════════════════════════════════════════
+     ANA UYGULAMA
+     ════════════════════════════════════════════ -->
+<div id="uygulama">
+
+  <!-- ── HEADER ── -->
+  <header id="baslik">
+    <div class="logo-alani">
+      <div class="logo-simge">𒀭</div>
+      <div class="logo-metin">
+        <h1>SÜMER</h1>
+        <span>Mezopotamya Keşif Atlası</span>
+      </div>
+    </div>
+
+    <!-- NAVİGASYON -->
+    <nav id="sekmeler" role="navigation" aria-label="Ana menü">
+      <button
+        class="sekme-btn aktif"
+        data-sekme="harita"
+        id="sekme-harita"
+        aria-selected="true"
+        title="İnteraktif CBS Haritası"
+      >
+        <span class="sekme-ikon">🗺️</span>
+        <span>Harita</span>
+      </button>
+      <button
+        class="sekme-btn"
+        data-sekme="tanrilar"
+        id="sekme-tanrilar"
+        aria-selected="false"
+        title="Tanrı Soyağacı"
+      >
+        <span class="sekme-ikon">𒀭</span>
+        <span>Tanrılar</span>
+      </button>
+      <button
+        class="sekme-btn"
+        data-sekme="cuneiform"
+        id="sekme-cuneiform"
+        aria-selected="false"
+        title="Çivi Yazısı Alfabesi"
+      >
+        <span class="sekme-ikon">𒁾</span>
+        <span>Çivi Yazısı</span>
+      </button>
+      <button
+        class="sekme-btn"
+        data-sekme="tarih"
+        id="sekme-tarih"
+        aria-selected="false"
+        title="Sümer Tarihi"
+      >
+        <span class="sekme-ikon">📜</span>
+        <span>Tarih</span>
+      </button>
+    </nav>
+
+    <div class="baslik-bilgi">
+      <div class="tarih-rozeti">MÖ 4000 – 539</div>
+    </div>
+  </header>
+
+  <!-- ── ANA İÇERİK ── -->
+  <div id="icerik">
+
+    <!-- ════════════════════════════════════════
+         HARİTA SEKMESİ
+         ════════════════════════════════════════ -->
+    <div id="harita-sekme" class="sekme-panel aktif">
+
+        <!-- Sol Kenar Çubuğu -->
+        <aside id="harita-sidebar" aria-label="Harita katmanları">
+
+          <!-- ZAMAN SLIDER -->
+          <div class="sidebar-bolum">
+            <div class="sidebar-baslik">⏳ Zaman Yolculuğu</div>
+            <div class="zaman-slider-kapsayici">
+              <div class="slider-donem-adi" id="slider-donem-adi">Erken Hanedanlık</div>
+              <div class="slider-donem-tarih" id="slider-donem-tarih">MÖ 3000 – 2334</div>
+              <div class="slider-donem-aciklama" id="slider-donem-aciklama">
+                Kent-devletlerin birbiriyle savaştığı dönem. Gilgamesh, Ur Kraliyet Mezarlıkları.
+              </div>
+
+              <input
+                type="range"
+                id="zaman-slider"
+                min="0"
+                max="3"
+                step="1"
+                value="1"
+                aria-label="Tarihsel dönem seçimi"
+              />
+
+              <div class="slider-etiketler">
+                <div class="slider-etiket" style="width:25%;text-align:center">
+                  MÖ<br>4000
+                </div>
+                <div class="slider-etiket aktif" style="width:25%;text-align:center">
+                  MÖ<br>3000
+                </div>
+                <div class="slider-etiket" style="width:25%;text-align:center">
+                  MÖ<br>2334
+                </div>
+                <div class="slider-etiket" style="width:25%;text-align:center">
+                  MÖ<br>2112
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- KATMANLAR -->
+          <div class="sidebar-bolum">
+            <div class="sidebar-baslik">🗂️ Harita Katmanları</div>
+
+            <div
+              class="katman-toggle aktif"
+              data-katman="sehirler"
+              id="toggle-sehirler"
+              role="checkbox"
+              aria-checked="true"
+              tabindex="0"
+            >
+              <div class="toggle-switch"></div>
+              <div class="toggle-ikon">🏛️</div>
+              <div class="toggle-bilgi">
+                <div class="toggle-ad">Sümer Şehirleri</div>
+                <div class="toggle-alt">20 antik kent</div>
+              </div>
+            </div>
+
+            <div
+              class="katman-toggle aktif"
+              data-katman="sinirlar"
+              id="toggle-sinirlar"
+              role="checkbox"
+              aria-checked="true"
+              tabindex="0"
+            >
+              <div class="toggle-switch"></div>
+              <div class="toggle-ikon">🗺️</div>
+              <div class="toggle-bilgi">
+                <div class="toggle-ad">Medeniyet Sınırları</div>
+                <div class="toggle-alt">Sümer & Akkad</div>
+              </div>
+            </div>
+
+            <div
+              class="katman-toggle aktif"
+              data-katman="nehirler"
+              id="toggle-nehirler"
+              role="checkbox"
+              aria-checked="true"
+              tabindex="0"
+            >
+              <div class="toggle-switch"></div>
+              <div class="toggle-ikon">🌊</div>
+              <div class="toggle-bilgi">
+                <div class="toggle-ad">Dicle & Fırat</div>
+                <div class="toggle-alt">Antik Mezopotamya nehirleri</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- KATMAN AÇIKLAMASI -->
+          <div class="sidebar-bolum">
+            <div class="sidebar-baslik">📖 Legend</div>
+            <div style="font-size:0.7rem;color:var(--metin-soluk);line-height:2">
+              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.3rem">
+                <div style="width:14px;height:14px;border-radius:50%;background:#FFD700;border:2px solid #FFD700;flex-shrink:0"></div>
+                Büyük Şehir (5★)
+              </div>
+              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.3rem">
+                <div style="width:11px;height:11px;border-radius:50%;background:#D4AF37;border:2px solid #D4AF37;flex-shrink:0"></div>
+                Önemli Şehir (4★)
+              </div>
+              <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.3rem">
+                <div style="width:9px;height:9px;border-radius:50%;background:#B8860B;border:2px solid #B8860B;flex-shrink:0"></div>
+                Orta Büyüklük (3★)
+              </div>
+              <div style="margin-top:0.75rem;padding-top:0.75rem;border-top:1px solid rgba(212,175,55,0.15)">
+                <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.3rem">
+                  <div style="width:20px;height:2px;background:#5599FF;border-radius:1px"></div>
+                  Fırat Nehri
+                </div>
+                <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.3rem">
+                  <div style="width:20px;height:2px;background:#3377CC;border-radius:1px"></div>
+                  Dicle Nehri
+                </div>
+                <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.3rem">
+                  <div style="width:20px;height:1px;background:#D4AF37;border-top:1px dashed #D4AF37"></div>
+                  Sümer Sınırı
+                </div>
+                <div style="display:flex;align-items:center;gap:0.5rem">
+                  <div style="width:20px;height:1px;background:#B8860B;border-top:1px dashed #B8860B"></div>
+                  Akkad Sınırı
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Harita Ailesi -->
+          <div class="sidebar-bolum" style="margin-top:auto;font-size:0.65rem;color:var(--metin-soluk);text-align:center;padding-top:0.75rem">
+            <div style="margin-bottom:0.3rem">Harita: CartoDB Dark</div>
+            <div style="opacity:0.5">Koordinatlar yaklaşık tarihseldir</div>
+          </div>
+
+        </aside>
+
+        <!-- Harita Konteyner -->
+        <div id="harita-konteyner">
+          <div id="harita" aria-label="İnteraktif Sümer haritası"></div>
+
+          <!-- Bilgi Paneli (sağ alt) -->
+          <div id="harita-bilgi-panel">
+            <!-- JS tarafından doldurulur -->
+          </div>
+
+          <!-- Alt bilgi şeridi -->
+          <div style="
+            position:absolute;
+            bottom:0;left:0;right:0;
+            background:linear-gradient(transparent,rgba(10,7,3,0.7));
+            height:40px;
+            pointer-events:none;
+            z-index:5
+          "></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════
+         TANRILAR SEKMESİ
+         ════════════════════════════════════════ -->
+    <div id="tanrilar-sekme" class="sekme-panel">
+      <div id="tanrilar-sekme-ic" style="display:flex;height:100%">
+
+        <!-- Graf SVG Alanı -->
+        <div id="soyagaci-panel">
+          <!-- Filtre Paneli -->
+          <div id="tanri-filtre-panel">
+            <div class="tanri-filtre-baslik">🔱 Kategori Filtresi</div>
+            <div class="filtre-btn-grup">
+              <!-- JS tarafından doldurulur -->
+            </div>
+          </div>
+
+          <!-- Graf Açıklama -->
+          <div style="
+            position:absolute;
+            bottom:1rem;
+            left:50%;
+            transform:translateX(-50%);
+            background:rgba(15,10,6,0.9);
+            border:1px solid rgba(212,175,55,0.2);
+            border-radius:20px;
+            padding:0.4rem 1rem;
+            font-size:0.65rem;
+            color:var(--metin-soluk);
+            pointer-events:none;
+            z-index:5;
+            white-space:nowrap;
+            backdrop-filter:blur(10px)
+          ">
+            🖱️ Sürükle & Yakınlaştır &nbsp;|&nbsp; Tanrıya tıkla → Detay &nbsp;|&nbsp;
+            <span style="color:#D4AF37">——</span> Soy bağı &nbsp;
+            <span style="color:#FF80AB;font-style:italic">- - -</span> Evlilik
+          </div>
+
+          <!-- D3 SVG -->
+          <svg id="soyagaci-svg" aria-label="Sümer tanrıları soyağacı"></svg>
+        </div>
+
+        <!-- Tanrı Detay Paneli -->
+        <div id="tanri-detay-panel" role="complementary" aria-label="Tanrı detayları">
+          <!-- JS tarafından doldurulur -->
+          <div style="
+            height:100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-direction:column;
+            gap:1rem;
+            color:var(--metin-soluk);
+            font-size:0.85rem;
+            text-align:center;
+            padding:2rem;
+            font-family:'Cinzel',serif
+          ">
+            <div style="font-size:3rem;opacity:0.2">𒀭</div>
+            <div>Bir tanrıya tıklayarak<br>detaylarını görüntüleyin</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════
+         CUNEİFORM ALFABESİ SEKMESİ
+         ════════════════════════════════════════ -->
+    <div id="cuneiform-sekme" class="sekme-panel">
+
+      <!-- Üst Kontrol Çubuğu -->
+      <div class="cuneiform-kontrol">
+        <div class="cuneiform-baslik-alani">
+          <h2>𒁾 Çivi Yazısı</h2>
+          <p>Sümer alfabe ve hece işaretlerini keşfedin</p>
+        </div>
+
+        <div class="arama-alani">
+          <span class="arama-ikon">🔍</span>
+          <input
+            type="search"
+            id="cuneiform-arama"
+            placeholder="İşaret ara… (Türkçe anlam veya transliterasyon)"
+            aria-label="Çivi yazısı işareti ara"
+          />
+        </div>
+
+        <button
+          id="quiz-baslat-btn"
+          class="quiz-btn"
+          onclick="cuneiformModul.quizBaslat()"
+          aria-label="Quiz modunu başlat"
+        >
+          🎯 Quiz Modu
+        </button>
+      </div>
+
+      <!-- Kategori Filtreleri -->
+      <div class="kategori-filtreleri" role="group" aria-label="Kategori filtreleri">
+        <!-- JS tarafından doldurulur -->
+      </div>
+
+      <!-- İşaret Kartları Izgarası -->
+      <div
+        id="isaretler-izgara"
+        role="list"
+        aria-label="Çivi yazısı işaretleri"
+      >
+        <!-- JS tarafından doldurulur -->
+      </div>
+
+    </div>
+
+    <!-- ════════════════════════════════════════
+         TARİH SEKMESİ
+         ════════════════════════════════════════ -->
+    <div id="tarih-sekme" class="sekme-panel">
+      <div class="tarih-icerik">
+
+        <div class="tarih-basligi">
+          <div class="tarih-ana-baslik">𒀭 Sümer Tarihi</div>
+          <div class="tarih-alt-baslik">
+            İnsanlığın İlk Medeniyetinin Kronolojisi
+          </div>
+          <div style="
+            font-size:1.5rem;
+            color:var(--altin-ana);
+            opacity:0.5;
+            margin:0.75rem 0;
+            letter-spacing:1rem
+          ">𒀭 𒂗 𒆠 𒈗</div>
+          <div style="
+            font-size:0.8rem;
+            color:var(--metin-soluk);
+            max-width:500px;
+            margin:0 auto;
+            line-height:1.7
+          ">
+            Mezopotamya'da Sümerler, yazıyı, hukuku, matematik ve astronominin temellerini attı.
+            MÖ 4000'den 2000'e uzanan bu yolculuk, insanlık tarihinin en çarpıcı bölümüdür.
+          </div>
+        </div>
+
+        <!-- İstatistik Kutucukları -->
+        <div style="
+          display:grid;
+          grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+          gap:1rem;
+          margin-bottom:2.5rem
+        ">
+          <div style="
+            background:rgba(212,175,55,0.08);
+            border:1px solid rgba(212,175,55,0.2);
+            border-radius:12px;
+            padding:1.25rem;
+            text-align:center
+          ">
+            <div style="font-size:2rem;font-family:'Cinzel Decorative',serif;color:var(--altin-parlak);text-shadow:0 0 10px rgba(255,215,0,0.3)">~3200</div>
+            <div style="font-size:0.7rem;color:var(--metin-soluk);margin-top:0.3rem;letter-spacing:0.05em">MÖ — Çivi Yazısı</div>
+          </div>
+          <div style="
+            background:rgba(212,175,55,0.08);
+            border:1px solid rgba(212,175,55,0.2);
+            border-radius:12px;
+            padding:1.25rem;
+            text-align:center
+          ">
+            <div style="font-size:2rem;font-family:'Cinzel Decorative',serif;color:var(--altin-parlak);text-shadow:0 0 10px rgba(255,215,0,0.3)">5000+</div>
+            <div style="font-size:0.7rem;color:var(--metin-soluk);margin-top:0.3rem;letter-spacing:0.05em">Yıllık Sümer Mirası</div>
+          </div>
+          <div style="
+            background:rgba(212,175,55,0.08);
+            border:1px solid rgba(212,175,55,0.2);
+            border-radius:12px;
+            padding:1.25rem;
+            text-align:center
+          ">
+            <div style="font-size:2rem;font-family:'Cinzel Decorative',serif;color:var(--altin-parlak);text-shadow:0 0 10px rgba(255,215,0,0.3)">156</div>
+            <div style="font-size:0.7rem;color:var(--metin-soluk);margin-top:0.3rem;letter-spacing:0.05em">Belgelenmiş Tanrı</div>
+          </div>
+          <div style="
+            background:rgba(212,175,55,0.08);
+            border:1px solid rgba(212,175,55,0.2);
+            border-radius:12px;
+            padding:1.25rem;
+            text-align:center
+          ">
+            <div style="font-size:2rem;font-family:'Cinzel Decorative',serif;color:var(--altin-parlak);text-shadow:0 0 10px rgba(255,215,0,0.3)">500k+</div>
+            <div style="font-size:0.7rem;color:var(--metin-soluk);margin-top:0.3rem;letter-spacing:0.05em">Kil Tablet Arşivi</div>
+          </div>
+          <div style="
+            background:rgba(212,175,55,0.08);
+            border:1px solid rgba(212,175,55,0.2);
+            border-radius:12px;
+            padding:1.25rem;
+            text-align:center
+          ">
+            <div style="font-size:2rem;font-family:'Cinzel Decorative',serif;color:var(--altin-parlak);text-shadow:0 0 10px rgba(255,215,0,0.3)">60</div>
+            <div style="font-size:0.7rem;color:var(--metin-soluk);margin-top:0.3rem;letter-spacing:0.05em">Tabanlı Sayı Sistemi</div>
+          </div>
+          <div style="
+            background:rgba(212,175,55,0.08);
+            border:1px solid rgba(212,175,55,0.2);
+            border-radius:12px;
+            padding:1.25rem;
+            text-align:center
+          ">
+            <div style="font-size:2rem;font-family:'Cinzel Decorative',serif;color:var(--altin-parlak);text-shadow:0 0 10px rgba(255,215,0,0.3)">20+</div>
+            <div style="font-size:0.7rem;color:var(--metin-soluk);margin-top:0.3rem;letter-spacing:0.05em">Kent-Devlet</div>
+          </div>
+        </div>
+
+        <!-- Zaman Seridi -->
+        <div class="tarih-zaman-seridi">
+          <!-- JS tarafından doldurulur -->
+        </div>
+
+        <!-- Alt Bilgi -->
+        <div style="
+          text-align:center;
+          margin-top:3rem;
+          padding-top:2rem;
+          border-top:1px solid rgba(212,175,55,0.1);
+          font-size:0.7rem;
+          color:var(--metin-soluk);
+          line-height:2
+        ">
+          <div style="font-size:1.5rem;margin-bottom:0.5rem;opacity:0.3">𒀭 𒂗 𒆠</div>
+          Kaynaklar: ETCSL (Electronic Text Corpus of Sumerian Literature) · ORACC · Cuneiform Digital Library Initiative<br>
+          Güney Mezopotamya tarihi verileri akademik literatür taranarak derlenmiştir.
+        </div>
+      </div>
+    </div>
+
+  </div><!-- #icerik -->
+</div><!-- #uygulama -->
+
+<!-- ════════════════════════════════════════════════
+     KÜTÜPHANELER
+     ════════════════════════════════════════════════ -->
+
+<!-- Leaflet.js -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- D3.js v7 -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<!-- VERİ DOSYALARI -->
+<script src="data/cities.js"></script>
+<script src="data/cuneiform_signs.js"></script>
+<script src="data/tanrilar_veri.js"></script>
+
+<!-- MODÜLLER -->
+<script src="js/map.js"></script>
+<script src="js/tanrilar.js"></script>
+<script src="js/cuneiform.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
