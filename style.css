@@ -1,3 +1,4 @@
+/* v=20260414_233732 */
 /* =====================================================
    SÜMER CBS UYGULAMASI - ANA STİL DOSYASI
    Kil tablet estetiği ile modern glassmorphism
@@ -653,29 +654,34 @@ body::after {
    ═════════════════════════════════════════════════ */
 
 #tanrilar-sekme {
-  height: 100%;
+  /* position:absolute;inset:0 .sekme-panel'den geliyor */
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
 }
 
 #tanrilar-ic {
-  display: flex;
-  flex: 1;
-  height: 100%;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  position: absolute;
+  inset: 0;
   gap: 0;
-  min-height: 0;
+  overflow: hidden;
 }
 
 /* ── Sol Panel (Filtre + Detay) ── */
 #tanrilar-sol {
-  width: 280px;
-  flex-shrink: 0;
   background: var(--renk-panel);
   border-right: 1px solid var(--renk-panel-kenari);
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
+  display: grid;
+  grid-template-rows: auto 1fr;  /* üst: sabit, alt: kaydırılabilir */
+  overflow: hidden;
+  min-height: 0;
+  padding-top: 5.5rem;
+}
+
+/* Sabit üst blok: arama + kategoriler */
+#tanrilar-sol-ust {
+  overflow-y: auto;  /* taşarsa scroll, kesilmesin */
+  border-bottom: 1px solid rgba(212,175,55,0.15);
 }
 
 .t-arama-kutusu {
@@ -715,12 +721,10 @@ body::after {
 
 /* Kategori Filtreleri (Sol Panel) */
 .t-kategoriler {
-  padding: 0.6rem 0.5rem;
+  padding: 0.4rem 0.5rem 0.6rem;
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
-  border-bottom: 1px solid rgba(212,175,55,0.1);
-  flex-shrink: 0;
 }
 
 .t-kat-btn {
@@ -768,6 +772,7 @@ body::after {
   flex: 1;
   overflow-y: auto;
   padding: 0.75rem;
+  min-height: 0; /* flex overflow için zorunlu */
 }
 
 .t-detay-bos {
@@ -916,8 +921,10 @@ body::after {
   flex: 1;
   overflow-y: auto;
   padding: 0.75rem;
-  padding-top: 0.5rem;
+  padding-top: 5.5rem;
   background: rgba(10,7,3,0.3);
+  min-height: 0; /* flex overflow için zorunlu */
+  min-width: 0;
 }
 
 #tanri-kart-izgara {

@@ -276,71 +276,47 @@
          TANRILAR SEKMESİ
          ════════════════════════════════════════ -->
     <div id="tanrilar-sekme" class="sekme-panel">
-      <div id="tanrilar-sekme-ic" style="display:flex;height:100%">
+      <div id="tanrilar-ic">
 
-        <!-- Graf SVG Alanı -->
-        <div id="soyagaci-panel">
-          <!-- Filtre Paneli -->
-          <div id="tanri-filtre-panel">
-            <div class="tanri-filtre-baslik">🔱 Kategori Filtresi</div>
-            <div class="filtre-btn-grup">
+        <!-- SOL PANEL: Arama + Filtreler + Detay -->
+        <div id="tanrilar-sol">
+
+          <!-- Sabit Üst Alan -->
+          <div id="tanrilar-sol-ust">
+            <div class="t-arama-kutusu">
+              <span class="t-arama-ikon">🔍</span>
+              <input
+                id="tanri-arama"
+                type="search"
+                placeholder="Tanrı ara…"
+                oninput="tanrilarModul && tanrilarModul._aramaGuncelle(this.value)"
+              />
+            </div>
+            <div class="t-kategoriler" id="tanri-kategoriler">
               <!-- JS tarafından doldurulur -->
             </div>
           </div>
 
-          <!-- Graf Açıklama -->
-          <div style="
-            position:absolute;
-            bottom:1rem;
-            left:50%;
-            transform:translateX(-50%);
-            background:rgba(15,10,6,0.9);
-            border:1px solid rgba(212,175,55,0.2);
-            border-radius:20px;
-            padding:0.4rem 1rem;
-            font-size:0.65rem;
-            color:var(--metin-soluk);
-            pointer-events:none;
-            z-index:5;
-            white-space:nowrap;
-            backdrop-filter:blur(10px)
-          ">
-            🖱️ Sürükle & Yakınlaştır &nbsp;|&nbsp; Tanrıya tıkla → Detay &nbsp;|&nbsp;
-            <span style="color:#D4AF37">——</span> Soy bağı &nbsp;
-            <span style="color:#FF80AB;font-style:italic">- - -</span> Evlilik
+          <!-- Kaydırılabilir Detay Alanı -->
+          <div id="tanri-detay-alani">
+            <div class="t-detay-bos">
+              <div class="t-detay-bos-ikon">𒀭</div>
+              <div>Bir tanrı kartına tıklayarak<br>soyağacını ve bilgilerini görün</div>
+            </div>
           </div>
 
-          <!-- D3 SVG -->
-          <svg id="soyagaci-svg" aria-label="Sümer tanrıları soyağacı"></svg>
         </div>
 
-        <!-- Tanrı Detay Paneli -->
-        <div id="tanri-detay-panel" role="complementary" aria-label="Tanrı detayları">
-          <!-- JS tarafından doldurulur -->
-          <div style="
-            height:100%;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            flex-direction:column;
-            gap:1rem;
-            color:var(--metin-soluk);
-            font-size:0.85rem;
-            text-align:center;
-            padding:2rem;
-            font-family:'Cinzel',serif
-          ">
-            <div style="font-size:3rem;opacity:0.2">𒀭</div>
-            <div>Bir tanrıya tıklayarak<br>detaylarını görüntüleyin</div>
-          </div>
+        <!-- SAĞ PANEL: Kart Izgarası -->
+        <div id="tanrilar-kart-alani">
+          <div id="tanri-kart-izgara"></div>
         </div>
 
       </div>
     </div>
 
-    <!-- ════════════════════════════════════════
-         CUNEİFORM ALFABESİ SEKMESİ
-         ════════════════════════════════════════ -->
+
+
     <div id="cuneiform-sekme" class="sekme-panel">
 
       <!-- Üst Kontrol Çubuğu -->
@@ -521,15 +497,15 @@
 <script src="https://d3js.org/d3.v7.min.js"></script>
 
 <!-- VERİ DOSYALARI -->
-<script src="data/cities.js"></script>
-<script src="data/cuneiform_signs.js"></script>
-<script src="data/tanrilar_veri.js"></script>
+<script src="data/cities.js?v=2"></script>
+<script src="data/cuneiform_signs.js?v=2"></script>
+<script src="data/tanrilar_veri.js?v=2"></script>
 
 <!-- MODÜLLER -->
-<script src="js/map.js"></script>
-<script src="js/tanrilar.js"></script>
-<script src="js/cuneiform.js"></script>
-<script src="js/app.js"></script>
+<script src="js/map.js?v=2"></script>
+<script src="js/tanrilar.js?v=2"></script>
+<script src="js/cuneiform.js?v=2"></script>
+<script src="js/app.js?v=2"></script>
 
 </body>
 </html>

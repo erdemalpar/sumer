@@ -1,3 +1,4 @@
+/* v=20260414_233732 */
 /* === SÜMER TANRILAR MODÜLÜ v2 ===
    Kart tabanlı galeri + mini SVG soy ağacı
    Anlaşılır, etkileşimli arayüz
@@ -7,12 +8,12 @@ const tanrilarModul = (() => {
 
   // ── Sabitler ────────────────────────────────────
   const KATEGORI = {
-    Creator:        { renk: '#E91E63', simge: '🌌', tr: 'Yaratıcı' },
-    Ruling:         { renk: '#FFD700', simge: '👑', tr: 'Yönetici' },
-    Major:          { renk: '#9C27B0', simge: '⭐', tr: 'Büyük' },
-    Minor:          { renk: '#607D8B', simge: '✦', tr: 'Küçük' },
-    Demigod:        { renk: '#FF5722', simge: '⚔️', tr: 'Yarı Tanrı' },
-    'Demon/Spirit': { renk: '#795548', simge: '👁', tr: 'Demon/Ruh' }
+    Creator: { renk: '#E91E63', simge: '🌌', tr: 'Yaratıcı Tanrılar' },
+    Ruling: { renk: '#FFD700', simge: '👑', tr: 'Yönetici Tanrılar' },
+    Major: { renk: '#9C27B0', simge: '⭐', tr: 'Büyük Tanrılar' },
+    Minor: { renk: '#607D8B', simge: '✦', tr: 'Küçük Tanrılar' },
+    Demigod: { renk: '#FF5722', simge: '⚔️', tr: 'Yarı Tanrılar' },
+    'Demon/Spirit': { renk: '#795548', simge: '👁', tr: 'Demonlar/Ruhlar' }
   };
 
   const CINSIYET = {
@@ -22,21 +23,21 @@ const tanrilarModul = (() => {
   };
 
   const TANRI_SEMBOLLERI = {
-    'An':          '☽', 'Enlil':       '🌪', 'Enki':        '🌊',
-    'Ninhursag':   '🌿', 'İnanna':      '⭐', 'Inanna':      '⭐',
-    'Nanna':       '🌙', 'Utu':         '☀', 'Adad':        '⛈',
-    'Nergal':      '💀', 'Ereşkigal':   '🕷', 'Dumuzi':      '🐑',
-    'Ninurta':     '⚔', 'Marduk':      '🐉', 'Gilgamesh':   '🦁',
-    'Ki':          '🌍', 'Nammu':       '🌊', 'Abzu':        '💧',
-    'Kutha':       '🔥', 'Nabu':        '📜',
-    default:       '𒀭'
+    'An': '☽', 'Enlil': '🌪', 'Enki': '🌊',
+    'Ninhursag': '🌿', 'İnanna': '⭐', 'Inanna': '⭐',
+    'Nanna': '🌙', 'Utu': '☀', 'Adad': '⛈',
+    'Nergal': '💀', 'Ereşkigal': '🕷', 'Dumuzi': '🐑',
+    'Ninurta': '⚔', 'Marduk': '🐉', 'Gilgamesh': '🦁',
+    'Ki': '🌍', 'Nammu': '🌊', 'Abzu': '💧',
+    'Kutha': '🔥', 'Nabu': '📜',
+    default: '𒀭'
   };
 
   let tumTanrilar = [];
-  let tanriHarita  = {};
+  let tanriHarita = {};
   let filtreKategori = 'Hepsi';
-  let aramaMetni     = '';
-  let seciliTanri    = null;
+  let aramaMetni = '';
+  let seciliTanri = null;
 
   // ── JSON Yükle & Temizle ────────────────────────
   async function yukle() {
@@ -51,15 +52,37 @@ const tanrilarModul = (() => {
 
       tumTanrilar = [
         ...(veri.creator_primordial || []),
-        ...(veri.ruling_major_gods  || []),
-        ...(veri.major_minor_gods   || []),
-        ...(veri.demons_spirits     || [])
-      ].map(t => ({
-        ...t,
-        parents:  Array.isArray(t.parents)  ? t.parents.filter(Boolean)  : [],
-        spouse:   Array.isArray(t.spouse)   ? t.spouse.filter(Boolean)   : [],
-        children: Array.isArray(t.children) ? t.children.filter(Boolean) : []
-      }));
+        ...(veri.ruling_major_gods || []),
+        ...(veri.major_minor_gods || []),
+        ...(veri.demons_spirits || [])
+      ].map(t => {
+        // Category normalleştirme: veri dosyasındaki farklı değerleri
+        // KATEGORI haritasındaki anahtarlara eşle
+        const katNorm = {
+          'Primordial':  'Creator',
+          'Ruling':      'Ruling',
+          'Major':       'Major',
+          'Minor':       'Minor',
+          'Demigod':     'Demigod',
+          'Demon':       'Demon/Spirit',
+          'Spirit':      'Demon/Spirit'
+        };
+        return {
+          ...t,
+          category: katNorm[t.category] || t.category,
+          parents:  Array.isArray(t.parents)  ? t.parents.filter(Boolean)  : [],
+          spouse:   Array.isArray(t.spouse)   ? t.spouse.filter(Boolean)   : [],
+          children: Array.isArray(t.children) ? t.children.filter(Boolean) : []
+        };
+      });
+
+      // Tekrarlananları temizle: aynı name birden fazla dizide olabilir
+      const gorulenIsimler = new Set();
+      tumTanrilar = tumTanrilar.filter(t => {
+        if (gorulenIsimler.has(t.name)) return false;
+        gorulenIsimler.add(t.name);
+        return true;
+      });
 
       tumTanrilar.forEach(t => {
         tanriHarita[t.name] = t;
@@ -72,63 +95,35 @@ const tanrilarModul = (() => {
   }
 
   // ── UI Oluştur ───────────────────────────────────
+  // HTML yapısı index.html'de -- JS sadece kategorileri ve kartları doldurur
   function uiOlustur() {
-    const kapsayici = document.getElementById('tanrilar-sekme');
+    filtreButonlariOlustur();
+    kartlariGoster();
+  }
+
+  // ── Filtre Butonları ─────────────────────────────
+  function filtreButonlariOlustur() {
+    const kapsayici = document.getElementById('tanri-kategoriler');
     if (!kapsayici) return;
 
-    kapsayici.innerHTML = `
-      <div id="tanrilar-ic">
-        <!-- SOL PANEL: Filtreler + Detay -->
-        <div id="tanrilar-sol">
-          <!-- Arama -->
-          <div class="t-arama-kutusu">
-            <span class="t-arama-ikon">🔍</span>
-            <input
-              id="tanri-arama"
-              type="search"
-              placeholder="Tanrı ara…"
-              oninput="tanrilarModul._aramaGuncelle(this.value)"
-            />
-          </div>
+    const katBtnler = Object.entries(KATEGORI).map(([kat, info]) => {
+      const sayi = tumTanrilar.filter(t => t.category === kat).length;
+      return '<button class="t-kat-btn" data-kat="' + kat + '"' +
+        ' onclick="tanrilarModul.filtrele(\'' + kat + '\', this)"' +
+        ' style="--kat-renk:' + info.renk + '">' +
+        '<span class="t-kat-ikon">' + info.simge + '</span>' +
+        '<span>' + info.tr + '</span>' +
+        '<span class="t-kat-sayi">' + sayi + '</span>' +
+        '</button>';
+    }).join('');
 
-          <!-- Kategori Filtreleri -->
-          <div class="t-kategoriler">
-            <button class="t-kat-btn aktif" data-kat="Hepsi"
-              onclick="tanrilarModul.filtrele('Hepsi', this)">
-              <span class="t-kat-ikon">𒀭</span>
-              <span>Tümü</span>
-              <span class="t-kat-sayi">${tumTanrilar.length}</span>
-            </button>
-            ${Object.entries(KATEGORI).map(([kat, info]) => {
-              const sayi = tumTanrilar.filter(t => t.category === kat).length;
-              return `
-                <button class="t-kat-btn" data-kat="${kat}"
-                  onclick="tanrilarModul.filtrele('${kat}', this)"
-                  style="--kat-renk:${info.renk}">
-                  <span class="t-kat-ikon">${info.simge}</span>
-                  <span>${info.tr}</span>
-                  <span class="t-kat-sayi">${sayi}</span>
-                </button>`;
-            }).join('')}
-          </div>
-
-          <!-- Tanrı Detay Alanı -->
-          <div id="tanri-detay-alani">
-            <div class="t-detay-bos">
-              <div class="t-detay-bos-ikon">𒀭</div>
-              <div>Bir tanrı kartına tıklayarak<br>soyağacını ve bilgilerini görün</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SAĞ PANEL: Kart Izgarası -->
-        <div id="tanrilar-kart-alani">
-          <div id="tanri-kart-izgara"></div>
-        </div>
-      </div>
-    `;
-
-    kartlariGoster();
+    kapsayici.innerHTML =
+      '<button class="t-kat-btn aktif" data-kat="Hepsi"' +
+      ' onclick="tanrilarModul.filtrele(\'Hepsi\', this)">' +
+      '<span class="t-kat-ikon">𒀭</span>' +
+      '<span>Tümü</span>' +
+      '<span class="t-kat-sayi">' + tumTanrilar.length + '</span>' +
+      '</button>' + katBtnler;
   }
 
   // ── Kart Izgara Oluştur ──────────────────────────
@@ -155,9 +150,10 @@ const tanrilarModul = (() => {
 
   function filtreliTanrilar() {
     return tumTanrilar.filter(t => {
-      const katUyum  = filtreKategori === 'Hepsi' || t.category === filtreKategori;
-      const araUyum  = aramaMetni === '' || [
-        t.name, t.name_ak, t.role, t.city, t.description
+      const katUyum = filtreKategori === 'Hepsi' || t.category === filtreKategori;
+      // description aramadan çıkarıldı — sadece isim, Akkadca adı, rol ve şehir
+      const araUyum = aramaMetni === '' || [
+        t.name, t.name_ak, t.role, t.city
       ].some(a => a && a.toLowerCase().includes(aramaMetni));
       return katUyum && araUyum;
     });
@@ -165,10 +161,10 @@ const tanrilarModul = (() => {
 
   // ── Tek Tanrı Kartı ─────────────────────────────
   function tanriKartOlustur(tanri, indeks) {
-    const kat     = KATEGORI[tanri.category] || KATEGORI.Minor;
-    const cins    = CINSIYET[tanri.gender]   || CINSIYET.N;
-    const sembol  = TANRI_SEMBOLLERI[tanri.name] || TANRI_SEMBOLLERI.default;
-    const aktif   = seciliTanri && seciliTanri.name === tanri.name;
+    const kat = KATEGORI[tanri.category] || KATEGORI.Minor;
+    const cins = CINSIYET[tanri.gender] || CINSIYET.N;
+    const sembol = TANRI_SEMBOLLERI[tanri.name] || TANRI_SEMBOLLERI.default;
+    const aktif = seciliTanri && seciliTanri.name === tanri.name;
 
     const div = document.createElement('div');
     div.className = `t-kart${aktif ? ' aktif-kart' : ''}`;
@@ -217,8 +213,8 @@ const tanrilarModul = (() => {
     const alan = document.getElementById('tanri-detay-alani');
     if (!alan) return;
 
-    const kat  = KATEGORI[tanri.category] || KATEGORI.Minor;
-    const cins = CINSIYET[tanri.gender]   || CINSIYET.N;
+    const kat = KATEGORI[tanri.category] || KATEGORI.Minor;
+    const cins = CINSIYET[tanri.gender] || CINSIYET.N;
     const sembol = TANRI_SEMBOLLERI[tanri.name] || TANRI_SEMBOLLERI.default;
 
     // Ebeveyn/çocuk/eş rozetleri
@@ -227,9 +223,9 @@ const tanrilarModul = (() => {
       const rozetler = liste.filter(a => a && a.trim()).map(ad => {
         const vari = tanriHarita[ad];
         return `<span class="t-detay-rozet"
-          style="background:${renk}18;color:${renk};border:1px solid ${renk}44;cursor:${vari ? 'pointer':''}"
+          style="background:${renk}18;color:${renk};border:1px solid ${renk}44;cursor:${vari ? 'pointer' : ''}"
           onclick="tanrilarModul._bagliTanriGit('${ad}')"
-          title="${vari ? (vari.role||'') : ''}">
+          title="${vari ? (vari.role || '') : ''}">
           ${ad}
         </span>`;
       }).join('');
@@ -271,9 +267,9 @@ const tanrilarModul = (() => {
           </div>
         </div>
 
-        ${rozetListesi(tanri.parents,  'ebeveyn', '#4FC3F7', '👑 Ebeveynler')}
-        ${rozetListesi(tanri.spouse,   'es',      '#F48FB1', '💛 Eşler')}
-        ${rozetListesi(tanri.children, 'cocuk',   '#A5D6A7', '🌱 Çocuklar')}
+        ${rozetListesi(tanri.parents, 'ebeveyn', '#4FC3F7', '👑 Ebeveynler')}
+        ${rozetListesi(tanri.spouse, 'es', '#F48FB1', '💛 Eşler')}
+        ${rozetListesi(tanri.children, 'cocuk', '#A5D6A7', '🌱 Çocuklar')}
 
         <!-- Mini Soy Ağacı SVG -->
         <div class="t-agac-baslik">🌳 Soy Ağacı</div>
@@ -287,14 +283,14 @@ const tanrilarModul = (() => {
   // ── Mini SVG Soy Ağacı ──────────────────────────
   function miniAgacCiz(tanri) {
     const genislik = 230;
-    const kutu_y   = 26;
+    const kutu_y = 26;
     const kutu_bos = 10;
-    const aralik   = 80;
+    const aralik = 80;
     const merkez_x = genislik / 2;
 
-    const ebeveynler = (tanri.parents  || []).filter(a => a && tanriHarita[a]);
-    const cocuklar   = (tanri.children || []).filter(a => a && tanriHarita[a]).slice(0, 4);
-    const esler      = (tanri.spouse   || []).filter(a => a && tanriHarita[a]);
+    const ebeveynler = (tanri.parents || []).filter(a => a && tanriHarita[a]);
+    const cocuklar = (tanri.children || []).filter(a => a && tanriHarita[a]).slice(0, 4);
+    const esler = (tanri.spouse || []).filter(a => a && tanriHarita[a]);
 
     const toplam_yukseklik = 30
       + (ebeveynler.length > 0 ? aralik : 0)
@@ -307,7 +303,7 @@ const tanrilarModul = (() => {
 
     // — Ebeveynler Satırı —
     if (ebeveynler.length > 0) {
-      const eb_y  = 5;
+      const eb_y = 5;
       const eb_genislik = genislik / ebeveynler.length;
 
       ebeveynler.forEach((ad, i) => {
@@ -315,7 +311,7 @@ const tanrilarModul = (() => {
         const eb_kat = KATEGORI[(tanriHarita[ad] || {}).category] || KATEGORI.Minor;
 
         // Bağlantı çizgisi → ana düğüm
-        svg_icerik += `<line x1="${x}" y1="${eb_y + kutu_y/2 + 5}" x2="${merkez_x}" y2="${eb_y + aralik - 5}"
+        svg_icerik += `<line x1="${x}" y1="${eb_y + kutu_y / 2 + 5}" x2="${merkez_x}" y2="${eb_y + aralik - 5}"
           stroke="${eb_kat.renk}" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="4 2"/>`;
 
         // Kutu
@@ -324,14 +320,14 @@ const tanrilarModul = (() => {
             <rect x="${x - 40}" y="${eb_y}" width="80" height="22" rx="11"
               fill="${eb_kat.renk}22" stroke="${eb_kat.renk}" stroke-width="1.2"/>
             <text x="${x}" y="${eb_y + 14}" text-anchor="middle"
-              font-family="Cinzel,serif" font-size="9" fill="${eb_kat.renk}">${ad.length > 10 ? ad.slice(0,9)+'…' : ad}</text>
+              font-family="Cinzel,serif" font-size="9" fill="${eb_kat.renk}">${ad.length > 10 ? ad.slice(0, 9) + '…' : ad}</text>
           </g>`;
       });
     }
 
     // — Ana Tanrı —
     const merkez_y = (ebeveynler.length > 0 ? aralik : 0) + 5;
-    const ana_kat  = KATEGORI[tanri.category] || KATEGORI.Minor;
+    const ana_kat = KATEGORI[tanri.category] || KATEGORI.Minor;
 
     svg_icerik += `
       <g>
@@ -339,7 +335,7 @@ const tanrilarModul = (() => {
           fill="${ana_kat.renk}33" stroke="${ana_kat.renk}" stroke-width="2"/>
         <text x="${merkez_x}" y="${merkez_y + 12}" text-anchor="middle"
           font-family="Cinzel Decorative,serif" font-size="10" fill="${ana_kat.renk}" font-weight="700">
-          ${tanri.name.length > 10 ? tanri.name.slice(0,9)+'…' : tanri.name}
+          ${tanri.name.length > 10 ? tanri.name.slice(0, 9) + '…' : tanri.name}
         </text>
         <text x="${merkez_x}" y="${merkez_y + 23}" text-anchor="middle"
           font-family="serif" font-size="8" fill="${ana_kat.renk}99">
@@ -359,28 +355,28 @@ const tanrilarModul = (() => {
             <rect x="${es_x - 42}" y="${merkez_y + 4}" width="84" height="20" rx="10"
               fill="#F48FB122" stroke="#F48FB1" stroke-width="1"/>
             <text x="${es_x}" y="${merkez_y + 17}" text-anchor="middle"
-              font-family="Cinzel,serif" font-size="8.5" fill="#F48FB1">${ad.length > 9 ? ad.slice(0,8)+'…' : ad}</text>
+              font-family="Cinzel,serif" font-size="8.5" fill="#F48FB1">${ad.length > 9 ? ad.slice(0, 8) + '…' : ad}</text>
           </g>`;
       });
     }
 
     // — Çocuklar Satırı —
     if (cocuklar.length > 0) {
-      const co_y      = merkez_y + kutu_y + aralik - 10;
+      const co_y = merkez_y + kutu_y + aralik - 10;
       const co_genislik = genislik / cocuklar.length;
 
       // Ana düğümden çizgi
       svg_icerik += `<line x1="${merkez_x}" y1="${merkez_y + kutu_y}" x2="${merkez_x}" y2="${merkez_y + kutu_y + aralik / 2}"
         stroke="${ana_kat.renk}" stroke-width="1.5" stroke-opacity="0.4"/>
-      <line x1="${co_genislik/2}" y1="${merkez_y + kutu_y + aralik/2}"
-        x2="${co_genislik * (cocuklar.length - 0.5)}" y2="${merkez_y + kutu_y + aralik/2}"
+      <line x1="${co_genislik / 2}" y1="${merkez_y + kutu_y + aralik / 2}"
+        x2="${co_genislik * (cocuklar.length - 0.5)}" y2="${merkez_y + kutu_y + aralik / 2}"
         stroke="${ana_kat.renk}" stroke-width="1" stroke-opacity="0.3"/>`;
 
       cocuklar.forEach((ad, i) => {
-        const x    = co_genislik * i + co_genislik / 2;
+        const x = co_genislik * i + co_genislik / 2;
         const co_kat = KATEGORI[(tanriHarita[ad] || {}).category] || KATEGORI.Minor;
 
-        svg_icerik += `<line x1="${x}" y1="${merkez_y + kutu_y + aralik/2}" x2="${x}" y2="${co_y - 5}"
+        svg_icerik += `<line x1="${x}" y1="${merkez_y + kutu_y + aralik / 2}" x2="${x}" y2="${co_y - 5}"
           stroke="${co_kat.renk}" stroke-width="1.2" stroke-opacity="0.4"/>`;
 
         svg_icerik += `
@@ -388,7 +384,7 @@ const tanrilarModul = (() => {
             <rect x="${x - 38}" y="${co_y}" width="76" height="22" rx="11"
               fill="${co_kat.renk}22" stroke="${co_kat.renk}" stroke-width="1.2"/>
             <text x="${x}" y="${co_y + 14}" text-anchor="middle"
-              font-family="Cinzel,serif" font-size="9" fill="${co_kat.renk}">${ad.length > 9 ? ad.slice(0,8)+'…' : ad}</text>
+              font-family="Cinzel,serif" font-size="9" fill="${co_kat.renk}">${ad.length > 9 ? ad.slice(0, 8) + '…' : ad}</text>
           </g>`;
       });
     }

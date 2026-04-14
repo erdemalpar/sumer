@@ -2011,7 +2011,7 @@ const TANRILAR_JSON = {
     {
       "name": "Galla",
       "gender": "N",
-      "role": "Ölüler Diyarı Cinleri",
+      "role": "Cehennem Muhafızı / Ruh Toplayıcı",
       "parents": [
         "Ereşkigal"
       ],
@@ -2019,7 +2019,7 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Demon",
-      "description": "Ölüler diyarından kaçırıcı cinler."
+      "description": "Ölüler diyarından gelen, ruhları toplayan demonlar. İnanna'nın ölüler diyarına inişinde onu yakalayan yedi Galla vardır. Dumuzi'yi de arayıp yakalamışlardır."
     },
     {
       "name": "Udug",
@@ -2133,14 +2133,15 @@ const TANRILAR_JSON = {
     },
     {
       "name": "Edimmu",
+      "name_ak": "Gidim",
       "gender": "N",
-      "role": "Ölü Ruhlar",
+      "role": "Ölü Ruhu / Yürüyen Ölü",
       "parents": [],
       "spouse": [],
       "children": [],
       "city": "",
-      "category": "Spirit",
-      "description": "Gömülmüş ama huzursuz ruhlar."
+      "category": "Demon",
+      "description": "Gömülmemiş veya haksız öldürülmüş kişilerin ruhları. Kapılara ve pencerelere dadanır, ev halkını rahatsız eder. Gidim olarak da bilinir."
     },
     {
       "name": "Ahhazu",
@@ -2183,7 +2184,7 @@ const TANRILAR_JSON = {
       "spouse": [],
       "children": [],
       "city": "",
-      "category": "Demon",
+      "category": "Demon/Spirit",
       "description": "Kadınları taciz eden."
     },
     {
@@ -2498,6 +2499,7 @@ const TANRILAR_JSON = {
     },
     {
       "name": "Alad",
+      "name_ak": "Shedu",
       "gender": "N",
       "role": "Koruyucu Ruh",
       "parents": [],
@@ -5336,6 +5338,74 @@ const TANRILAR_JSON = {
       "city": "Eridu",
       "category": "Demigod",
       "description": "Apkallu."
+    },
+    {
+      "name": "Namtaru",
+      "name_ak": "Namtar",
+      "gender": "M",
+      "role": "Kader Ruhu / Ölüm Getiren",
+      "parents": ["Ereşkigal"],
+      "spouse": [],
+      "children": [],
+      "city": "",
+      "category": "Demon",
+      "description": "Ereşkigal'in ölüler diyarındaki hizmetkarı ve kader belirleyicisi. 60 çeşit hastalığı insanlar arasında yayar. İnanna'nın inişinde önemli rol oynar."
+    },
+    {
+      "name": "Lama",
+      "name_ak": "Lamassu",
+      "gender": "F",
+      "role": "Koruyucu Tanrıça / Yardım Ruhu",
+      "parents": [],
+      "spouse": [],
+      "children": [],
+      "city": "",
+      "category": "Spirit",
+      "description": "Bireysel koruyucu ruh olarak işlev gören tanrıça. Kralın veya kişinin başında durur, ona yardım eder. İkonografide kanatlı kadın figürü olarak tasvir edilir."
+    },
+    {
+      "name": "Udug Hul",
+      "gender": "N",
+      "role": "Kötü Demon",
+      "parents": [],
+      "spouse": [],
+      "children": [],
+      "city": "",
+      "category": "Demon",
+      "description": "Hastalık, felaket ve şanssızlık getiren kesinlikle kötü ruhlar. Namburbi ritüelleri bunlara karşı koruma sağlamak için hazırlanmıştır."
+    },
+    {
+      "name": "Lil",
+      "gender": "N",
+      "role": "Rüzgar Ruhu / Gizli Ruh",
+      "parents": [],
+      "spouse": [],
+      "children": [],
+      "city": "",
+      "category": "Spirit",
+      "description": "Rüzgar ve hava ile ilgili ruhlar. İyi veya kötü olabilir. Lilitu (gece ruhu) ve Sümer demonolojisindeki hava ruhlarının atası."
+    },
+    {
+      "name": "Etemmu",
+      "gender": "N",
+      "role": "Yas Ruhu / Ağlayan Ölü",
+      "parents": [],
+      "spouse": [],
+      "children": [],
+      "city": "",
+      "category": "Spirit",
+      "description": "Gömülmüş fakat cenaze törenleri yapılmış, aile tarafından anılan ölü ruhları. Edimmu'dan farklı olarak yaşayanlarla barışık ilişki kurabilirler."
+    },
+    {
+      "name": "Ki Sikil",
+      "gender": "F",
+      "role": "Saf Yer Ruhu / Temiz Peri",
+      "parents": [],
+      "spouse": [],
+      "children": [],
+      "city": "",
+      "category": "Spirit",
+      "description": "Bahçelerde, su kaynaklarında ve kutsal yerlerde yaşayan, temizlik ve bereket getiren ruhlar. Ki-sikil-lil-la-ke varlıklarıyla ilişkili."
     }
   ]
 };
