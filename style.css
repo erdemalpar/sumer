@@ -1040,6 +1040,33 @@ body::after {
   color: var(--metin-soluk);
 }
 
+/* Demon/Ruh Yaratıcı Satırı */
+.t-kart-yaratici {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin: 0.2rem 0;
+  font-size: 0.6rem;
+  color: #9B59B6;
+}
+
+.t-yaratici-ikon {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.t-yaratici-isimler {
+  color: #BB8FCE;
+  font-family: 'Cinzel', serif;
+  font-size: 0.6rem;
+}
+
+.t-yaratici-kur {
+  font-size: 0.55rem;
+  opacity: 0.7;
+  color: #7F8C8D;
+}
+
 /* Grup Etiket Satırı */
 .t-grup-satirlari {
   display: flex;

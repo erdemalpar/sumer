@@ -193,6 +193,20 @@ const tanrilarModul = (() => {
         }).join('')
       : '';
 
+    // Yaratıcı satırı — sadece Demon/Spirit kartlarında göster
+    const isDemon = tanri.category === 'Demon/Spirit' || tanri.category === 'Demon' || tanri.category === 'Spirit';
+    const yaraticilar = Array.isArray(tanri.parents) ? tanri.parents.filter(p => p && p !== 'Kur') : [];
+    const kur = Array.isArray(tanri.parents) && tanri.parents.includes('Kur');
+    const yaraticiHtml = isDemon && (yaraticilar.length > 0 || kur)
+      ? '<div class="t-kart-yaratici">' +
+        '<span class="t-yaratici-ikon">🔱</span>' +
+        (yaraticilar.length > 0
+          ? '<span class="t-yaratici-isimler">' + yaraticilar.join(', ') + '</span>'
+          : '') +
+        (kur ? '<span class="t-yaratici-kur" title="Ölüler Diyarından Geliyor">⬛ Kur</span>' : '') +
+        '</div>'
+      : '';
+
     div.innerHTML = `
       <div class="t-kart-renk-serit"></div>
       <div class="t-kart-ic">
@@ -203,6 +217,7 @@ const tanrilarModul = (() => {
         <div class="t-kart-isim">${tanri.name}</div>
         ${tanri.name_ak ? `<div class="t-kart-akad">${tanri.name_ak}</div>` : ''}
         <div class="t-kart-rol">${(tanri.role || '').split(',')[0].trim()}</div>
+        ${yaraticiHtml}
         <div class="t-kart-alt">
           <span class="t-kat-pilule" style="background:${kat.renk}22;color:${kat.renk};border:1px solid ${kat.renk}44">
             ${kat.simge} ${kat.tr}
@@ -289,7 +304,10 @@ const tanrilarModul = (() => {
           </div>
         </div>
 
-        ${rozetListesi(tanri.parents, 'ebeveyn', '#4FC3F7', '👑 Ebeveynler')}
+        ${rozetListesi(tanri.parents, 'ebeveyn', '#BE90D4',
+          (tanri.category === 'Demon/Spirit' || tanri.category === 'Demon' || tanri.category === 'Spirit')
+            ? '🔱 Yaratıcı / Kaynak'
+            : '👑 Ebeveynler')}
         ${rozetListesi(tanri.spouse, 'es', '#F48FB1', '💛 Eşler')}
         ${rozetListesi(tanri.children, 'cocuk', '#A5D6A7', '🌱 Çocuklar')}
 
@@ -310,7 +328,9 @@ const tanrilarModul = (() => {
     const aralik = 80;
     const merkez_x = genislik / 2;
 
-    const ebeveynler = (tanri.parents || []).filter(a => a && tanriHarita[a]);
+    // Ebeveynler: tanriHarita'da olanlar + olmayanlar (hayalet düğüm)
+    const ebeveynler_tam = (tanri.parents || []).filter(a => a && a.trim());
+    const ebeveynler = ebeveynler_tam; // artık tüm ebeveynleri göster
     const cocuklar = (tanri.children || []).filter(a => a && tanriHarita[a]).slice(0, 4);
     const esler = (tanri.spouse || []).filter(a => a && tanriHarita[a]);
 
@@ -330,19 +350,27 @@ const tanrilarModul = (() => {
 
       ebeveynler.forEach((ad, i) => {
         const x = eb_genislik * i + eb_genislik / 2;
-        const eb_kat = KATEGORI[(tanriHarita[ad] || {}).category] || KATEGORI.Minor;
+        const varMi = !!tanriHarita[ad];
+        const eb_kat = varMi
+          ? (KATEGORI[(tanriHarita[ad] || {}).category] || KATEGORI.Minor)
+          : { renk: '#888888' };  // bilinmeyen → gri
 
         // Bağlantı çizgisi → ana düğüm
         svg_icerik += `<line x1="${x}" y1="${eb_y + kutu_y / 2 + 5}" x2="${merkez_x}" y2="${eb_y + aralik - 5}"
-          stroke="${eb_kat.renk}" stroke-width="1.5" stroke-opacity="0.5" stroke-dasharray="4 2"/>`;
+          stroke="${eb_kat.renk}" stroke-width="1.5" stroke-opacity="${varMi ? 0.5 : 0.3}" stroke-dasharray="${varMi ? '4 2' : '2 3'}"/>`;
 
-        // Kutu
+        // Kutu — bilinmeyen ebeveyn: kesik çizgi kenarlı, gri
         svg_icerik += `
-          <g onclick="tanrilarModul._bagliTanriGit('${ad}')" style="cursor:pointer">
+          <g ${varMi ? `onclick="tanrilarModul._bagliTanriGit('${ad}')" style="cursor:pointer"` : 'style="cursor:default"'}>
             <rect x="${x - 40}" y="${eb_y}" width="80" height="22" rx="11"
-              fill="${eb_kat.renk}22" stroke="${eb_kat.renk}" stroke-width="1.2"/>
+              fill="${eb_kat.renk}${varMi ? '22' : '11'}"
+              stroke="${eb_kat.renk}" stroke-width="${varMi ? 1.2 : 0.8}"
+              stroke-dasharray="${varMi ? 'none' : '3 2'}"/>
             <text x="${x}" y="${eb_y + 14}" text-anchor="middle"
-              font-family="Cinzel,serif" font-size="9" fill="${eb_kat.renk}">${ad.length > 10 ? ad.slice(0, 9) + '…' : ad}</text>
+              font-family="Cinzel,serif" font-size="9"
+              fill="${eb_kat.renk}" opacity="${varMi ? 1 : 0.6}">
+              ${ad.length > 10 ? ad.slice(0, 9) + '…' : ad}
+            </text>
           </g>`;
       });
     }

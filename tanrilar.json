@@ -961,7 +961,7 @@
       "Dumuzi",
       "Gilgamesh (evlatlık/destansı)",
       "Belili",
-      "Gestinanna",
+      "Geshtinanna",
       "Gilgamesh"
     ],
     "city": "Uruk",
@@ -1271,7 +1271,7 @@
     ]
   },
   {
-    "name": "Gestinanna",
+    "name": "Geshtinanna",
     "name_ak": "Geshtinanna",
     "gender": "F",
     "role": "Üzüm, Rüyalar",
@@ -2502,21 +2502,6 @@
     ]
   },
   {
-    "name": "Belet-Seri",
-    "gender": "F",
-    "role": "Ölüler Diyarı Katibi",
-    "parents": [],
-    "spouse": [],
-    "children": [],
-    "city": "Uruk",
-    "category": "Minor",
-    "description": "Geshtinanna ile özdeş. / Katip.",
-    "gruplar": [
-      "Annunaki"
-    ],
-    "name_ak": ""
-  },
-  {
     "name": "Gubarra",
     "gender": "F",
     "role": "Step",
@@ -2870,24 +2855,6 @@
       "Mitolojik"
     ],
     "name_ak": ""
-  },
-  {
-    "name": "Ziusudra",
-    "name_ak": "Utnapiştim, Noa",
-    "gender": "M",
-    "role": "Tufan Kahramanı, Ölümsüzlük",
-    "parents": [
-      "Ubara-Tutu"
-    ],
-    "spouse": [],
-    "children": [],
-    "city": "Shuruppak",
-    "category": "Demigod",
-    "description": "Tufandan kurtulan, tanrılar tarafından ölümsüzlük verilen. / Tufandan kurtulan. / Tufan.",
-    "gruplar": [
-      "Apkallu",
-      "Mitolojik"
-    ]
   },
   {
     "name": "Etana",
@@ -3251,9 +3218,9 @@
   },
   {
     "name": "Utnapishtim",
-    "name_ak": "Ziusudra",
+    "name_ak": "Ziusudra/Atrahasis/Nuh Peygamber",
     "gender": "M",
-    "role": "Ölümsüzlük",
+    "role": "Ölümsüzlük/Tufan Kahramanı",
     "parents": [
       "Ubara-Tutu"
     ],
@@ -3263,7 +3230,8 @@
     "category": "Demigod",
     "description": "Tufan. / Ölümsüzlük.",
     "gruplar": [
-      "Mitolojik"
+      "Mitolojik",
+      "Apkallu"
     ]
   },
   {
@@ -3367,7 +3335,10 @@
     "name": "Gugalanna",
     "gender": "M",
     "role": "Gök Boğa, Ölüler Diyarı",
-    "parents": [],
+    "parents": [
+      "An",
+      "Ereşkigal"
+    ],
     "spouse": [
       "Ereşkigal (önce)",
       "Ereshkigal"
@@ -3473,7 +3444,9 @@
     "name": "Rabisu",
     "gender": "N",
     "role": "Kapı Kenarı Cinleri / Pusu",
-    "parents": [],
+    "parents": [
+      "Kur"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3489,7 +3462,9 @@
     "name_ak": "Gidim",
     "gender": "N",
     "role": "Ölü Ruhu / Yürüyen Ölü",
-    "parents": [],
+    "parents": [
+      "Kur"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3503,7 +3478,9 @@
     "name": "Ahhazu",
     "gender": "M",
     "role": "Kapma Cinleri",
-    "parents": [],
+    "parents": [
+      "Kur"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3517,7 +3494,10 @@
     "name": "Lilitu",
     "gender": "F",
     "role": "Rüzgar İblisi",
-    "parents": [],
+    "parents": [
+      "Enlil",
+      "Lil"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3531,7 +3511,10 @@
     "name": "Ardat Lili",
     "gender": "F",
     "role": "Gençlik İblisi",
-    "parents": [],
+    "parents": [
+      "Enlil",
+      "Lil"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3545,7 +3528,9 @@
     "name": "Sagul",
     "gender": "M",
     "role": "Otobur İblis",
-    "parents": [],
+    "parents": [
+      "Kur"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3559,7 +3544,9 @@
     "name": "Mulla",
     "gender": "N",
     "role": "Sinir Cinleri",
-    "parents": [],
+    "parents": [
+      "Kur"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3573,7 +3560,9 @@
     "name": "Ugallu",
     "gender": "M",
     "role": "Aslan-İnsan / Büyük Aslan",
-    "parents": [],
+    "parents": [
+      "Enlil"
+    ],
     "spouse": [
       "Ninurta (bazı)"
     ],
@@ -3592,7 +3581,10 @@
     "name_ak": "Imdugud",
     "gender": "M",
     "role": "Gök Kartalı / Kuş Canavar",
-    "parents": [],
+    "parents": [
+      "An",
+      "Ki"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3625,7 +3617,10 @@
     "name": "Başmu",
     "gender": "N",
     "role": "Horned Yılan",
-    "parents": [],
+    "parents": [
+      "Tiamat",
+      "Apsu"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3640,7 +3635,10 @@
     "name": "Mušmaḫḫū",
     "gender": "N",
     "role": "Yılan-Ejderha",
-    "parents": [],
+    "parents": [
+      "Tiamat",
+      "Apsu"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3673,7 +3671,9 @@
     "name": "Hushbishag",
     "gender": "F",
     "role": "Ölüler Diyarı",
-    "parents": [],
+    "parents": [
+      "Ereşkigal"
+    ],
     "spouse": [
       "Namtar"
     ],
@@ -3689,7 +3689,10 @@
     "name": "Erra",
     "gender": "M",
     "role": "Savaş, Öfke",
-    "parents": [],
+    "parents": [
+      "Anu",
+      "An"
+    ],
     "spouse": [],
     "children": [],
     "city": "Kutha",
@@ -3720,7 +3723,9 @@
     "name": "Udug Hul",
     "gender": "N",
     "role": "Kötü Demon",
-    "parents": [],
+    "parents": [
+      "Kur"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3734,7 +3739,9 @@
     "name": "Udug",
     "gender": "N",
     "role": "Koruyucu Cinler",
-    "parents": [],
+    "parents": [
+      "Kur"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3749,7 +3756,9 @@
     "name": "Ekimmu",
     "gender": "N",
     "role": "Ölü Ruhlar",
-    "parents": [],
+    "parents": [
+      "Kur"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3764,7 +3773,9 @@
     "name": "Utukku",
     "gender": "N",
     "role": "Hayaletler",
-    "parents": [],
+    "parents": [
+      "Kur"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3779,7 +3790,9 @@
     "name": "Lamassu",
     "gender": "N",
     "role": "Koruyucu İnsan-Boğa-Kartal",
-    "parents": [],
+    "parents": [
+      "Enki"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3795,7 +3808,9 @@
     "name": "Shedu",
     "gender": "N",
     "role": "Koruyucu Boğa",
-    "parents": [],
+    "parents": [
+      "Enki"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3811,7 +3826,9 @@
     "name": "Kusarikku",
     "gender": "M",
     "role": "Boğa-İnsan",
-    "parents": [],
+    "parents": [
+      "Enki"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3825,7 +3842,10 @@
     "name": "Scorpion Men",
     "gender": "M",
     "role": "Dağ Bekçileri",
-    "parents": [],
+    "parents": [
+      "An",
+      "Ki"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3840,7 +3860,10 @@
     "name": "Sirrush",
     "gender": "N",
     "role": "Ejderha",
-    "parents": [],
+    "parents": [
+      "Tiamat",
+      "Apsu"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3854,7 +3877,10 @@
     "name": "Mušḫuššu",
     "gender": "N",
     "role": "Yılan-Ejderha",
-    "parents": [],
+    "parents": [
+      "Tiamat",
+      "Apsu"
+    ],
     "spouse": [],
     "children": [],
     "city": "Babil",
@@ -3868,7 +3894,9 @@
     "name": "Shullat",
     "gender": "M",
     "role": "Cin / Rüzgar",
-    "parents": [],
+    "parents": [
+      "Enlil"
+    ],
     "spouse": [
       "Hanish"
     ],
@@ -3885,7 +3913,9 @@
     "name": "Hanish",
     "gender": "M",
     "role": "Cin / Rüzgar",
-    "parents": [],
+    "parents": [
+      "Enlil"
+    ],
     "spouse": [
       "Shullat"
     ],
@@ -3902,7 +3932,10 @@
     "name": "Girtablullu",
     "gender": "N",
     "role": "Akrep-İnsan",
-    "parents": [],
+    "parents": [
+      "An",
+      "Ki"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3917,7 +3950,9 @@
     "name_ak": "Shedu",
     "gender": "N",
     "role": "Koruyucu Ruh",
-    "parents": [],
+    "parents": [
+      "Enki"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3931,7 +3966,9 @@
     "name": "Sukkal",
     "gender": "N",
     "role": "Vezir-Kategori",
-    "parents": [],
+    "parents": [
+      "Enlil"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3946,7 +3983,9 @@
     "name_ak": "Lamassu",
     "gender": "F",
     "role": "Koruyucu Tanrıça / Yardım Ruhu",
-    "parents": [],
+    "parents": [
+      "Enki"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3960,7 +3999,9 @@
     "name": "Lil",
     "gender": "N",
     "role": "Rüzgar Ruhu / Gizli Ruh",
-    "parents": [],
+    "parents": [
+      "Kur"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3974,7 +4015,9 @@
     "name": "Etemmu",
     "gender": "N",
     "role": "Yas Ruhu / Ağlayan Ölü",
-    "parents": [],
+    "parents": [
+      "Kur"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -3988,7 +4031,9 @@
     "name": "Ki Sikil",
     "gender": "F",
     "role": "Saf Yer Ruhu / Temiz Peri",
-    "parents": [],
+    "parents": [
+      "Ki"
+    ],
     "spouse": [],
     "children": [],
     "city": "",
@@ -4002,7 +4047,10 @@
     "name": "Irdu Lili",
     "gender": "M",
     "role": "Yatakta İblis",
-    "parents": [],
+    "parents": [
+      "Enlil",
+      "Lil"
+    ],
     "spouse": [],
     "children": [],
     "city": "",

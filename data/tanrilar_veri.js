@@ -979,7 +979,7 @@ const TANRILAR_JSON = {
         "Dumuzi",
         "Gilgamesh (evlatlık/destansı)",
         "Belili",
-        "Gestinanna",
+        "Geshtinanna",
         "Gilgamesh"
       ],
       "city": "Uruk",
@@ -1289,7 +1289,7 @@ const TANRILAR_JSON = {
       ]
     },
     {
-      "name": "Gestinanna",
+      "name": "Geshtinanna",
       "name_ak": "Geshtinanna",
       "gender": "F",
       "role": "Üzüm, Rüyalar",
@@ -2158,7 +2158,7 @@ const TANRILAR_JSON = {
       "gruplar": [
         "Annunaki"
       ],
-      "name_ak": ""
+      "name_ak": "Havva"
     },
     {
       "name": "Ninazimua",
@@ -2520,21 +2520,6 @@ const TANRILAR_JSON = {
       ]
     },
     {
-      "name": "Belet-Seri",
-      "gender": "F",
-      "role": "Ölüler Diyarı Katibi",
-      "parents": [],
-      "spouse": [],
-      "children": [],
-      "city": "Uruk",
-      "category": "Minor",
-      "description": "Geshtinanna ile özdeş. / Katip.",
-      "gruplar": [
-        "Annunaki"
-      ],
-      "name_ak": ""
-    },
-    {
       "name": "Gubarra",
       "gender": "F",
       "role": "Step",
@@ -2888,24 +2873,6 @@ const TANRILAR_JSON = {
         "Mitolojik"
       ],
       "name_ak": ""
-    },
-    {
-      "name": "Ziusudra",
-      "name_ak": "Utnapiştim, Noa",
-      "gender": "M",
-      "role": "Tufan Kahramanı, Ölümsüzlük",
-      "parents": [
-        "Ubara-Tutu"
-      ],
-      "spouse": [],
-      "children": [],
-      "city": "Shuruppak",
-      "category": "Demigod",
-      "description": "Tufandan kurtulan, tanrılar tarafından ölümsüzlük verilen. / Tufandan kurtulan. / Tufan.",
-      "gruplar": [
-        "Apkallu",
-        "Mitolojik"
-      ]
     },
     {
       "name": "Etana",
@@ -3269,9 +3236,9 @@ const TANRILAR_JSON = {
     },
     {
       "name": "Utnapishtim",
-      "name_ak": "Ziusudra",
+      "name_ak": "Ziusudra/Atrahasis/Nuh Peygamber",
       "gender": "M",
-      "role": "Ölümsüzlük",
+      "role": "Ölümsüzlük/Tufan Kahramanı",
       "parents": [
         "Ubara-Tutu"
       ],
@@ -3281,7 +3248,8 @@ const TANRILAR_JSON = {
       "category": "Demigod",
       "description": "Tufan. / Ölümsüzlük.",
       "gruplar": [
-        "Mitolojik"
+        "Mitolojik",
+        "Apkallu"
       ]
     },
     {
@@ -3387,7 +3355,10 @@ const TANRILAR_JSON = {
       "name": "Gugalanna",
       "gender": "M",
       "role": "Gök Boğa, Ölüler Diyarı",
-      "parents": [],
+      "parents": [
+        "An",
+        "Ereşkigal"
+      ],
       "spouse": [
         "Ereşkigal (önce)",
         "Ereshkigal"
@@ -3493,7 +3464,9 @@ const TANRILAR_JSON = {
       "name": "Rabisu",
       "gender": "N",
       "role": "Kapı Kenarı Cinleri / Pusu",
-      "parents": [],
+      "parents": [
+        "Kur"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3509,7 +3482,9 @@ const TANRILAR_JSON = {
       "name_ak": "Gidim",
       "gender": "N",
       "role": "Ölü Ruhu / Yürüyen Ölü",
-      "parents": [],
+      "parents": [
+        "Kur"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3523,7 +3498,9 @@ const TANRILAR_JSON = {
       "name": "Ahhazu",
       "gender": "M",
       "role": "Kapma Cinleri",
-      "parents": [],
+      "parents": [
+        "Kur"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3537,7 +3514,10 @@ const TANRILAR_JSON = {
       "name": "Lilitu",
       "gender": "F",
       "role": "Rüzgar İblisi",
-      "parents": [],
+      "parents": [
+        "Enlil",
+        "Lil"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3551,7 +3531,10 @@ const TANRILAR_JSON = {
       "name": "Ardat Lili",
       "gender": "F",
       "role": "Gençlik İblisi",
-      "parents": [],
+      "parents": [
+        "Enlil",
+        "Lil"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3565,7 +3548,9 @@ const TANRILAR_JSON = {
       "name": "Sagul",
       "gender": "M",
       "role": "Otobur İblis",
-      "parents": [],
+      "parents": [
+        "Kur"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3579,7 +3564,9 @@ const TANRILAR_JSON = {
       "name": "Mulla",
       "gender": "N",
       "role": "Sinir Cinleri",
-      "parents": [],
+      "parents": [
+        "Kur"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3593,7 +3580,9 @@ const TANRILAR_JSON = {
       "name": "Ugallu",
       "gender": "M",
       "role": "Aslan-İnsan / Büyük Aslan",
-      "parents": [],
+      "parents": [
+        "Enlil"
+      ],
       "spouse": [
         "Ninurta (bazı)"
       ],
@@ -3612,7 +3601,10 @@ const TANRILAR_JSON = {
       "name_ak": "Imdugud",
       "gender": "M",
       "role": "Gök Kartalı / Kuş Canavar",
-      "parents": [],
+      "parents": [
+        "An",
+        "Ki"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3645,7 +3637,10 @@ const TANRILAR_JSON = {
       "name": "Başmu",
       "gender": "N",
       "role": "Horned Yılan",
-      "parents": [],
+      "parents": [
+        "Tiamat",
+        "Apsu"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3660,7 +3655,10 @@ const TANRILAR_JSON = {
       "name": "Mušmaḫḫū",
       "gender": "N",
       "role": "Yılan-Ejderha",
-      "parents": [],
+      "parents": [
+        "Tiamat",
+        "Apsu"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3693,7 +3691,9 @@ const TANRILAR_JSON = {
       "name": "Hushbishag",
       "gender": "F",
       "role": "Ölüler Diyarı",
-      "parents": [],
+      "parents": [
+        "Ereşkigal"
+      ],
       "spouse": [
         "Namtar"
       ],
@@ -3709,7 +3709,10 @@ const TANRILAR_JSON = {
       "name": "Erra",
       "gender": "M",
       "role": "Savaş, Öfke",
-      "parents": [],
+      "parents": [
+        "Anu",
+        "An"
+      ],
       "spouse": [],
       "children": [],
       "city": "Kutha",
@@ -3740,7 +3743,9 @@ const TANRILAR_JSON = {
       "name": "Udug Hul",
       "gender": "N",
       "role": "Kötü Demon",
-      "parents": [],
+      "parents": [
+        "Kur"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3754,7 +3759,9 @@ const TANRILAR_JSON = {
       "name": "Udug",
       "gender": "N",
       "role": "Koruyucu Cinler",
-      "parents": [],
+      "parents": [
+        "Kur"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3769,7 +3776,9 @@ const TANRILAR_JSON = {
       "name": "Ekimmu",
       "gender": "N",
       "role": "Ölü Ruhlar",
-      "parents": [],
+      "parents": [
+        "Kur"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3784,7 +3793,9 @@ const TANRILAR_JSON = {
       "name": "Utukku",
       "gender": "N",
       "role": "Hayaletler",
-      "parents": [],
+      "parents": [
+        "Kur"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3799,7 +3810,9 @@ const TANRILAR_JSON = {
       "name": "Lamassu",
       "gender": "N",
       "role": "Koruyucu İnsan-Boğa-Kartal",
-      "parents": [],
+      "parents": [
+        "Enki"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3815,7 +3828,9 @@ const TANRILAR_JSON = {
       "name": "Shedu",
       "gender": "N",
       "role": "Koruyucu Boğa",
-      "parents": [],
+      "parents": [
+        "Enki"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3831,7 +3846,9 @@ const TANRILAR_JSON = {
       "name": "Kusarikku",
       "gender": "M",
       "role": "Boğa-İnsan",
-      "parents": [],
+      "parents": [
+        "Enki"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3845,7 +3862,10 @@ const TANRILAR_JSON = {
       "name": "Scorpion Men",
       "gender": "M",
       "role": "Dağ Bekçileri",
-      "parents": [],
+      "parents": [
+        "An",
+        "Ki"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3860,7 +3880,10 @@ const TANRILAR_JSON = {
       "name": "Sirrush",
       "gender": "N",
       "role": "Ejderha",
-      "parents": [],
+      "parents": [
+        "Tiamat",
+        "Apsu"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3874,7 +3897,10 @@ const TANRILAR_JSON = {
       "name": "Mušḫuššu",
       "gender": "N",
       "role": "Yılan-Ejderha",
-      "parents": [],
+      "parents": [
+        "Tiamat",
+        "Apsu"
+      ],
       "spouse": [],
       "children": [],
       "city": "Babil",
@@ -3888,7 +3914,9 @@ const TANRILAR_JSON = {
       "name": "Shullat",
       "gender": "M",
       "role": "Cin / Rüzgar",
-      "parents": [],
+      "parents": [
+        "Enlil"
+      ],
       "spouse": [
         "Hanish"
       ],
@@ -3905,7 +3933,9 @@ const TANRILAR_JSON = {
       "name": "Hanish",
       "gender": "M",
       "role": "Cin / Rüzgar",
-      "parents": [],
+      "parents": [
+        "Enlil"
+      ],
       "spouse": [
         "Shullat"
       ],
@@ -3922,7 +3952,10 @@ const TANRILAR_JSON = {
       "name": "Girtablullu",
       "gender": "N",
       "role": "Akrep-İnsan",
-      "parents": [],
+      "parents": [
+        "An",
+        "Ki"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3937,7 +3970,9 @@ const TANRILAR_JSON = {
       "name_ak": "Shedu",
       "gender": "N",
       "role": "Koruyucu Ruh",
-      "parents": [],
+      "parents": [
+        "Enki"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3951,7 +3986,9 @@ const TANRILAR_JSON = {
       "name": "Sukkal",
       "gender": "N",
       "role": "Vezir-Kategori",
-      "parents": [],
+      "parents": [
+        "Enlil"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3966,7 +4003,9 @@ const TANRILAR_JSON = {
       "name_ak": "Lamassu",
       "gender": "F",
       "role": "Koruyucu Tanrıça / Yardım Ruhu",
-      "parents": [],
+      "parents": [
+        "Enki"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3980,7 +4019,9 @@ const TANRILAR_JSON = {
       "name": "Lil",
       "gender": "N",
       "role": "Rüzgar Ruhu / Gizli Ruh",
-      "parents": [],
+      "parents": [
+        "Kur"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -3994,7 +4035,9 @@ const TANRILAR_JSON = {
       "name": "Etemmu",
       "gender": "N",
       "role": "Yas Ruhu / Ağlayan Ölü",
-      "parents": [],
+      "parents": [
+        "Kur"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -4008,7 +4051,9 @@ const TANRILAR_JSON = {
       "name": "Ki Sikil",
       "gender": "F",
       "role": "Saf Yer Ruhu / Temiz Peri",
-      "parents": [],
+      "parents": [
+        "Ki"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
@@ -4022,7 +4067,10 @@ const TANRILAR_JSON = {
       "name": "Irdu Lili",
       "gender": "M",
       "role": "Yatakta İblis",
-      "parents": [],
+      "parents": [
+        "Enlil",
+        "Lil"
+      ],
       "spouse": [],
       "children": [],
       "city": "",
