@@ -71,7 +71,9 @@ const haritaModul = (() => {
     // Katmanlar oluştur
     nehirleriCiz();
     sehirleriCiz(aktifDonemIndex);
-    siniriCiz();
+    // Başlangıç döneminin orta yılını hesapla
+    const baslangicDonem = TARIHSEL_DONEMLER[aktifDonemIndex];
+    siniriCiz(Math.round((baslangicDonem.on_raks + baslangicDonem.bitis_raks) / 2));
 
     // Harita tıklama ile popup kapat
     harita.on('click', () => {
@@ -129,53 +131,46 @@ const haritaModul = (() => {
     katmanlar.nehirler.addLayer(dicleCizgi);
   }
 
-  // ── Medeniyet Sınırını Çiz ──────────────────────
-  function siniriCiz() {
+  // ── Medeniyet Sınırlarını Zamana Göre Çiz ─────────
+  function siniriCiz(aktifYil) {
     katmanlar.sinirlar.clearLayers();
 
-    // Klasik Sümer
-    const sumerPolygon = L.polygon(
-      MEDENIYET_SINIRI.sumer_klasik.koordinatlar,
-      {
-        color:       '#D4AF37',
-        weight:      2,
-        opacity:     0.65,
-        fillColor:   '#D4AF37',
-        fillOpacity: 0.07,
-        dashArray:   '8 4'
-      }
-    );
+    // Mevcut yılda aktif olan medeniyetleri bul
+    const aktifMedeniyetler = Object.values(MEDENIYET_SINIRI)
+      .filter(m => aktifYil >= m.baslangic_yil && aktifYil <= m.bitis_yil);
 
-    sumerPolygon.bindTooltip(
-      `<div style="font-family:'Cinzel',serif">
-        ${MEDENIYET_SINIRI.sumer_klasik.isim}
-      </div>`,
-      { sticky: true }
-    );
+    // Önce büyük alanlıları çiz (Akkad/Babil gibi), Sümer en son üste gelir
+    const sirali = [...aktifMedeniyetler].sort((a, b) => {
+      // Sumer_klasik her zaman en üstte (sonra eklenir = hover’da önce çalışır)
+      if (a === MEDENIYET_SINIRI.sumer_klasik) return  1;
+      if (b === MEDENIYET_SINIRI.sumer_klasik) return -1;
+      return 0;
+    });
 
-    katmanlar.sinirlar.addLayer(sumerPolygon);
+    sirali.forEach(med => {
+      const polygon = L.polygon(
+        med.koordinatlar,
+        {
+          color:       med.renk,
+          weight:      med === MEDENIYET_SINIRI.sumer_klasik ? 2.5 : 1.8,
+          opacity:     med === MEDENIYET_SINIRI.sumer_klasik ? 0.75 : 0.55,
+          fillColor:   med.renk,
+          fillOpacity: med.fillOpacity,
+          dashArray:   med.dashArray,
+          interactive: true
+        }
+      );
 
-    // Akkad İmparatorluğu
-    const akkadPolygon = L.polygon(
-      MEDENIYET_SINIRI.akkad_imparatorlugu.koordinatlar,
-      {
-        color:       '#B8860B',
-        weight:      2,
-        opacity:     0.5,
-        fillColor:   '#B8860B',
-        fillOpacity: 0.05,
-        dashArray:   '4 6'
-      }
-    );
+      polygon.bindTooltip(
+        `<div style="font-family:'Cinzel',serif;font-size:0.8rem;padding:4px 8px">
+          <span style="color:${med.renk};font-weight:700">${med.isim}</span>
+          <div style="font-size:0.65rem;color:#aaa;margin-top:2px">${med.tarih}</div>
+        </div>`,
+        { sticky: true, opacity: 0.95 }
+      );
 
-    akkadPolygon.bindTooltip(
-      `<div style="font-family:'Cinzel',serif">
-        ${MEDENIYET_SINIRI.akkad_imparatorlugu.isim}
-      </div>`,
-      { sticky: true }
-    );
-
-    katmanlar.sinirlar.addLayer(akkadPolygon);
+      katmanlar.sinirlar.addLayer(polygon);
+    });
   }
 
   // ── Şehirleri Çiz ───────────────────────────────
@@ -303,19 +298,15 @@ const haritaModul = (() => {
     }
   }
 
-  // ── Dönem Güncelle ───────────────────────────────
+  // ── Dönem Güncelle ───────────────────────────
   function donemGuncelle(index) {
     aktifDonemIndex = index;
     sehirleriCiz(index);
 
     const donem = TARIHSEL_DONEMLER[index];
-
-    // Akkad sınırını sadece akkad döneminde göster
-    if (donem.id === 'akkad' || donem.id === 'ur3') {
-      if (!harita.hasLayer(katmanlar.sinirlar)) {
-        // Sinirlar zaten açıksa güncelleme
-      }
-    }
+    // Dönem orta yılını hesapla
+    const ortaYil = Math.round((donem.on_raks + donem.bitis_raks) / 2);
+    siniriCiz(ortaYil);
   }
 
   // ── Haritayı Yeniden Boyutlandır ─────────────────
