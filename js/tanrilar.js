@@ -207,6 +207,31 @@ const tanrilarModul = (() => {
         '</div>'
       : '';
 
+    // ── İsimler: Sümerce önce, diğerleri etiket olarak ──
+    const isimlerDizi = Array.isArray(tanri.isimler) && tanri.isimler.length > 0
+      ? tanri.isimler
+      : [{ m: 'Sümer', i: tanri.name }, ...(tanri.name_ak ? [{ m: 'Akad', i: tanri.name_ak }] : [])];
+
+    const sumerIsim = (isimlerDizi.find(x => x.m === 'Sümer') || isimlerDizi[0])?.i || tanri.name;
+    const digerIsimler = isimlerDizi.filter(x => x.i !== sumerIsim);
+
+    const MED_RENK = {
+      'Sümer': '#D4AF37', 'Akad': '#E67E22', 'Babil': '#C0392B',
+      'Asur': '#8E44AD',  'Hurri': '#16A085', 'Fenike': '#2980B9'
+    };
+
+    const digerIsimlerHtml = digerIsimler.length > 0
+      ? '<div class="t-kart-diger-isimler">' +
+          digerIsimler.map(x => {
+            const renk = MED_RENK[x.m] || '#888';
+            return '<span class="t-med-etiket" style="color:' + renk + ';border-color:' + renk + '44">' +
+                   '<span class="t-med-ad">' + x.m + '</span>' +
+                   '<span class="t-med-isim">' + x.i + '</span>' +
+                   '</span>';
+          }).join('') +
+        '</div>'
+      : '';
+
     div.innerHTML = `
       <div class="t-kart-renk-serit"></div>
       <div class="t-kart-ic">
@@ -214,8 +239,8 @@ const tanrilarModul = (() => {
           <span class="t-kart-sembol">${sembol}</span>
           <span class="t-kart-cinsiyet" style="color:${cins.renk}" title="${cins.etiket}">${cins.ikon}</span>
         </div>
-        <div class="t-kart-isim">${tanri.name}</div>
-        ${tanri.name_ak ? `<div class="t-kart-akad">${tanri.name_ak}</div>` : ''}
+        <div class="t-kart-isim">${sumerIsim}</div>
+        ${digerIsimlerHtml}
         <div class="t-kart-rol">${(tanri.role || '').split(',')[0].trim()}</div>
         ${yaraticiHtml}
         <div class="t-kart-alt">
