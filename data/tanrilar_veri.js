@@ -567,7 +567,7 @@ const TANRILAR_JSON = {
       "parents": [
         "Haia",
         "Nisaba (farklı versiyonlar)",
-        "Nisaba"
+        "Nidaba"
       ],
       "spouse": [
         "Enlil"
@@ -696,7 +696,7 @@ const TANRILAR_JSON = {
       "children": [
         "İşum",
         "Hendursaga",
-        "Ishum"
+        "İşum"
       ],
       "city": "Sippar, Larsa",
       "category": "Ruling",
@@ -1216,7 +1216,7 @@ const TANRILAR_JSON = {
       "isimler": [
         {
           "m": "Sümer",
-          "i": "Geştinanna"
+          "i": "Geshtinanna"
         },
         {
           "m": "Akad",
@@ -1268,21 +1268,22 @@ const TANRILAR_JSON = {
       "name": "Nidaba",
       "name_ak": "Nisaba",
       "gender": "F",
-      "role": "Yazı, Bilgelik, Tahıl, Muhasebe",
+      "role": "Yazı, Bilgelik, Tahıl, Muhasebe / Yazı, Tahıl",
       "parents": [
         "An",
-        "Uraş"
+        "Uraş",
+        "Uras"
       ],
       "spouse": [
         "Haia"
       ],
       "children": [
         "Ninlil",
-        "Nanshe"
+        "Nanşe"
       ],
       "city": "Eresh, Uruk",
       "category": "Major",
-      "description": "Sümer edebiyatının ve yazının koruyucusu.",
+      "description": "Sümer edebiyatının ve yazının koruyucusu. / Yazı.",
       "gruplar": [
         "Annunaki",
         "Duzen"
@@ -1301,7 +1302,7 @@ const TANRILAR_JSON = {
     {
       "name": "Nanşe",
       "gender": "F",
-      "role": "Sular, Balık, Kehanet, Adalet",
+      "role": "Sular, Balık, Kehanet, Adalet / Kehanet, Balık, Adalet",
       "parents": [
         "Enki",
         "Nidaba"
@@ -1312,18 +1313,18 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "Lagash, Nina",
       "category": "Major",
-      "description": "Denizlerin ve balıkçıların tanrıçası, düş yorumcusu.",
+      "description": "Denizlerin ve balıkçıların tanrıçası, düş yorumcusu. / Düş yorumu ve balık tanrıçası.",
       "gruplar": [
         "Annunaki"
       ],
       "isimler": [
         {
           "m": "Sümer",
-          "i": "Nanse"
+          "i": "Nanşe"
         },
         {
-          "m": "Akad",
-          "i": "Nanşe"
+          "m": "Transkrip.",
+          "i": "Nanshe"
         }
       ]
     },
@@ -1576,13 +1577,14 @@ const TANRILAR_JSON = {
       "gender": "M",
       "role": "Savaş, Umma",
       "parents": [
-        "İnanna"
+        "İnanna",
+        "Inanna"
       ],
       "spouse": [],
       "children": [],
       "city": "Umma",
       "category": "Major",
-      "description": "Umma kentinin koruyucusu, savaş tanrısı.",
+      "description": "Umma kentinin koruyucusu, savaş tanrısı. / Savaş.",
       "gruplar": [
         "Annunaki"
       ],
@@ -1590,6 +1592,10 @@ const TANRILAR_JSON = {
         {
           "m": "Sümer",
           "i": "Şara"
+        },
+        {
+          "m": "Transkrip.",
+          "i": "Shara"
         }
       ]
     },
@@ -1638,37 +1644,8 @@ const TANRILAR_JSON = {
           "i": "Baba"
         },
         {
-          "m": "Akad",
+          "m": "Akad/Alt.",
           "i": "Bau"
-        }
-      ]
-    },
-    {
-      "name": "Nanshe",
-      "name_ak": "Nanşe",
-      "gender": "F",
-      "role": "Kehanet, Balık, Adalet",
-      "parents": [
-        "Enki"
-      ],
-      "spouse": [
-        "Nindara"
-      ],
-      "children": [],
-      "city": "Lagash, Nina",
-      "category": "Major",
-      "description": "Düş yorumu ve balık tanrıçası.",
-      "gruplar": [
-        "Annunaki"
-      ],
-      "isimler": [
-        {
-          "m": "Sümer",
-          "i": "Nanse"
-        },
-        {
-          "m": "Akad",
-          "i": "Nanşe"
         }
       ]
     },
@@ -1703,36 +1680,6 @@ const TANRILAR_JSON = {
         {
           "m": "Babil",
           "i": "Tammuz"
-        }
-      ]
-    },
-    {
-      "name": "Geshtinanna",
-      "name_ak": "Geshtinanna",
-      "gender": "F",
-      "role": "Üzüm, Rüyalar",
-      "parents": [
-        "Enki",
-        "Ninsun"
-      ],
-      "spouse": [
-        "Ningişzida"
-      ],
-      "children": [],
-      "city": "",
-      "category": "Major",
-      "description": "Dumuzi'nin kız kardeşi.",
-      "gruplar": [
-        "Annunaki"
-      ],
-      "isimler": [
-        {
-          "m": "Sümer",
-          "i": "Geştinanna"
-        },
-        {
-          "m": "Akad",
-          "i": "Belet-Seri (eş.)"
         }
       ]
     },
@@ -1835,55 +1782,6 @@ const TANRILAR_JSON = {
       ]
     },
     {
-      "name": "Shara",
-      "gender": "M",
-      "role": "Savaş, Umma",
-      "parents": [
-        "Inanna"
-      ],
-      "spouse": [],
-      "children": [],
-      "city": "Umma",
-      "category": "Major",
-      "description": "Savaş.",
-      "gruplar": [
-        "Annunaki"
-      ],
-      "isimler": [
-        {
-          "m": "Sümer",
-          "i": "Shara"
-        }
-      ]
-    },
-    {
-      "name": "Nisaba",
-      "gender": "F",
-      "role": "Yazı, Tahıl",
-      "parents": [
-        "An",
-        "Uras"
-      ],
-      "spouse": [
-        "Haia"
-      ],
-      "children": [
-        "Ninlil"
-      ],
-      "city": "Eresh",
-      "category": "Major",
-      "description": "Yazı.",
-      "gruplar": [
-        "Annunaki"
-      ],
-      "isimler": [
-        {
-          "m": "Sümer",
-          "i": "Nisaba"
-        }
-      ]
-    },
-    {
       "name": "Gibil",
       "name_ak": "Girra",
       "gender": "M",
@@ -1917,7 +1815,8 @@ const TANRILAR_JSON = {
       "role": "Gece Bekçisi, Koruyucu",
       "parents": [
         "Utu",
-        "Aya"
+        "Aya",
+        "Shamash"
       ],
       "spouse": [
         "Ninmug"
@@ -1925,7 +1824,7 @@ const TANRILAR_JSON = {
       "children": [],
       "city": "",
       "category": "Minor",
-      "description": "Dostane bir tanrı, Erra'nın öfkesini yatıştıran.",
+      "description": "Dostane bir tanrı, Erra'nın öfkesini yatıştıran. / Gece.",
       "gruplar": [
         "Annunaki"
       ],
@@ -1936,7 +1835,7 @@ const TANRILAR_JSON = {
         },
         {
           "m": "Akad",
-          "i": "İşum"
+          "i": "Ishum"
         }
       ]
     },
@@ -2045,7 +1944,7 @@ const TANRILAR_JSON = {
       "parents": [],
       "spouse": [
         "Nidaba",
-        "Nisaba"
+        "Nidaba"
       ],
       "children": [
         "Ninlil"
@@ -2095,7 +1994,7 @@ const TANRILAR_JSON = {
       "spouse": [
         "İşum",
         "Hendursaga",
-        "Ishum"
+        "İşum"
       ],
       "children": [],
       "city": "",
@@ -2663,7 +2562,7 @@ const TANRILAR_JSON = {
       "parents": [],
       "spouse": [
         "Nanşe",
-        "Nanshe"
+        "Nanşe"
       ],
       "children": [],
       "city": "Lagash",
@@ -3790,33 +3689,6 @@ const TANRILAR_JSON = {
         {
           "m": "Sümer",
           "i": "Nunbarsegunu"
-        }
-      ]
-    },
-    {
-      "name": "Ishum",
-      "gender": "M",
-      "role": "Gece Bekçisi",
-      "parents": [
-        "Utu",
-        "Aya",
-        "Shamash"
-      ],
-      "spouse": [
-        "Ninmug"
-      ],
-      "children": [],
-      "city": "",
-      "category": "Minor",
-      "description": "Gece.",
-      "gruplar": [
-        "Annunaki"
-      ],
-      "name_ak": "",
-      "isimler": [
-        {
-          "m": "Sümer",
-          "i": "Ishum"
         }
       ]
     },
@@ -5235,7 +5107,7 @@ const TANRILAR_JSON = {
       "isimler": [
         {
           "m": "Sümer",
-          "i": "Alad/Lama"
+          "i": "Alad"
         },
         {
           "m": "Akad",

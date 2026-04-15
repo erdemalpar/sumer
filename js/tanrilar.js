@@ -18,13 +18,13 @@ const tanrilarModul = (() => {
 
   // ── Mitolojik Grup Sistemi ───────────────────────
   const GRUP = {
-    'Annunaki':       { renk: '#C0392B', ikon: '𒀭', tr: 'Annunaki',          aciklama: 'Yerin ve kaderin büyük tanrıları' },
-    'Igigi':          { renk: '#2980B9', ikon: '🌟', tr: 'İgigi',             aciklama: 'Gökyüzü ve göksel tanrılar' },
-    'EfsaneviYaratik':{ renk: '#6C3483', ikon: '🐉', tr: 'Efsanevi Yaratık',  aciklama: 'Mitolojik canavarlar ve yaratıklar' },
-    'Apkallu':        { renk: '#117A65', ikon: '𒁾', tr: 'Apkallu',           aciklama: 'Yedi Bilge — medeniyeti getiren figürler' },
-    'Mitolojik':      { renk: '#B7950B', ikon: '⚔️', tr: 'Mitolojik',         aciklama: 'Efsanelerin ve destanların figürleri' },
-    'Duzen':          { renk: '#1A5276', ikon: '𒈨', tr: 'Düzen (Me)',         aciklama: 'Düzeni ve medeniyeti temsil edenler' },
-    'Kaos':           { renk: '#4A235A', ikon: '𒆳', tr: 'Kaos (Kur/Hul)',    aciklama: 'Kaos, hastalık ve karanlık güçler' }
+    'Anunnaki': { renk: '#C0392B', ikon: '𒀭', tr: 'Anunnaki', aciklama: 'Yerin ve kaderin büyük tanrıları' },
+    'Igigi': { renk: '#2980B9', ikon: '🌟', tr: 'İgigi', aciklama: 'Gökyüzü ve göksel tanrılar' },
+    'EfsaneviYaratik': { renk: '#6C3483', ikon: '🐉', tr: 'Efsanevi Yaratık', aciklama: 'Mitolojik canavarlar ve yaratıklar' },
+    'Apkallu': { renk: '#117A65', ikon: '𒁾', tr: 'Apkallu', aciklama: 'Yedi Bilge — medeniyeti getiren figürler' },
+    'Mitolojik': { renk: '#B7950B', ikon: '⚔️', tr: 'Mitolojik', aciklama: 'Efsanelerin ve destanların figürleri' },
+    'Duzen': { renk: '#1A5276', ikon: '𒈨', tr: 'Düzen (Me)', aciklama: 'Düzeni ve medeniyeti temsil edenler' },
+    'Kaos': { renk: '#4A235A', ikon: '𒆳', tr: 'Kaos (Kur/Hul)', aciklama: 'Kaos, hastalık ve karanlık güçler' }
   };
 
   const CINSIYET = {
@@ -70,19 +70,19 @@ const tanrilarModul = (() => {
         // Category normalleştirme: veri dosyasındaki farklı değerleri
         // KATEGORI haritasındaki anahtarlara eşle
         const katNorm = {
-          'Primordial':  'Creator',
-          'Ruling':      'Ruling',
-          'Major':       'Major',
-          'Minor':       'Minor',
-          'Demigod':     'Demigod',
-          'Demon':       'Demon/Spirit',
-          'Spirit':      'Demon/Spirit'
+          'Primordial': 'Creator',
+          'Ruling': 'Ruling',
+          'Major': 'Major',
+          'Minor': 'Minor',
+          'Demigod': 'Demigod',
+          'Demon': 'Demon/Spirit',
+          'Spirit': 'Demon/Spirit'
         };
         return {
           ...t,
           category: katNorm[t.category] || t.category,
-          parents:  Array.isArray(t.parents)  ? t.parents.filter(Boolean)  : [],
-          spouse:   Array.isArray(t.spouse)   ? t.spouse.filter(Boolean)   : [],
+          parents: Array.isArray(t.parents) ? t.parents.filter(Boolean) : [],
+          spouse: Array.isArray(t.spouse) ? t.spouse.filter(Boolean) : [],
           children: Array.isArray(t.children) ? t.children.filter(Boolean) : []
         };
       });
@@ -186,11 +186,11 @@ const tanrilarModul = (() => {
     // Grup etiketleri HTML'i oluştur
     const grupEtiketleri = Array.isArray(tanri.gruplar) && tanri.gruplar.length > 0
       ? tanri.gruplar.map(g => {
-          const grp = GRUP[g];
-          if (!grp) return '';
-          return '<span class="t-grup-etiketi" style="background:' + grp.renk + '22;color:' + grp.renk + ';border:1px solid ' + grp.renk + '55" title="' + grp.aciklama + '">' +
-                 grp.ikon + ' ' + grp.tr + '</span>';
-        }).join('')
+        const grp = GRUP[g];
+        if (!grp) return '';
+        return '<span class="t-grup-etiketi" style="background:' + grp.renk + '22;color:' + grp.renk + ';border:1px solid ' + grp.renk + '55" title="' + grp.aciklama + '">' +
+          grp.ikon + ' ' + grp.tr + '</span>';
+      }).join('')
       : '';
 
     // Yaratıcı satırı — sadece Demon/Spirit kartlarında göster
@@ -199,12 +199,12 @@ const tanrilarModul = (() => {
     const kur = Array.isArray(tanri.parents) && tanri.parents.includes('Kur');
     const yaraticiHtml = isDemon && (yaraticilar.length > 0 || kur)
       ? '<div class="t-kart-yaratici">' +
-        '<span class="t-yaratici-ikon">🔱</span>' +
-        (yaraticilar.length > 0
-          ? '<span class="t-yaratici-isimler">' + yaraticilar.join(', ') + '</span>'
-          : '') +
-        (kur ? '<span class="t-yaratici-kur" title="Ölüler Diyarından Geliyor">⬛ Kur</span>' : '') +
-        '</div>'
+      '<span class="t-yaratici-ikon">🔱</span>' +
+      (yaraticilar.length > 0
+        ? '<span class="t-yaratici-isimler">' + yaraticilar.join(', ') + '</span>'
+        : '') +
+      (kur ? '<span class="t-yaratici-kur" title="Ölüler Diyarından Geliyor">⬛ Kur</span>' : '') +
+      '</div>'
       : '';
 
     // ── İsimler: Sümerce önce, diğerleri etiket olarak ──
@@ -217,19 +217,19 @@ const tanrilarModul = (() => {
 
     const MED_RENK = {
       'Sümer': '#D4AF37', 'Akad': '#E67E22', 'Babil': '#C0392B',
-      'Asur': '#8E44AD',  'Hurri': '#16A085', 'Fenike': '#2980B9'
+      'Asur': '#8E44AD', 'Hurri': '#16A085', 'Fenike': '#2980B9'
     };
 
     const digerIsimlerHtml = digerIsimler.length > 0
       ? '<div class="t-kart-diger-isimler">' +
-          digerIsimler.map(x => {
-            const renk = MED_RENK[x.m] || '#888';
-            return '<span class="t-med-etiket" style="color:' + renk + ';border-color:' + renk + '44">' +
-                   '<span class="t-med-ad">' + x.m + '</span>' +
-                   '<span class="t-med-isim">' + x.i + '</span>' +
-                   '</span>';
-          }).join('') +
-        '</div>'
+      digerIsimler.map(x => {
+        const renk = MED_RENK[x.m] || '#888';
+        return '<span class="t-med-etiket" style="color:' + renk + ';border-color:' + renk + '44">' +
+          '<span class="t-med-ad">' + x.m + '</span>' +
+          '<span class="t-med-isim">' + x.i + '</span>' +
+          '</span>';
+      }).join('') +
+      '</div>'
       : '';
 
     div.innerHTML = `
@@ -330,9 +330,9 @@ const tanrilarModul = (() => {
         </div>
 
         ${rozetListesi(tanri.parents, 'ebeveyn', '#BE90D4',
-          (tanri.category === 'Demon/Spirit' || tanri.category === 'Demon' || tanri.category === 'Spirit')
-            ? '🔱 Yaratıcı / Kaynak'
-            : '👑 Ebeveynler')}
+      (tanri.category === 'Demon/Spirit' || tanri.category === 'Demon' || tanri.category === 'Spirit')
+        ? '🔱 Yaratıcı / Kaynak'
+        : '👑 Ebeveynler')}
         ${rozetListesi(tanri.spouse, 'es', '#F48FB1', '💛 Eşler')}
         ${rozetListesi(tanri.children, 'cocuk', '#A5D6A7', '🌱 Çocuklar')}
 
