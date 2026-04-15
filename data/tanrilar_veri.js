@@ -43,7 +43,7 @@ const TANRILAR_JSON = {
       "category": "Creator",
       "description": "En yüce tanrı, gökyüzünün kişileştirmesi, tanrısal iradenin kaynağı.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Duzen"
       ],
       "isimler": [
@@ -81,7 +81,7 @@ const TANRILAR_JSON = {
       "category": "Creator",
       "description": "Toprağın ve yerin ilkesi, An ile birlikte evrensel düzeni oluşturur.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -114,7 +114,7 @@ const TANRILAR_JSON = {
       "category": "Creator",
       "description": "Yaratıcı tanrıça, Abzu ile birlikte ilk tanrıları doğurur.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Kaos"
       ],
       "isimler": [
@@ -146,7 +146,7 @@ const TANRILAR_JSON = {
       "category": "Creator",
       "description": "Yeraltı sularının ilkesi, Enki'nin mabedi E-Abzu'nun isim kaynağı.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Kaos"
       ],
       "isimler": [
@@ -177,7 +177,7 @@ const TANRILAR_JSON = {
       "category": "Creator",
       "description": "Yer tanrıçası, Ki ile özdeş.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -199,7 +199,7 @@ const TANRILAR_JSON = {
       "category": "Creator",
       "description": "Yaratıcı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -229,7 +229,7 @@ const TANRILAR_JSON = {
       "category": "Primordial",
       "description": "Tiamat'in kızı, Anshar'ın eşi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -260,7 +260,7 @@ const TANRILAR_JSON = {
       "category": "Primordial",
       "description": "Gök kubbenin kişileştirmesi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -281,7 +281,7 @@ const TANRILAR_JSON = {
       "category": "Primordial",
       "description": "Ölüler diyarının kendisi, dağ.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -302,7 +302,7 @@ const TANRILAR_JSON = {
       "category": "Primordial",
       "description": "Devasa balık.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -384,7 +384,7 @@ const TANRILAR_JSON = {
       "category": "Primordial",
       "description": "İlk yaratık.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -411,7 +411,7 @@ const TANRILAR_JSON = {
       "category": "Primordial",
       "description": "Yer.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -448,7 +448,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "Pantheon başkanı, 'Büyük Dağ', tanrısal fermanların sahibi.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Igigi",
         "Duzen"
       ],
@@ -495,7 +495,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "İnsanlığın yaratıcısı, bilginin ve sihirin efendisi.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Duzen"
       ],
       "isimler": [
@@ -541,7 +541,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "Ana tanrıça, 'Dağların Hanımı', yaratılış mitlerinde önemli rol.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Duzen"
       ],
       "isimler": [
@@ -567,7 +567,7 @@ const TANRILAR_JSON = {
       "parents": [
         "Haia",
         "Nisaba (farklı versiyonlar)",
-        "Nidaba"
+        "Nisaba"
       ],
       "spouse": [
         "Enlil"
@@ -583,7 +583,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "Enlil'in eşi, 'Hava Hanımefendisi'.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -617,7 +617,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "En güçlü kadın tanrıça, gökyüzünde gezegen Venüs olarak temsil edilir.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Igigi",
         "Duzen"
       ],
@@ -662,7 +662,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "Ay tanrısı, 'Büyük Boğa', zaman ölçümünün efendisi.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Igigi"
       ],
       "isimler": [
@@ -696,13 +696,13 @@ const TANRILAR_JSON = {
       "children": [
         "İşum",
         "Hendursaga",
-        "İşum"
+        "Ishum"
       ],
       "city": "Sippar, Larsa",
       "category": "Ruling",
       "description": "Adaletin koruyucusu, ölüler diyarının kapısını açan.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Igigi",
         "Duzen"
       ],
@@ -742,7 +742,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "Yağmur ve bereket getiren, boğa sembolü taşıyan.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Igigi"
       ],
       "isimler": [
@@ -780,7 +780,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "Kur'un (Ölüler Diyarı) efendisi, ani ölüm tanrısı.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Kaos"
       ],
       "isimler": [
@@ -819,7 +819,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "Göklerden ayrılıp yeraltını yöneten, İnanna'nın ablası.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Kaos"
       ],
       "isimler": [
@@ -859,7 +859,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "Kahraman tanrı, Anzu kuşunu öldüren, tarımsal bereketin sahibi.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Duzen"
       ],
       "isimler": [
@@ -895,7 +895,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "Babil döneminde yükselen, Tiamat'i öldüren tanrı.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Duzen"
       ],
       "name_ak": "",
@@ -932,7 +932,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "Ana tanrıça.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -961,7 +961,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "Lagash baştanrısı, Ninurta ile özdeş.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -985,7 +985,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "Anu'nun Akkadça eşi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1016,7 +1016,7 @@ const TANRILAR_JSON = {
       "category": "Ruling",
       "description": "Gök.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1050,7 +1050,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Nanna'nın eşi, büyük anne tanrıça.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -1084,7 +1084,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Enki'nin baş eşi, bilgelik tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1115,7 +1115,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Şifa ve merhamet tanrıçası, koruyucu köpeklerle tasvir edilir.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1146,7 +1146,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "İki yılan sarmal şeklinde tasvir edilir, ölüler diyarının yargıcı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1179,7 +1179,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Yılanlarla ilişkili şifa tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -1210,7 +1210,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Dumuzi'nin kız kardeşi, onun yerine ölüler diyarına gönüllü giden.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "Belet-Seri",
       "isimler": [
@@ -1249,7 +1249,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Gilgamesh'in annesi, bilge tanrıça.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Mitolojik"
       ],
       "name_ak": "",
@@ -1279,13 +1279,13 @@ const TANRILAR_JSON = {
       ],
       "children": [
         "Ninlil",
-        "Nanşe"
+        "Nanshe"
       ],
       "city": "Eresh, Uruk",
       "category": "Major",
       "description": "Sümer edebiyatının ve yazının koruyucusu. / Yazı.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Duzen"
       ],
       "isimler": [
@@ -1315,7 +1315,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Denizlerin ve balıkçıların tanrıçası, düş yorumcusu. / Düş yorumu ve balık tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1325,6 +1325,10 @@ const TANRILAR_JSON = {
         {
           "m": "Transkrip.",
           "i": "Nanshe"
+        },
+        {
+          "m": "Akad",
+          "i": "Nanşe"
         }
       ]
     },
@@ -1346,7 +1350,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Tıbbın tanrıçası, Pabilsag'ın eşi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1376,7 +1380,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Yay burcuna eşdeğer tanrı, koruyucu ruh.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1402,7 +1406,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Enlil'in vezir-suikastçısı, ateşin tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -1432,7 +1436,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Ölüler diyarının vebadarı, ölüm meleği.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Kaos"
       ],
       "name_ak": "",
@@ -1463,7 +1467,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Güneş tanrısının eşi, şafak tanrıçası.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Igigi"
       ],
       "isimler": [
@@ -1494,7 +1498,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Fırtına tanrısının eşi, bereket sembolü.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "Medimsha",
       "isimler": [
@@ -1528,7 +1532,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Yazı ve bilgelik tanrısı.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Duzen"
       ],
       "name_ak": "",
@@ -1562,7 +1566,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Marduk'un eşi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -1586,7 +1590,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Umma kentinin koruyucusu, savaş tanrısı. / Savaş.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1610,7 +1614,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "İnanna'nın sadık habercisi ve veziri.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -1636,7 +1640,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Lagash'ın koruyucu tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1695,7 +1699,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Semitc tanrı, Enki ile özdeşleştirildi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1721,7 +1725,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Adad'ın eşi (Hurri etkisi).",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -1748,7 +1752,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Enlil'in veziri, ateş tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1772,7 +1776,7 @@ const TANRILAR_JSON = {
       "category": "Major",
       "description": "Ağaçlar.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1796,7 +1800,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Demircilerin ve ateşin tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1826,7 +1830,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Dostane bir tanrı, Erra'nın öfkesini yatıştıran. / Gece.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1854,7 +1858,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Geceleyin adaleti sağlayan, İşum ile özdeşleştirilir.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -1879,7 +1883,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Ninazu'nun eşi, bahçe tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -1905,7 +1909,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Ningişzida'nın eşi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -1928,7 +1932,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Namtar'ın eşi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -1944,7 +1948,7 @@ const TANRILAR_JSON = {
       "parents": [],
       "spouse": [
         "Nidaba",
-        "Nidaba"
+        "Nisaba"
       ],
       "children": [
         "Ninlil"
@@ -1953,7 +1957,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Tahıl ambarlarının koruyucusu.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -1976,7 +1980,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Bira tanrıçası, Sümerlerin bira tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -1994,14 +1998,14 @@ const TANRILAR_JSON = {
       "spouse": [
         "İşum",
         "Hendursaga",
-        "İşum"
+        "Ishum"
       ],
       "children": [],
       "city": "",
       "category": "Minor",
       "description": "Doğum tanrıçası, terzilerin koruyucusu.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2031,7 +2035,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Ninsar'ın kızı, Enki'nin torunu.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2059,7 +2063,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Yeşil bitkilerin tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "Ninsar",
       "isimler": [
@@ -2087,7 +2091,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Dokumacılık ve ağ örme tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2111,7 +2115,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Sulama sistemlerinin tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2135,7 +2139,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Enki'nin oğlu, büyü tanrısı, Marduk ile özdeş.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2162,7 +2166,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Nabu'nun eşi, duaları dinleyen.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2186,7 +2190,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Yaz mevsiminin tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2210,7 +2214,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Kış mevsimi ve çiftçilik tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2233,7 +2237,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Sığırların tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2256,7 +2260,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Tahıl tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2277,7 +2281,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Düzlüklerin ve nehir kenarlarının tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2298,7 +2302,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "İnşaat ve tuğla tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2319,7 +2323,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Mimarların koruyucusu.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2342,7 +2346,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Zanaatkârların tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2365,7 +2369,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Venüs gezegeni tanrıçası (İnanna ile karıştırılabilir).",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2386,7 +2390,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Berberlerin tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2407,7 +2411,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Koyunların tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2431,7 +2435,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Step hayvanlarının tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2452,7 +2456,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Ölüler diyarının bekçisi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2478,7 +2482,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Dumuzi'nin kız kardeşi veya eşi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2499,7 +2503,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Enki'nin çift yüzlü habercisi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2522,7 +2526,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Şifa ve bereket tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2546,7 +2550,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Yazı ve sel kontrolü tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -2562,14 +2566,14 @@ const TANRILAR_JSON = {
       "parents": [],
       "spouse": [
         "Nanşe",
-        "Nanşe"
+        "Nanshe"
       ],
       "children": [],
       "city": "Lagash",
       "category": "Minor",
       "description": "Nanşe'nin eşi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2592,7 +2596,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Doğurganlık tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -2614,7 +2618,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Toprak tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -2634,7 +2638,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Venüs tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -2654,7 +2658,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Dans ve neşe tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2678,7 +2682,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Nusku'nun eşi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2702,7 +2706,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Genç şifa tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -2724,7 +2728,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Şifa tanrıçası, Dumuzi'nin kız kardeşi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -2746,7 +2750,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Şifa tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -2768,7 +2772,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Şifa tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2791,7 +2795,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "'Kaburga Hanımı', şifa tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "Havva",
       "isimler": [
@@ -2818,7 +2822,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Hayat tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -2840,7 +2844,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Şifa tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2863,7 +2867,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Şifa tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -2885,7 +2889,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Şifa tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -2907,7 +2911,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Bitki ve şifa tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -2929,7 +2933,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Şifa tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -2954,7 +2958,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Bitki tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -2974,7 +2978,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Gümüş tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -2995,7 +2999,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Değerli taş tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3018,7 +3022,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Bataklık tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3043,7 +3047,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Bahçe tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3064,7 +3068,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Yılan tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3085,7 +3089,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Kapı tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3106,7 +3110,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Doğum tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3127,7 +3131,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Doğum tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3148,7 +3152,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Rüzgar tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3169,7 +3173,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Haberci tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3189,7 +3193,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Enlil'in habercilerinden.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3210,7 +3214,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Enlil'in habercisi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3231,7 +3235,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Enlil'in habercisi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3252,7 +3256,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Duyuru tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3272,7 +3276,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "İnanna'nın veziri.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3293,7 +3297,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Anu'nun habercisi (farklı gelenek).",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3315,7 +3319,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Step tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3338,7 +3342,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Amurru'nun eşi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3364,7 +3368,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Step ve batı rüzgarları tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3388,7 +3392,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Amurru'nun Sümerce ismi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3415,7 +3419,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Dağ tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3436,7 +3440,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Ebla tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3457,7 +3461,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Yer tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3481,7 +3485,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Uzun yaşam veren.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3503,7 +3507,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Metal işçiliği.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3529,7 +3533,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Dilmun tanrıçası.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3553,7 +3557,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Küçük kanal tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3573,7 +3577,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Nehir kanalı tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3593,7 +3597,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Ana tanrıça.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3613,7 +3617,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Doğurganlık.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3637,7 +3641,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Ninhursag'ın eşi.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3660,7 +3664,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Tapınak tanrısı.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3683,7 +3687,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Tahıl.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3705,7 +3709,7 @@ const TANRILAR_JSON = {
       "category": "Minor",
       "description": "Bereket.",
       "gruplar": [
-        "Annunaki"
+        "Anunnaki"
       ],
       "isimler": [
         {
@@ -3730,7 +3734,7 @@ const TANRILAR_JSON = {
       "description": "Efsanevi Uruk kralı, sonra tanrılaştırıldı.",
       "gruplar": [
         "Mitolojik",
-        "Annunaki"
+        "Anunnaki"
       ],
       "name_ak": "",
       "isimler": [
@@ -3816,7 +3820,7 @@ const TANRILAR_JSON = {
       "gruplar": [
         "Apkallu"
       ],
-      "name_ak": "Uanna",
+      "name_ak": "Uanna/Adem",
       "isimler": [
         {
           "m": "Akad",
@@ -3825,6 +3829,10 @@ const TANRILAR_JSON = {
         {
           "m": "Sümer",
           "i": "Adapa"
+        },
+        {
+          "m": "İbrahimi Dinlerde",
+          "i": "Adem"
         }
       ]
     },
@@ -4408,7 +4416,7 @@ const TANRILAR_JSON = {
       "category": "Demon",
       "description": "Hapishane tanrıçası, idam cezası ile ilgili.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Kaos"
       ],
       "isimler": [
@@ -4435,7 +4443,7 @@ const TANRILAR_JSON = {
       "category": "Demon",
       "description": "Kelepçelerin tanrısı, Nungal'ın eşi.",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Kaos"
       ],
       "name_ak": "",
@@ -4462,7 +4470,7 @@ const TANRILAR_JSON = {
       "category": "Demon",
       "description": "Büyük Gök Boğa, Ereşkigal",
       "gruplar": [
-        "Annunaki",
+        "Anunnaki",
         "Kaos"
       ],
       "name_ak": "",
@@ -4675,6 +4683,7 @@ const TANRILAR_JSON = {
     },
     {
       "name": "Lilitu",
+      "name_ak": "Adem'in ilk karısı",
       "gender": "F",
       "role": "Rüzgar İblisi",
       "parents": [

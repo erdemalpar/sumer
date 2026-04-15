@@ -49,6 +49,7 @@ const tanrilarModul = (() => {
   let filtreKategori = 'Hepsi';
   let aramaMetni = '';
   let seciliTanri = null;
+  let gorunumModu = 'kart'; // 'kart' | 'liste' | 'tablo'
 
   // ── JSON Yükle & Temizle ────────────────────────
   async function yukle() {
@@ -109,7 +110,23 @@ const tanrilarModul = (() => {
   // HTML yapısı index.html'de -- JS sadece kategorileri ve kartları doldurur
   function uiOlustur() {
     filtreButonlariOlustur();
+    gorunumButonlariOlustur();
     kartlariGoster();
+  }
+
+  // ── Görünüm Modu Butonları ───────────────────────
+  function gorunumButonlariOlustur() {
+    const kapsayici = document.getElementById('tanri-gorunum-secici');
+    if (!kapsayici) return;
+    kapsayici.innerHTML = [
+      { mod: 'kart',  ikon: '⊞', ad: 'Kart'  },
+      { mod: 'liste', ikon: '☰', ad: 'Liste' },
+      { mod: 'tablo', ikon: '⊟', ad: 'Tablo' }
+    ].map(({ mod, ikon, ad }) =>
+      '<button class="t-gorunum-btn' + (mod === gorunumModu ? ' aktif' : '') + '"' +
+      ' onclick="tanrilarModul.gorunumDegistir(\'' + mod + '\')" title="' + ad + ' görünümü">' +
+      '<span>' + ikon + '</span><span class="t-gorunum-ad">' + ad + '</span></button>'
+    ).join('');
   }
 
   // ── Filtre Butonları ─────────────────────────────
@@ -137,26 +154,100 @@ const tanrilarModul = (() => {
       '</button>' + katBtnler;
   }
 
-  // ── Kart Izgara Oluştur ──────────────────────────
+  // ── Ana Render ───────────────────────────────────
   function kartlariGoster() {
     const izgara = document.getElementById('tanri-kart-izgara');
     if (!izgara) return;
 
     const filtreli = filtreliTanrilar();
     izgara.innerHTML = '';
+    izgara.className = 'tanri-izgara gorunum-' + gorunumModu;
 
     if (filtreli.length === 0) {
-      izgara.innerHTML = `<div class="t-bos-mesaj">
-        <span style="font-size:2rem;opacity:0.3">𒀭</span><br>
-        Sonuç bulunamadı
-      </div>`;
+      izgara.innerHTML = '<div class="t-bos-mesaj"><span style="font-size:2rem;opacity:0.3">𒀭</span><br>Sonuç bulunamadı</div>';
       return;
     }
 
-    filtreli.forEach((tanri, i) => {
-      const kart = tanriKartOlustur(tanri, i);
-      izgara.appendChild(kart);
-    });
+    if (gorunumModu === 'kart') {
+      filtreli.forEach((tanri, i) => izgara.appendChild(tanriKartOlustur(tanri, i)));
+    } else if (gorunumModu === 'liste') {
+      filtreli.forEach((tanri, i) => izgara.appendChild(tanriListeSatirOlustur(tanri, i)));
+    } else {
+      izgara.appendChild(tanriTabloOlustur(filtreli));
+    }
+  }
+
+  // ── Liste Satırı ─────────────────────────────────
+  function tanriListeSatirOlustur(tanri, indeks) {
+    const kat  = KATEGORI[tanri.category] || KATEGORI.Minor;
+    const cins = CINSIYET[tanri.gender]   || CINSIYET.N;
+    const sembol = TANRI_SEMBOLLERI[tanri.name] || TANRI_SEMBOLLERI.default;
+    const aktif  = seciliTanri && seciliTanri.name === tanri.name;
+    const isimlerDizi = Array.isArray(tanri.isimler) && tanri.isimler.length > 0
+      ? tanri.isimler
+      : [{ m: 'Sümer', i: tanri.name }];
+    const sumerIsim = (isimlerDizi.find(x => x.m === 'Sümer') || isimlerDizi[0])?.i || tanri.name;
+    const digerStr  = isimlerDizi.filter(x => x.i !== sumerIsim).map(x => x.i).join(' · ');
+
+    const div = document.createElement('div');
+    div.className = 't-liste-satir' + (aktif ? ' aktif-kart' : '');
+    div.style.setProperty('--kat-renk', kat.renk);
+    div.style.animationDelay = Math.min(indeks * 0.015, 0.4) + 's';
+    div.dataset.isim = tanri.name;
+
+    div.innerHTML =
+      '<span class="tl-sembol">' + sembol + '</span>' +
+      '<span class="tl-isim-blok">' +
+        '<span class="tl-isim">' + sumerIsim + '</span>' +
+        (digerStr ? '<span class="tl-diger">' + digerStr + '</span>' : '') +
+      '</span>' +
+      '<span class="tl-rol">' + (tanri.role || '').split(',')[0].trim() + '</span>' +
+      '<span class="tl-kat" style="color:' + kat.renk + ';background:' + kat.renk + '18">' + kat.simge + ' ' + kat.tr + '</span>' +
+      '<span class="tl-sehir">' + (tanri.city ? '📍 ' + tanri.city.split(',')[0] : '') + '</span>' +
+      '<span class="tl-cins" style="color:' + cins.renk + '">' + cins.ikon + '</span>';
+
+    div.addEventListener('click', () => tanriSec(tanri));
+    return div;
+  }
+
+  // ── Tablo ────────────────────────────────────────
+  function tanriTabloOlustur(liste) {
+    const MED_RENK = {
+      'Sümer':'#D4AF37','Akad':'#E67E22','Babil':'#C0392B',
+      'Asur':'#8E44AD','Hurri':'#16A085','Fenike':'#2980B9','Transkrip.':'#7F8C8D'
+    };
+    const satirlar = liste.map((tanri, i) => {
+      const kat  = KATEGORI[tanri.category] || KATEGORI.Minor;
+      const cins = CINSIYET[tanri.gender]   || CINSIYET.N;
+      const sembol = TANRI_SEMBOLLERI[tanri.name] || TANRI_SEMBOLLERI.default;
+      const isimlerDizi = Array.isArray(tanri.isimler) && tanri.isimler.length > 0
+        ? tanri.isimler : [{ m: 'Sümer', i: tanri.name }];
+      const sumerIsim = (isimlerDizi.find(x => x.m === 'Sümer') || isimlerDizi[0])?.i || tanri.name;
+      const digerPills = isimlerDizi.filter(x => x.i !== sumerIsim).map(x => {
+        const r = MED_RENK[x.m] || '#888';
+        return '<span class="tt-pill" style="color:' + r + ';border-color:' + r + '44">' + x.m[0] + ' ' + x.i + '</span>';
+      }).join('');
+      const aktif = seciliTanri && seciliTanri.name === tanri.name;
+      return '<tr class="tt-satir' + (aktif ? ' aktif-kart' : '') + '" onclick="tanrilarModul._bagliTanriGit(\'' + tanri.name + '\')" style="--kat-renk:' + kat.renk + '">' +
+        '<td class="tt-no">' + (i + 1) + '</td>' +
+        '<td class="tt-sembol">' + sembol + '</td>' +
+        '<td class="tt-isim-kol"><span class="tt-isim">' + sumerIsim + '</span><div class="tt-diger-isimler">' + digerPills + '</div></td>' +
+        '<td class="tt-rol">' + (tanri.role || '—').split(',')[0].trim() + '</td>' +
+        '<td><span class="tt-kat" style="color:' + kat.renk + ';background:' + kat.renk + '18">' + kat.simge + ' ' + kat.tr + '</span></td>' +
+        '<td class="tt-sehir">' + (tanri.city ? tanri.city.split(',')[0] : '—') + '</td>' +
+        '<td style="color:' + cins.renk + ';text-align:center">' + cins.ikon + '</td>' +
+        '</tr>';
+    }).join('');
+
+    const tablo = document.createElement('table');
+    tablo.className = 't-tablo';
+    tablo.innerHTML =
+      '<thead><tr class="tt-baslik">' +
+        '<th>#</th><th></th>' +
+        '<th>İsim (Sümerce / Diğer)</th>' +
+        '<th>Rol</th><th>Kategori</th><th>Şehir</th><th>❧</th>' +
+      '</tr></thead><tbody>' + satirlar + '</tbody>';
+    return tablo;
   }
 
   function filtreliTanrilar() {
@@ -530,7 +621,15 @@ const tanrilarModul = (() => {
     filtrele,
     _aramaGuncelle,
     _bagliTanriGit,
-    getTanrilar: () => tumTanrilar
+    getTanrilar: () => tumTanrilar,
+    gorunumDegistir(mod) {
+      gorunumModu = mod;
+      // Buton aktif sınıflarını güncelle
+      document.querySelectorAll('.t-gorunum-btn').forEach(b => {
+        b.classList.toggle('aktif', b.title.startsWith(mod === 'kart' ? 'Kart' : mod === 'liste' ? 'Liste' : 'Tablo'));
+      });
+      kartlariGoster();
+    }
   };
 
 })();

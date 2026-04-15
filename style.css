@@ -920,17 +920,269 @@ body::after {
 #tanrilar-kart-alani {
   flex: 1;
   overflow-y: auto;
-  padding: 0.75rem;
+  padding: 0;
   padding-top: 5.5rem;
   background: rgba(10,7,3,0.3);
-  min-height: 0; /* flex overflow için zorunlu */
+  min-height: 0;
   min-width: 0;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Görünüm Seçici Üst Bar */
+#tanri-kart-ust {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.4rem 0.75rem 0.2rem;
+  border-bottom: 1px solid rgba(212,175,55,0.1);
+  flex-shrink: 0;
+}
+
+#tanri-gorunum-secici {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.t-gorunum-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid rgba(212,175,55,0.2);
+  border-radius: 8px;
+  background: rgba(255,255,255,0.04);
+  color: var(--metin-soluk);
+  cursor: pointer;
+  font-size: 0.72rem;
+  font-family: 'Cinzel', serif;
+  transition: all 0.2s;
+}
+
+.t-gorunum-btn:hover {
+  background: rgba(212,175,55,0.1);
+  color: var(--altin);
+  border-color: rgba(212,175,55,0.4);
+}
+
+.t-gorunum-btn.aktif {
+  background: rgba(212,175,55,0.15);
+  color: var(--altin);
+  border-color: var(--altin);
+}
+
+.t-gorunum-ad {
+  font-size: 0.65rem;
+}
+
+/* Izgara — Kart Modu */
 #tanri-kart-izgara {
+  padding: 0.75rem;
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+
+#tanri-kart-izgara.gorunum-kart {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
   gap: 0.6rem;
+  align-content: start;
+}
+
+/* ── Liste Modu ── */
+#tanri-kart-izgara.gorunum-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.t-liste-satir {
+  display: grid;
+  grid-template-columns: 2rem 11rem 1fr 7rem 6rem 1.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.7rem;
+  background: rgba(26,18,8,0.75);
+  border: 1px solid rgba(212,175,55,0.1);
+  border-left: 3px solid var(--kat-renk, #D4AF37);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  animation: kayan-panel 0.25s ease both;
+}
+
+.t-liste-satir:hover,
+.t-liste-satir.aktif-kart {
+  background: rgba(212,175,55,0.08);
+  border-color: var(--kat-renk, #D4AF37);
+}
+
+.tl-sembol {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.tl-isim-blok {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05rem;
+  overflow: hidden;
+}
+
+.tl-isim {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 0.78rem;
+  color: var(--altin);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tl-diger {
+  font-size: 0.52rem;
+  color: var(--metin-soluk);
+  font-style: italic;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tl-rol {
+  font-size: 0.65rem;
+  color: var(--metin-ana);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tl-kat {
+  font-size: 0.58rem;
+  font-family: 'Cinzel', serif;
+  padding: 0.15rem 0.4rem;
+  border-radius: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tl-sehir {
+  font-size: 0.58rem;
+  color: var(--metin-soluk);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tl-cins {
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* ── Tablo Modu ── */
+#tanri-kart-izgara.gorunum-tablo {
+  display: block;
+  overflow-x: auto;
+}
+
+.t-tablo {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.72rem;
+}
+
+.tt-baslik th {
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+  font-family: 'Cinzel', serif;
+  font-size: 0.62rem;
+  color: var(--altin);
+  border-bottom: 2px solid rgba(212,175,55,0.3);
+  white-space: nowrap;
+  background: rgba(10,7,3,0.6);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.tt-satir {
+  border-bottom: 1px solid rgba(212,175,55,0.07);
+  cursor: pointer;
+  transition: background 0.12s;
+  border-left: 3px solid transparent;
+}
+
+.tt-satir:hover,
+.tt-satir.aktif-kart {
+  background: rgba(212,175,55,0.06);
+  border-left-color: var(--kat-renk, #D4AF37);
+}
+
+.tt-satir td {
+  padding: 0.4rem 0.6rem;
+  vertical-align: middle;
+}
+
+.tt-no {
+  color: var(--metin-soluk);
+  font-size: 0.58rem;
+  width: 2rem;
+  text-align: center;
+}
+
+.tt-sembol {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 2.2rem;
+}
+
+.tt-isim-kol { min-width: 150px; }
+
+.tt-isim {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 0.75rem;
+  color: var(--altin);
+  display: block;
+}
+
+.tt-diger-isimler {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  margin-top: 0.15rem;
+}
+
+.tt-pill {
+  font-size: 0.48rem;
+  padding: 0.05rem 0.3rem;
+  border-radius: 6px;
+  border: 1px solid;
+  font-style: italic;
+}
+
+.tt-rol {
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--metin-ana);
+}
+
+.tt-kat {
+  font-size: 0.58rem;
+  font-family: 'Cinzel', serif;
+  padding: 0.15rem 0.4rem;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.tt-sehir {
+  color: var(--metin-soluk);
+  font-size: 0.62rem;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* Tanrı Kartı */
