@@ -919,7 +919,7 @@ body::after {
 /* ── Sağ Panel (Kart Izgarası) ── */
 #tanrilar-kart-alani {
   flex: 1;
-  overflow-y: auto;
+  overflow-y: auto;        /* scroll burada */
   padding: 0;
   padding-top: 5.5rem;
   background: rgba(10,7,3,0.3);
@@ -937,6 +937,11 @@ body::after {
   padding: 0.4rem 0.75rem 0.2rem;
   border-bottom: 1px solid rgba(212,175,55,0.1);
   flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: rgba(10,7,3,0.85);
+  backdrop-filter: blur(6px);
 }
 
 #tanri-gorunum-secici {
@@ -975,20 +980,20 @@ body::after {
   font-size: 0.65rem;
 }
 
-/* Izgara — Kart Modu */
+/* Izgara — taban (scroll YOK, yükseklik serbest) */
 #tanri-kart-izgara {
   padding: 0.75rem;
-  flex: 1;
-  overflow-y: auto;
-  min-height: 0;
+  /* flex/overflow YOK — üst kapsayıcı scroll yapıyor */
 }
 
+/* Kart Modu */
 #tanri-kart-izgara.gorunum-kart {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
   gap: 0.6rem;
   align-content: start;
 }
+
 
 /* ── Liste Modu ── */
 #tanri-kart-izgara.gorunum-liste {
